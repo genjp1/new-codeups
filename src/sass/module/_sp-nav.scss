@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.sp-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    width: 100%;
+    // 100vhで全画面表示
+    height: 100vh;
+    z-index: 8888;
+
+    // 横からスライドインバージョン(-100%：左から右、100%：右から左)
+    transform: translateX(100%);
+    transition: ease .3s;
+
+    @include mq(md) {
+    display: none;
+    }
+}
+    // 横からスライドインバージョン
+.sp-nav.is-open {
+    transform: translateX(0%);
+}
+
+.sp-nav__items {
+    padding-top: 194px;//194px
+    height: 100vh;
+    padding-bottom: 6.25rem;//100px
+    //heightを入れないと overflow: scroll;は使えない
+    overflow: scroll;
+    
+}
+
+
+
+.sp-nav__item a {
+    //クリック領域を大きくとる（横に広げる）→   display: block;か　inline-block;にする
+    display: inline-block;
+    width: 100%;
+    padding-top: 0.9375rem;//15px
+    padding-bottom: 1rem;//16px
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;//16px
+    letter-spacing: 0.125rem;//2px
+
+}

@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.pagetop {
+    height: 2.8125rem;//45px
+    width: 2.8125rem;//45px
+    position: fixed;
+    right: 1.25rem;//20px
+    bottom: 2.5rem;//40px
+    background: #fff;
+    border: solid 2px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    @include mq(md) {
+        height: 2.9375rem;//47px
+        width: 2.9375rem;//47px
+        right: 1.875rem;//30px
+        bottom: 1.9375rem;//31px
+        transition: all 0.5s ease 0s;
+    }
+}
+
+.pagetop__arrow {
+    height: 1.25rem;//20px
+    width: 1.25rem;//20px
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: translateY(20%) rotate(-45deg);
+    // transition: all 1.0s ease 0s;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+    .pagetop:hover, .pagetop:hover .pagetop__arrow {
+        background-color: #333;
+        border-color: #fff;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transition: all 1.0s ease 0s;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .pagetop:hover, .pagetop:hover {
+        border: 2px solid #333;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+

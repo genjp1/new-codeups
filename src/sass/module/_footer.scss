@@ -1,0 +1,43 @@
+@use "global" as *;
+
+
+.footer {
+    margin-top: 3.25rem;//52px
+    background-color: $green2;
+
+    @include mq(md) {
+        margin-top: 2.0625rem;//33px
+    }
+}
+
+.footer__inner {
+    //p-header（親要素）の高さを継承する
+
+    @include mq(md) {
+        height: inherit;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.375rem;//0 22px
+    	padding-left: 2rem;//32px
+        padding-right: 0;
+        display: flex;
+    }
+}
+
+.footer__copyright {
+    font-size: 0.625rem;//10px
+    text-align: center;
+    margin: 2.1875rem 0 0 0.3125rem;//35px 0 0 5px
+    letter-spacing: 0.075rem;//1.2px
+    line-height: 1;
+    text-align: center;
+    color: $white;
+
+    @include mq(md) {
+        font-size: 0.6875rem;//11px
+    	font-size: 0.9375rem;//15px
+        margin-top: 4.9375rem;//79px
+        margin-left: 0.0625rem;//1px
+        letter-spacing: 0.0625rem;//1px
+    }
+}

@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.logo {
+    width: 4.375rem;//70px
+    position: relative;
+    z-index: 9999;
+
+    @include mq(md) {
+        width: 5.9375rem;//95px
+    }
+}
+
+.footer__logo {
+    width: 4.375rem;//70px
+    position: relative;
+    // z-index: 9999;
+    margin: auto;
+
+    @include mq(md) {
+        width: 4.5625rem;//73px
+        margin: 0;
+    }
+}
