@@ -1,12 +1,11 @@
 @use "global" as *;
 
-$drawer-width: 1.5rem; //ドロワーの幅 24px
-$drawer-height: 0.125rem; //ドロワー線の高さ 2px
+$drawer-width: 32px; //ドロワーの幅 24px
+$drawer-height: 2px; //ドロワー線の高さ 2px
 $drawer-color: #fff; //ドロワー線の色
 
 .hamburger{
  z-index:9999;
- margin-top: -0.625rem;//-10px
 
  @include mq(md) {
      display: none;
@@ -27,7 +26,7 @@ $drawer-color: #fff; //ドロワー線の色
 }
 
 .hamburger span:nth-child(2) {
- margin: 0.25rem 0;//4px 0
+ margin: 10px 0;//4px 0
 }
 
 .hamburger span:nth-child(3) {
@@ -35,8 +34,8 @@ $drawer-color: #fff; //ドロワー線の色
 }
 /*is-OPEN時の動き*/
 .hamburger.is-open span:nth-child(1) {
- top: 0.3125rem;//5px
- transform: rotate(45deg);
+ top: 12px;//5px
+ transform: rotate(37deg);
 }
 
 .hamburger.is-open span:nth-child(2) {
@@ -45,6 +44,6 @@ $drawer-color: #fff; //ドロワー線の色
 }
 
 .hamburger.is-open span:nth-child(3) {
- top: -0.4375rem;//-7px
- transform: rotate(-45deg);
+ top: -12px;//-7px
+ transform: rotate(-37deg);
 }

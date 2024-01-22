@@ -20,15 +20,45 @@
 }
 
 .pc-nav__item a {
+    padding-right: 20px;
+    padding-left: 20px;
     height: inherit;
-    color: #fff;
     //aタグの全体のクリック領域を確保
-    display: grid;
-    place-items:center;
-    padding: 0 0.9375rem;//0 15px
-    font-size: 1rem;//16px
-    letter-spacing: 0.125rem;//2px
+    // display: grid;
+    // place-items:center;
+    // letter-spacing: 2px;//2px
     position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: #FFF;
+    // text-align: center;
+    font-family: $english-family;
+    font-size: 18px;//16px
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 18px; /* 100% */
+}
+
+.pc-nav__item:last-child a{
+    padding-right: 20px;
+}
+
+
+.pc-nav__item span {
+    margin-top: 4px;
+    display: block;
+    text-align: center;
+    font-family:$base-font-family;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 15px; /* 150% */
+
+
 }
 
 .pc-nav__item a::after {

@@ -42,20 +42,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   /*====================================================
 # Swiperでズームインしながらフェードで切り替わるスライダー
 =====================================================*/
-  let swipeOption = {
-    loop: true,
-    effect: 'fade',
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    speed: 2000,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    }
-  }
-  new Swiper('.js-top-swiper', swipeOption);
+  // let swipeOption = {
+  //   loop: true,
+  //   effect: 'fade',
+  //   autoplay: {
+  //     delay: 4000,
+  //     disableOnInteraction: false,
+  //   },
+  //   speed: 2000,
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //   }
+  // }
+  // new Swiper('.js-top-swiper', swipeOption);
 
 
   /*====================================================

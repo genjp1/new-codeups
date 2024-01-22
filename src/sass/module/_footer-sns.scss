@@ -1,0 +1,37 @@
+@use "global" as *;
+
+
+.footer-sns {
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: 16px;
+
+    @include mq("md") {
+        margin-left: 40px;
+        margin-bottom: inherit;
+    }
+
+
+}
+
+.footer-sns__items {
+    display: flex;
+}
+
+.footer-sns__item {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    margin-top: 16px;
+
+    @include mq("md") {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+    }
+
+}
+
+.footer-sns__item:last-child {
+    margin-right: 0;
+}
