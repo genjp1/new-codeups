@@ -41,6 +41,10 @@
 
 .service-card__body {
     padding: 16px 16px 24px 16px;
+
+    @include mq("md") {
+        padding: 24px 16px 40px 16px;
+    }
 }
 
 .service-card__tag {
@@ -56,48 +60,85 @@
     line-height: 22px; /* 183.333% */
 
     @include mq(md){
-       
+        padding: 6px 16px;
     }
 }
 
 .service-card__title {
-    margin-top: rem(15);
-    font-size: rem(15);
-    line-height: 1;
-    @include mq(md){
-       
+    color: $green1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: 24px; /* 150% */
+
+    margin-top: 4px;
+
+    @include mq("md") {
+        margin-top: 10px;
     }
 }
 
+
+
+hr.service-card__line {
+    border-color: $green2;
+}
+
 .service-card__text {
-    margin-top: rem(15);
-    font-size: rem(15);
-    line-height: 1;
+    color: $green1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 24px; /* 171.429% */
+
+    text-align: center;
+
     @include mq(md){
-       
+       font-size: 16px;
+       margin-top: 16px;
     }
 }
 
 .service-card__price {
     display: flex;
+
 }
 
 .service-card__price-before {
-    margin-top: rem(15);
-    font-size: rem(15);
-    line-height: 1;
     text-decoration: line-through;
+    text-decoration-color: $red;
+    text-decoration-thickness: 3px;
+    width: 50%;
+    text-align: center;
+
+    color: $green1;
+    font-family:$mv-english-family;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: 20px; /* 100% */
+
+    margin-top: 18px;
+
     @include mq(md){
-       
+        font-size: 24px;
+        line-height: 24px; /* 100% */
+        margin-top: 22px;
     }
 }
 
 .service-card__price-discount {
-    margin-top: rem(15);
-    font-size: rem(15);
-    line-height: 1;
+    color: $green2;
+    font-family: $mv-english-family;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: 32px; /* 100% */
+
+    margin-top: 8px;
 
     @include mq(md){
-       
+        font-size: 40px;
+        line-height: 40px; /* 100% */
     }
 }

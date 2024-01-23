@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.service-swiper {
+    margin-top: 40px;
+}
+
 .service-swiper__button-wrap {
     margin-top: rem(70);
     display: flex;
