@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.service-card {
+.campaign-card {
 
 }
 
 
-.service-card a {
+.campaign-card a {
     // padding: rem(15) rem(15) rem(35);
     height: 100%;
     display: block;
@@ -19,27 +19,27 @@
     
 }
 
-.service-card a:hover {
+.campaign-card a:hover {
     opacity: 1;
 }
 
-.service-card__img {
+.campaign-card__img {
     width: 100%;
     overflow: hidden;
 }
 
-.service-card__img img {
+.campaign-card__img img {
     width: 100%;
     aspect-ratio: 280/188;
     object-fit: cover;
     transition: .6s;
 }
 
-.service-card:hover .service-card__img img {
+.campaign-card:hover .campaign-card__img img {
     transform: scale(1.2);
 }
 
-.service-card__body {
+.campaign-card__body {
     padding: 12px 16px 24px 15px;
 
     @include mq("md") {
@@ -47,7 +47,7 @@
     }
 }
 
-.service-card__tag {
+.campaign-card__tag {
     display: inline-flex;
     padding: 4px 12px;
     align-items: flex-start;
@@ -64,7 +64,7 @@
     }
 }
 
-.service-card__title {
+.campaign-card__title {
     color: $green1;
     font-size: 16px;
     font-style: normal;
@@ -80,12 +80,12 @@
 
 
 
-hr.service-card__line {
+hr.campaign-card__line {
     border-color: $green2;
     margin: 6px 0;
 }
 
-.service-card__text {
+.campaign-card__text {
     color: $green1;
     font-size: 14px;
     font-style: normal;
@@ -101,12 +101,12 @@ hr.service-card__line {
     }
 }
 
-.service-card__price {
+.campaign-card__price {
     display: flex;
     justify-content: center;
 }
 
-.service-card__price-before {
+.campaign-card__price-before {
     text-decoration: line-through;
     text-decoration-color: $red;
     text-decoration-thickness: rem(3);
@@ -129,7 +129,7 @@ hr.service-card__line {
     }
 }
 
-.service-card__price-discount {
+.campaign-card__price-discount {
     color: $green2;
     font-family: $mv-english-family;
     font-size: rem(32);
@@ -149,7 +149,7 @@ hr.service-card__line {
 
 
 // //カードサイズ調整
-// .service-card a {
+// .campaign-card a {
 //     max-width: 333px; /* 幅の調整 */
 //     // height: 445px; /* 高さの調整 */
 //     /* その他のスタイルは変更せず */

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.service-swiper {
+.campaign-swiper {
     margin-top: 28px;
 
     @include mq("md") {
@@ -9,7 +9,7 @@
     }
 }
 
-.service-swiper__button-wrap {
+.campaign-swiper__button-wrap {
     margin-top: 40px;//41px
     display: flex;
     justify-content: left;
@@ -19,8 +19,8 @@
     }
 }
 
-.service-swiper__button-wrap .swiper-button-prev,
-.service-swiper__button-wrap .swiper-button-next {
+.campaign-swiper__button-wrap .swiper-button-prev,
+.campaign-swiper__button-wrap .swiper-button-next {
     position: relative;
     width: rem(100);
     height: rem(100);
@@ -28,12 +28,12 @@
     border-radius: 50%;
 }
 
-.service-swiper__button-wrap .swiper-button-next {
+.campaign-swiper__button-wrap .swiper-button-next {
     margin-left: rem(100);
 }
 
-.service-swiper__button-wrap .swiper-button-prev::before,
-.service-swiper__button-wrap .swiper-button-next::before {
+.campaign-swiper__button-wrap .swiper-button-prev::before,
+.campaign-swiper__button-wrap .swiper-button-next::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -44,10 +44,10 @@
     border-right: rem(3) solid #333;
 }
 
-.service-swiper__button-wrap .swiper-button-prev::before {
+.campaign-swiper__button-wrap .swiper-button-prev::before {
     transform: translate(-50%, -50%) rotate(-135deg);
 }
 
-.service-swiper__button-wrap .swiper-button-next::before {
+.campaign-swiper__button-wrap .swiper-button-next::before {
     transform: translate(-50%, -50%) rotate(45deg);
 }

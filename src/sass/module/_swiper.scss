@@ -2,7 +2,7 @@
 
 
 // ボタン位置の調整
-.service-swiper__button-wrap {
+.campaign-swiper__button-wrap {
     justify-content: right;
 }
 
@@ -28,12 +28,12 @@
 
 
 // 既定のやじるしを消す
-.service-swiper__button-wrap .swiper-button-prev::before, .service-swiper__button-wrap .swiper-button-next::before {
+.campaign-swiper__button-wrap .swiper-button-prev::before, .campaign-swiper__button-wrap .swiper-button-next::before {
     display: none;
 }
 
 // 円のデザイン調整
-.service-swiper__button-wrap .swiper-button-prev, .service-swiper__button-wrap .swiper-button-next {
+.campaign-swiper__button-wrap .swiper-button-prev, .campaign-swiper__button-wrap .swiper-button-next {
     // border: 1px solid $green2;
     background-color: $white;
     // width: 80px;

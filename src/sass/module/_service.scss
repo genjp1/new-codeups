@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.service {
+.campaign {
     overflow-x: hidden;
 }
 
-.service__inner {
+.campaign__inner {
     margin: auto;
     padding: 0 20px 0 15px;
     max-width: 600px;
@@ -15,11 +15,11 @@
     }
 }
 
-.service__swiper {
+.campaign__swiper {
     margin-right: calc(50% - 50vw);
     width: 100vw;
 }
 
-.service__btn {
+.campaign__btn {
     text-align: center;
 }

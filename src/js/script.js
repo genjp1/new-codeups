@@ -70,10 +70,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         fadeEffect: {
             crossFade: true,
         },
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 4000,
+        //     disableOnInteraction: false,
+        // },
     });
 
 
@@ -109,29 +109,29 @@ topBtn.click(function () {
 =====================================================*/
 
   // リサイズ処理（PC時のみ矢印表示）
-  const service_slideLength = document.querySelectorAll('.js-service-swiper .swiper-slide').length
+  const campaign_slideLength = document.querySelectorAll('.js-campaign-swiper .swiper-slide').length
   $(window).resize(function () {
-      service_arrow();
+      campaign_arrow();
   });
-  service_arrow();
-  function service_arrow() {
-      if (window.matchMedia('(max-width: 767px)').matches || service_slideLength <= 3) {
-          $('.js-service-arrow').hide();
+  campaign_arrow();
+  function campaign_arrow() {
+      if (window.matchMedia('(max-width: 767px)').matches || campaign_slideLength <= 3) {
+          $('.js-campaign-arrow').hide();
       } else {
-          $('.js-service-arrow').show();
+          $('.js-campaign-arrow').show();
       }
   }
 
   // Swiper
-  var service_swiper = new Swiper(".js-service-swiper", {
+  var campaign_swiper = new Swiper(".js-campaign-swiper", {
       loop: true,
       speed: 2000,
       slidesPerView: 1.3,
       spaceBetween: 20,
-      autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-      },
+      // autoplay: {
+      //     delay: 2000,
+      //     disableOnInteraction: false,
+      // },
       breakpoints: {
           768: {
               slidesPerView: 3.9,

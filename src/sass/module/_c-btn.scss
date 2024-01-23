@@ -1,14 +1,14 @@
 @use "global" as *;
 
-.c-btn,
-.c-bnr,
-.c-txt {
-  cursor: pointer;
-  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
-}
+// .btn,
+// .c-bnr,
+// .c-txt {
+//   cursor: pointer;
+//   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+// }
  
 // ボタン基本コード
-.c-btn {
+.btn {
   background: $green2;
   border: 2px solid $green2;
   // border-radius: 60px;
@@ -22,24 +22,24 @@
 
 
  
-// 画像バナー基本コード
-.c-bnr {
-  background: url(../img/btn-bnr.jpg)no-repeat center center / cover;
-  display: inline-block;
-  width: 240px;
-  height: 240px;
-}
+// // 画像バナー基本コード
+// .c-bnr {
+//   background: url(../img/btn-bnr.jpg)no-repeat center center / cover;
+//   display: inline-block;
+//   width: 240px;
+//   height: 240px;
+// }
  
-// テキスト基本コード
-.c-txt {
-  color: $green2;
-  display: inline-block;
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 0.06em;
-}
+// // テキスト基本コード
+// .c-txt {
+//   color: $green2;
+//   display: inline-block;
+//   font-size: 22px;
+//   font-weight: bold;
+//   letter-spacing: 0.06em;
+// }
 
-.c-btn.slide {
+.btn.slide {
   background: $green2;
   overflow: hidden;
   position: relative;
@@ -59,7 +59,7 @@
   }
 }
 
-.c-btn.slide::after {
+.btn.slide::after {
   background: $white;
   position: absolute;
   top: 0;
@@ -74,14 +74,14 @@
 }
 
 
-.c-btn.slide:hover {
+.btn.slide:hover {
   color: $green2;
 }
-.c-btn.slide:hover::after {
+.btn.slide:hover::after {
   transform: scale(1, 1);
 }
 
-.c-btn.slide::before{
+.btn.slide::before{
   content: "";
   display: block;
   position: absolute;
@@ -102,7 +102,7 @@
   }
 }
 
-.c-btn.slide::before:hover {
+.btn.slide::before:hover {
   border-right: 2px solid $green2;
   border-bottom: 1px solid  $green2;
 }
