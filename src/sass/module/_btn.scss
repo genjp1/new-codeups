@@ -1,13 +1,5 @@
 @use "global" as *;
 
-// .btn,
-// .c-bnr,
-// .c-txt {
-//   cursor: pointer;
-//   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
-// }
- 
-// ボタン基本コード
 .btn {
   background: $green2;
   border: 2px solid $green2;
@@ -20,24 +12,6 @@
   text-align: center;
 }
 
-
- 
-// // 画像バナー基本コード
-// .c-bnr {
-//   background: url(../img/btn-bnr.jpg)no-repeat center center / cover;
-//   display: inline-block;
-//   width: 240px;
-//   height: 240px;
-// }
- 
-// // テキスト基本コード
-// .c-txt {
-//   color: $green2;
-//   display: inline-block;
-//   font-size: 22px;
-//   font-weight: bold;
-//   letter-spacing: 0.06em;
-// }
 
 .btn.slide {
   background: $green2;

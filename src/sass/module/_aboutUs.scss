@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.aboutUs {
+
+}
+
+.top-aboutUs {
+
+}
+
+.aboutUs__head {
+
+}
+
+
+.aboutUs__title {
+
+}
+
+
+.aboutUs__img {
+    position: relative;
+    text-align: right;
+    margin-top: 53px;
+}
+
+.aboutUs-base {
+    width: 281px;
+    height: 186px;
+    flex-shrink: 0;
+    display: inline-block;
+
+}
+
+
+.aboutUs__coverImg {
+ position: absolute;
+ content: "";
+top: 50%;
+transform: translateY(-62%);
+width: 128px;
+height: 194px;
+flex-shrink: 0;
+}
+
+.aboutUs__content {
+    margin-top: 35px;
+}
+
+.aboutUs__title {
+    color: $green2;
+    font-family: Gotu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 40px; /* 100% */
+}
+
+.aboutUs___text {
+    margin-top: 16px;
+    color: $green1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 24px; /* 150% */
+}
+
+.aboutUs__btn {
+    margin-top: 50px;
+    text-align: center;
+}
