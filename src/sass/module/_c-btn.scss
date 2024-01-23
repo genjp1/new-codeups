@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.c-btn,
+.c-bnr,
+.c-txt {
+  cursor: pointer;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+ 
+// ボタン基本コード
+.c-btn {
+  background: $green2;
+  border: 2px solid $green2;
+  // border-radius: 60px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  max-width: 300px;
+  padding: 14px 25px 14px 25px;
+  text-align: center;
+}
+
+
+ 
+// 画像バナー基本コード
+.c-bnr {
+  background: url(../img/btn-bnr.jpg)no-repeat center center / cover;
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+}
+ 
+// テキスト基本コード
+.c-txt {
+  color: $green2;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}
+
+.c-btn.slide {
+  background: $green2;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 14px 87px 14px 37px;
+
+  color: $white;
+  font-family: $english-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: $regular;
+  line-height: 22px; /* 157.143% */
+
+  @include mq("md") {
+    padding: 14px 87px 14px 37px;
+  }
+}
+
+.c-btn.slide::after {
+  background: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+
+
+.c-btn.slide:hover {
+  color: $green2;
+}
+.c-btn.slide:hover::after {
+  transform: scale(1, 1);
+}
+
+.c-btn.slide::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 40px;
+  width: 40px;
+  height: 5px;
+  border: none;
+  border-right: 2px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  transform: skew(53deg);
+  transition: .3s;
+
+  @include mq("md") {
+      right: 42px;
+      width: 41px;
+      top: calc(50% - 4px);
+  }
+}
+
+.c-btn.slide::before:hover {
+  border-right: 2px solid $green2;
+  border-bottom: 1px solid  $green2;
+}

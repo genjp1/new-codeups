@@ -1,14 +1,14 @@
 @use "global" as *;
 
 .top-service {
-    margin-top: 40px;
-    margin-bottom: 84px;
+    padding-top: 40px;
+    padding-bottom: 84px;
     // width: 100%;
     // margin-right: auto;
     // margin-left: auto;
 
     @include mq(md) {
-        margin-top: 120px;
-        margin-bottom: 140px
+        padding-top: 120px;
+        padding-bottom: 140px
     }
 }

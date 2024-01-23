@@ -63,18 +63,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 /*====================================================
 # mvセクションのスライダー
 =====================================================*/
-    // const mv_swiper = new Swiper(".js-mv-swiper", {
-    //     loop: true,
-    //     speed: 2000,
-    //     effect: "fade",
-    //     fadeEffect: {
-    //         crossFade: true,
-    //     },
-    //     autoplay: {
-    //         delay: 4000,
-    //         disableOnInteraction: false,
-    //     },
-    // });
+    const mv_swiper = new Swiper(".js-mv-swiper", {
+        loop: true,
+        speed: 2000,
+        effect: "fade",
+        fadeEffect: {
+            crossFade: true,
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+    });
 
 
 
@@ -128,13 +128,13 @@ topBtn.click(function () {
       speed: 2000,
       slidesPerView: 1.3,
       spaceBetween: 20,
-      // autoplay: {
-      //     delay: 2000,
-      //     disableOnInteraction: false,
-      // },
+      autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+      },
       breakpoints: {
           768: {
-              slidesPerView: 3.5,
+              slidesPerView: 3.9,
               spaceBetween: 40
           }
       },

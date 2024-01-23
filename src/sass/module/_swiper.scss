@@ -1,0 +1,70 @@
+@use "global" as *;
+
+
+// ボタン位置の調整
+.service-swiper__button-wrap {
+    justify-content: right;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: auto;
+    right: 275px;//275px
+    top: -632px;//-632px
+
+    @include mq("md") {
+        top: -540px;//-540px
+    }
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: auto;
+    left: -315px;//-315px
+    top: -633px;//-633px
+
+    @include mq("md") {
+        top: -541px;//-541px
+    }
+}
+
+
+// 既定のやじるしを消す
+.service-swiper__button-wrap .swiper-button-prev::before, .service-swiper__button-wrap .swiper-button-next::before {
+    display: none;
+}
+
+// 円のデザイン調整
+.service-swiper__button-wrap .swiper-button-prev, .service-swiper__button-wrap .swiper-button-next {
+    // border: 1px solid $green2;
+    background-color: $white;
+    // width: 80px;
+    // height: 80px;
+}
+
+/* 幅・高さを指定 */
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+}
+ 
+/* 矢印を消す、画像に変更 */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: rem(80);
+  width: rem(80);
+  margin: auto;
+}
+ 
+/* 前に戻る画像パス */
+.swiper-button-prev:after {
+  background-image: url(../images/common/swiper-arrow-left.png);
+}
+/* 次に進む画像パス */
+.swiper-button-next:after {
+  background-image: url(../images/common/swiper-arrow-right.png);
+}
+
+
