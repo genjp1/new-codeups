@@ -1,0 +1,84 @@
+@use "global" as *;
+.mv {
+    position: relative;
+    z-index: 1;
+    // height: 100vh;
+    min-height: rem(400);
+}
+
+.mv__inner {
+    height: inherit;
+    min-height: inherit;
+}
+
+.mv__title-wrap {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    // width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.mv__main-title {
+    color: #FFF;
+    font-family: $mv-english-family;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    letter-spacing: 21.6px;
+    width: 100%;
+    max-width: 248px;
+
+    @include mq(md) {
+        font-size: rem(80);
+        line-height: rem(100); /* 125% */
+        letter-spacing: 43.2px;
+        width: 100%;
+        max-width: 496px;
+    }
+}
+
+.mv__sub-title {
+    color: #FFF;
+    font-family: $english-family;
+    font-size: rem(20);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    text-align: center;
+}
+
+.mv__swiper,
+.mv__swiper .swiper-img,
+.mv__swiper .swiper-img img {
+    height: inherit;
+    min-height: inherit;
+}
+
+.mv__swiper .swiper-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.mv__swiper .swiper-slide.swiper-slide-active .swiper-img,
+.mv__swiper .swiper-slide.swiper-slide-duplicate-active .swiper-img,
+.mv__swiper .swiper-slide.swiper-slide-prev .swiper-img {
+    animation: scale 8s linear 0s normal both;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.space {
+    margin-top: 1000px;
+}

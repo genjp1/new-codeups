@@ -23,8 +23,8 @@
   <!-- ファビコン -->
   <link rel="”icon”" href="#" />
  <!-- スワイパー -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
@@ -54,7 +54,7 @@
             <li class="sp-nav__item"><a href="#campaign">キャンペーン</a>
             <div class="sp-nav__item-child">ライセンス取得</div>
             <div class="sp-nav__item-child">貸切体験ダイビング</div>
-            <div class="sp-nav__item-child">ナイトダイビング</div>
+            <div class="sp-nav__item-child">ライセンス取得</div>
           </li>
             <li class="sp-nav__item"><a href="#aboutUs">私たちについて</a>
             </li>
@@ -104,8 +104,46 @@
     </div>
  </header>
 
+<!-- mv -->
+<section class="mv">
+  <div class="mv__inner">
+    <div class="mv__title-wrap">
+      <h2 class="mv__main-title">DIVING</h2>
+      <p class="mv__sub-title">into the ocean</p>
+    </div>
+    <div class="mv__swiper swiper js-mv-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-img">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/common/mv1.jpg" class="mv" alt="mv-img1">
+              <img src="./assets/images/common/mv1-sp.jpg" class="mv" alt="mv-img-sp1">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-img">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/common/mv2.jpg" class="mv" alt="mv-img1">
+              <img src="./assets/images/common/mv2-sp.jpg" class="mv" alt="mv-img-sp1">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-img">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/common/mv3.jpg" class="mv" alt="mv-img3">
+              <img src="./assets/images/common/mv3-sp.jpg" class="mv" alt="mv-img-sp3">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
  <!-- トップ -->
- <div  id="top" class="top">
+ <!-- <div  id="top" class="top">
   <div class="top__inner">
     <div class="top__wrap">
       <div class="swiper-container js-top-swiper">
@@ -149,14 +187,182 @@
 
         </div>
       </div>
-      <!-- Add Pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
+      Add Pagination
+      <div class="swiper-pagination"></div>
     </div>
   </div>
-</div>
+</div> -->
 
+<div class="service top-service">
+  <div class="service__inner">
 
- <div class="space"></div>
+    <div class="service__swiper service-swiper">
+      <div class="swiper js-service-swiper">
+        <ul class="swiper-wrapper">
+
+          <li class="service-card swiper-slide">
+            <a href="#">
+              <div class="service-card__item">
+                <div class="service-card__img">
+                  <img src="./assets/images/common/campaign1.jpg" alt="省略">
+                </div>
+                <div class="service-card__body">
+                  <p class="service-card__tag">ライセンス講習</p>
+                  <p class="service-card__title">ライセンス取得</p>
+                  <hr class="service-card__line">
+                  <p class="service-card__text">全部コミコミ(お一人様)</p>
+                  <div class="service-card__price">
+                    <p class="service-card__price-before">¥56,000</p>
+                    <p class="service-card__price-discount">¥46,000</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="service-card swiper-slide">
+            <a href="#">
+              <div class="service-card__item">
+                <div class="service-card__img">
+                  <img src="./assets/images/common/campaign2.jpg" alt="省略">
+                </div>
+                <div class="service-card__body">
+                  <p class="service-card__tag">ライセンス講習</p>
+                  <p class="service-card__title">ライセンス取得</p>
+                  <hr class="service-card__line">
+                  <p class="service-card__text">全部コミコミ(お一人様)</p>
+                  <div class="service-card__price">
+                    <p class="service-card__price-before">¥56,000</p>
+                    <p class="service-card__price-discount">¥46,000</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="service-card swiper-slide">
+            <a href="#">
+              <div class="service-card__item">
+                <div class="service-card__img">
+                  <img src="./assets/images/common/campaign3.jpg" alt="省略">
+                </div>
+                <p class="service-card__text">ライセンス取得</p>
+              </div>
+            </a>
+          </li>
+          <li class="service-card swiper-slide">
+            <a href="#">
+              <div class="service-card__item">
+                <div class="service-card__img">
+                  <img src="./assets/images/common/campaign4.jpg" alt="省略">
+                </div>
+                <p class="service-card__text">ライセンス取得</p>
+              </div>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="service-swiper__button-wrap">
+        <div class="swiper-button-prev js-service-arrow"></div>
+        <div class="swiper-button-next js-service-arrow"></div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+<!--     
+    <section  id="campaign" class="campaign top-campaign">
+      <div class="campaign__head inner">
+    
+        <div class="campaign__title title">
+          <h2 class="title__main">campaign</h2>
+          <p class="title__sub">キャンペーン</p>
+        </div>
+
+  </div>
+</section> -->
+
+<div class="space100"></div>
+
+<section  id="aboutUs" class="aboutUs top-aboutUs">
+  <div class="aboutUs__head inner">
+
+    <div class="aboutUs__title title">
+      <h2 class="title__main">about us</h2>
+      <p class="title__sub">私たちについて</p>
+    </div>
+
+  </div>
+</section>
+
+ <div class="space100"></div>
+
+ <section  id="information" class="information top-information">
+  <div class="information__head inner">
+
+    <div class="information__title title">
+      <h2 class="title__main">information</h2>
+      <p class="title__sub">ダイビング情報</p>
+    </div>
+
+  </div>
+</section>
+
+ <div class="space100"></div>
+
+ <section  id="blog" class="blog top-blog">
+  <div class="blog__head inner">
+
+    <div class="blog__title title">
+      <h2 class="title__main">blog</h2>
+      <p class="title__sub">私たちについて</p>
+    </div>
+
+  </div>
+</section>
+
+ <div class="space100"></div>
+
+ <section  id="voice" class="voice top-voice">
+  <div class="voice__head inner">
+
+    <div class="voice__title title">
+      <h2 class="title__main">voice</h2>
+      <p class="title__sub">お客様の声</p>
+    </div>
+
+  </div>
+</section>
+
+ <div class="space100"></div>
+
+ <section  id="price" class="price top-price">
+  <div class="price__head inner">
+
+    <div class="price__title title">
+      <h2 class="title__main">price</h2>
+      <p class="title__sub">料金一覧</p>
+    </div>
+
+  </div>
+</section>
+
+ <div class="space100"></div>
+
+ <section  id="contact" class="contact top-contact">
+  <div class="contact__head inner">
+
+    <div class="contact__title title">
+      <h2 class="title__main">contact</h2>
+      <p class="title__sub">お問合せ</p>
+    </div>
+
+  </div>
+</section>
+
+ <div class="space100"></div>
 
 
  <footer class="footer">
@@ -186,7 +392,7 @@
               <li class="footer-nav__item"><a href="#campaign">キャンペーン</a>
               <div class="footer-nav__item-child">ライセンス取得</div>
               <div class="footer-nav__item-child">貸切体験ダイビング</div>
-              <div class="footer-nav__item-child">ナイトダイビング</div>
+              <div class="footer-nav__item-child">ライセンス取得</div>
               </li>
               <li class="footer-nav__item"><a href="#aboutUs">私たちについて</a>
               </li>

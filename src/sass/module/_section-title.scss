@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.title {
+    // max-width: 80rem;//1280px
+    // margin: auto;
+    // position: relative;
+}
+
+.title__main {
+    margin-bottom: 4px;
+
+    color: $green1;
+    text-align: center;
+    font-family: $english-family;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 40px;
+    text-transform:capitalize;
+
+    @include mq(md) {
+        margin-bottom: 8px;
+        font-size: 40px;
+    }
+}
+
+.title__main::first-letter {
+    color: $green2;
+  }
+
+.title__sub{
+    color: $green2;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
+
+

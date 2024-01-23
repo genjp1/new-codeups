@@ -1,0 +1,103 @@
+@use "global" as *;
+
+.service-card {
+
+}
+
+
+.service-card a {
+    // padding: rem(15) rem(15) rem(35);
+    height: 100%;
+    display: block;
+    // background-color: #fff9ee;
+
+    // width: 280px;
+    // height: 366px;
+    flex-shrink: 0;
+    background: var(--White, #FFF);
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    
+}
+
+.service-card a:hover {
+    opacity: 1;
+}
+
+.service-card__img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.service-card__img img {
+    width: 100%;
+    aspect-ratio: 300/186;
+    object-fit: cover;
+    transition: .6s;
+}
+
+.service-card:hover .service-card__img img {
+    transform: scale(1.2);
+}
+
+.service-card__body {
+    padding: 16px 16px 24px 16px;
+}
+
+.service-card__tag {
+    display: inline-flex;
+    padding: 4px 12px;
+    align-items: flex-start;
+    gap: 8px;
+    border: 1px solid $green2;
+    color: $green2;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 22px; /* 183.333% */
+
+    @include mq(md){
+       
+    }
+}
+
+.service-card__title {
+    margin-top: rem(15);
+    font-size: rem(15);
+    line-height: 1;
+    @include mq(md){
+       
+    }
+}
+
+.service-card__text {
+    margin-top: rem(15);
+    font-size: rem(15);
+    line-height: 1;
+    @include mq(md){
+       
+    }
+}
+
+.service-card__price {
+    display: flex;
+}
+
+.service-card__price-before {
+    margin-top: rem(15);
+    font-size: rem(15);
+    line-height: 1;
+    text-decoration: line-through;
+    @include mq(md){
+       
+    }
+}
+
+.service-card__price-discount {
+    margin-top: rem(15);
+    font-size: rem(15);
+    line-height: 1;
+
+    @include mq(md){
+       
+    }
+}

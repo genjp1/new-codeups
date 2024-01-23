@@ -40,7 +40,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
   /*====================================================
-# Swiperでズームインしながらフェードで切り替わるスライダー
+# 旧CodeUps Swiperでズームインしながらフェードで切り替わるスライダー
 =====================================================*/
   // let swipeOption = {
   //   loop: true,
@@ -58,7 +58,27 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // new Swiper('.js-top-swiper', swipeOption);
 
 
-  /*====================================================
+
+
+/*====================================================
+# mvセクションのスライダー
+=====================================================*/
+    // const mv_swiper = new Swiper(".js-mv-swiper", {
+    //     loop: true,
+    //     speed: 2000,
+    //     effect: "fade",
+    //     fadeEffect: {
+    //         crossFade: true,
+    //     },
+    //     autoplay: {
+    //         delay: 4000,
+    //         disableOnInteraction: false,
+    //     },
+    // });
+
+
+
+/*====================================================
 # ボタンをクリックしたらスクロールして上に戻る
 =====================================================*/
 var topBtn = $('.pagetop');
@@ -82,6 +102,51 @@ topBtn.click(function () {
   }, 300, 'swing');
   return false;
 });
+
+
+/*====================================================
+# campaignセクションのスライダー
+=====================================================*/
+
+  // リサイズ処理（PC時のみ矢印表示）
+  const service_slideLength = document.querySelectorAll('.js-service-swiper .swiper-slide').length
+  $(window).resize(function () {
+      service_arrow();
+  });
+  service_arrow();
+  function service_arrow() {
+      if (window.matchMedia('(max-width: 767px)').matches || service_slideLength <= 3) {
+          $('.js-service-arrow').hide();
+      } else {
+          $('.js-service-arrow').show();
+      }
+  }
+
+  // Swiper
+  var service_swiper = new Swiper(".js-service-swiper", {
+      loop: true,
+      speed: 2000,
+      slidesPerView: 1.3,
+      spaceBetween: 20,
+      // autoplay: {
+      //     delay: 2000,
+      //     disableOnInteraction: false,
+      // },
+      breakpoints: {
+          768: {
+              slidesPerView: 3.5,
+              spaceBetween: 40
+          }
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+
+
+
+
 
 
 
