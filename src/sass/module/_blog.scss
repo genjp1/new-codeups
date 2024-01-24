@@ -63,8 +63,10 @@
 }
 
 .blog__img {
+  display: none;
 
   @include mq("md") {
+    display: block;
     content: "";
     position: absolute;
     top: 53%;
