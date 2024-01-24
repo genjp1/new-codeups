@@ -15,14 +15,37 @@
 
 .information__content {
 
+    @include mq("md") {
+        display: flex;
+    }
 }
 
 .information__img {
     margin-top: 24px;
+
+    @include mq("md") {
+        margin-top: 40px;
+        width: 50%;
+
+    }
 }
+
+.information__img-img {
+    max-width: 540px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .information__course {
     margin-top: 26px;
+
+    @include mq("md") {
+        width: 46%;
+        margin-left: 47px;
+        margin-top: 101px;
+    }
 }
 
 .information__course-title {
@@ -31,11 +54,19 @@
     font-style: normal;
     font-weight: $bold;
     line-height: 24px; /* 120% */
+
+    @include mq("md") {
+        font-size: 24px;
+    }
 }
 
 hr.information__line {
     border-color: $green2;
     margin: 3px 0;
+
+    @include mq("md") {
+        margin: 7px 0;
+    }
 }
 
 .information__course-text {
@@ -46,6 +77,11 @@ hr.information__line {
     font-style: normal;
     font-weight: $regular;
     line-height: 24px; /* 150% */
+
+    @include mq("md") {
+        max-width: 492px;
+        width: 100%;
+    }
 }
 
 .information__btn {
