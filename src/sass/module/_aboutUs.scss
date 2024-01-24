@@ -65,7 +65,7 @@
 .aboutUs__content {
     margin-top: 35px;
     @include mq("md") {
-        
+        margin-top: inherit;
     }
 }
 
@@ -80,7 +80,7 @@
     @include mq("md") {
         position: absolute;
         content: "";
-        top:60%;
+        top: 51%;
         left: 40.2%;
         transform: translate(-50%, -50%);
         z-index: 3;
@@ -107,7 +107,7 @@
     @include mq("md") {
         position: absolute;
         content: "";
-        top: 55%;
+        top: 46.6%;
         left: 70.8%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -130,7 +130,7 @@
     @include mq("md") {
         position: absolute;
         content: "";
-        top: 66.5%;
+        top: 56.4%;
         left: 70.6%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -154,8 +154,8 @@
         
         position: absolute;
         content: "";
-        top: 99%;
-        right: 6%;
+        top: 84.3%;
+        right: 5.8%;
         transform: translateY(-50%);
         z-index: 3;
     }

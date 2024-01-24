@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.information {
+    background-color: $green3;
+}
+
+.information__head {
+
+}
+
+.information__title {
+
+}
+
+
+.information__content {
+
+}
+
+.information__img {
+    margin-top: 24px;
+}
+
+.information__course {
+    margin-top: 26px;
+}
+
+.information__course-title {
+    color: $green1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: 24px; /* 120% */
+}
+
+hr.information__line {
+    border-color: $green2;
+    margin: 3px 0;
+}
+
+.information__course-text {
+    margin-top: 6px;
+
+    color: $green1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 24px; /* 150% */
+}
+
+.information__btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
