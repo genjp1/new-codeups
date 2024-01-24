@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .aboutUs {
-
+    position: relative;
 }
 
 .top-aboutUs {
@@ -22,50 +22,141 @@
     position: relative;
     text-align: right;
     margin-top: 53px;
+
+    @include mq("md") {
+        margin-top: 120px;
+        
+    }
 }
 
 .aboutUs-base {
-    width: 281px;
-    height: 186px;
+    width: 100%;
+    max-width: 281px;
+    // height: 186px;
     flex-shrink: 0;
     display: inline-block;
+    z-index: 1;
+
+    @include mq("md") {
+        max-width: 880px;
+        
+    }
 
 }
 
 
 .aboutUs__coverImg {
- position: absolute;
- content: "";
-top: 50%;
-transform: translateY(-62%);
-width: 128px;
-height: 194px;
-flex-shrink: 0;
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-62%);
+    width: 100%;
+    max-width: 128px;
+    // height: 194px;
+    flex-shrink: 0;
+    z-index: 2;
+
+@include mq("md") {
+    max-width: 400px;
+   
+}
 }
 
 .aboutUs__content {
     margin-top: 35px;
+    @include mq("md") {
+        
+    }
 }
 
-.aboutUs__title {
+.aboutUs__content-title {
     color: $green2;
-    font-family: Gotu;
+    font-family: $english-family;
     font-size: 40px;
     font-style: normal;
     font-weight: $regular;
     line-height: 40px; /* 100% */
+
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        top:60%;
+        left: 40.2%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+
+        color: $white;
+        font-family: $english-family;
+        font-size: rem(80);
+        font-style: normal;
+        font-weight: $regular;
+        line-height: 100px; /* 125% */
+    }
+
+
 }
 
-.aboutUs___text {
+.aboutUs___content-text {
     margin-top: 16px;
     color: $green1;
     font-size: 16px;
     font-style: normal;
     font-weight: $regular;
     line-height: 24px; /* 150% */
+
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        top: 55%;
+        left: 70.8%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: rem(400);
+        z-index: 3;
+
+        color: $white;
+        font-size: rem(16);
+        font-style: normal;
+        font-weight: $regular;
+        line-height: 24px; /* 150% */
+    }
+
 }
 
 .aboutUs__btn {
-    margin-top: 50px;
+    margin-top: 52px;
     text-align: center;
+
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        top: 66.5%;
+        left: 70.6%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 400px;
+        z-index: 3;
+    }
+}
+
+
+.aboutUs__underImg {
+}
+
+.aboutUs__underImg-img {
+    display: none;
+
+    @include mq("md") {
+        width: 100%;
+        max-width: 194px;
+        height: auto;
+        display: block;
+        
+        position: absolute;
+        content: "";
+        top: 99%;
+        right: 6%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
 }
