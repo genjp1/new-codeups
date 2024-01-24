@@ -2,6 +2,15 @@
 
 .blog{
 
+
+  @include mq("md") {
+    background-image: url(../images/common/bg-blog.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+
+
   }
   
   .blog__inner{
@@ -53,4 +62,17 @@
     }
 }
 
-  
+.blog__img {
+
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    top: 53%;
+    left: 7%;
+    transform: translateY(-50%);
+    width: auto;
+    height: 100%;
+  }
+
+
+}

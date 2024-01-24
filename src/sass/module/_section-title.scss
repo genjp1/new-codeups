@@ -24,8 +24,20 @@
     }
 }
 
+.title__main.title__main--white {
+    @include mq("md") {
+        color: $white;
+    }
+}
+
 .title__main::first-letter {
     color: $green2;
+  }
+
+  .title__main.title__main--white::first-letter {
+    @include mq("md") {
+        color: $white;
+    }
   }
 
 .title__sub{
@@ -38,4 +50,10 @@
     line-height: 18px; /* 150% */
 }
 
+.title__sub.title__sub--white {
+    @include mq("md") {
+        color: $white;
+    }
+    
+}
 
