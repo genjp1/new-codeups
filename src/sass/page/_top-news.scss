@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.top-news {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    // width: 100%;
+    // padding-right: auto;
+    // padding-left: auto;
+
+    @include mq(md) {
+        padding-top: 100px;
+        padding-bottom: 76px
+    }
+}
