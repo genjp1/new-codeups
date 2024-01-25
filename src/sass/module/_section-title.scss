@@ -33,7 +33,7 @@
 .title__main.title__main--big {
     font-size: 80px;
     line-height: 80px; /* 100% */
-    margin-bottom: 0px;
+    margin-bottom: -9px;
 }
 
 .title__main::first-letter {
@@ -64,6 +64,7 @@
 }
 
 .title__subText {
+    margin-top: 8px;
     color: $green2;
     text-align: center;
     font-family: "Noto Sans JP";
