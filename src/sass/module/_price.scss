@@ -1,0 +1,89 @@
+@use "global" as *;
+
+.price {
+    background-color: $green3;
+
+}
+
+.top-price {
+
+}
+
+.price__head {
+
+}
+
+
+.price__title {
+    color: $green1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: 24px; /* 150% */
+}
+
+
+.price__imgTop {
+    margin-top: 30px;
+}
+
+.price__content {
+
+}
+
+.price__items {
+    margin-top: 40px;
+}
+
+.price__item.price__item {
+    margin-top: 39px;
+}
+
+hr.price__line {
+    border-color: $green2;
+    margin: 3px 0px 0px 0px;
+}
+
+.price__course {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.price__course.price__course {
+    margin-top: 8px;
+}
+
+.price__name {
+    color: $green1;
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 24px; /* 171.429% */
+}
+
+.price__cost {
+    color: $green1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 24px; /* 171.429% */
+}
+
+.price__imageBottom {
+    display: none;
+    @include mq("md") {
+        
+    }
+}
+
+.price__btn {
+    margin-top: 40px;
+    text-align: center;
+    
+    @include mq("md") {
+      margin-top: 79px;
+    }
+}
+
