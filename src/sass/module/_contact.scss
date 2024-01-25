@@ -18,8 +18,27 @@
 
     @include mq("md") {
         max-width: 1130px;
-        padding-left: 180px;
-        padding-right: 180px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.contact__content {
+    @include mq("md") {
+        display: flex;
+        padding: 53px 20px 74px 50px;
+        width: 100%;
+        max-width: 1080px;
+        // height: 415px;
+        flex-shrink: 0;;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.contact__left {
+    @include mq("md") {
+        width: 44%;
+        // margin-right: 24px;
     }
 }
 
@@ -31,7 +50,7 @@
     margin-left: auto;
 
     @include mq("md") {
-      
+      width: 200px;
     }
 }
 
@@ -49,8 +68,8 @@
         display: block;
         content: "";
         position: absolute;
-        top: 0%;
-        right: 7%;
+        right: 3.5%;
+        top: 27%;
         transform: translateY(-50%);
         width: 301px;
         height: auto;
@@ -62,6 +81,13 @@ hr.contact__line {
     margin: 5px 0px 0px 0px;
 }
 
+.contact__address-content {
+    @include mq("md") {
+        display: flex;
+        margin-top: 24px;
+    }
+}
+
 .contact__info {
     text-align: center;
     margin-top: 16px;
@@ -71,6 +97,12 @@ hr.contact__line {
     font-style: normal;
     font-weight: $regular;
     line-height: 24px; /* 150% */
+
+    @include mq("md") {
+        margin-top: 0;
+        text-align-last: left;
+        width: 33%;
+    }
 
 }
 
@@ -96,8 +128,10 @@ hr.contact__line {
     margin-top: 16px;
 
     @include mq("md") {
-        margin-top: 60px;
-        aspect-ratio: 1110 / 394;
+        margin-top: 0px;
+        aspect-ratio: 273 / 148;
+        margin-left: 21px;
+        width: 61%;
     }
 }
 
@@ -105,6 +139,21 @@ hr.contact__line {
     width: 100%;
     height: 100%;
 }
+
+// .contact__center-line {
+//     border-left: 1px solid $green2; ;
+//     width: 10%;
+// }
+
+.contact__right {
+    @include mq("md") {
+        border-left: 1px solid $green2;
+        margin-left: 78px;
+        width: 47%;
+    }
+
+}
+
 
 .contact__title {
     margin-top: 40px;
@@ -116,7 +165,7 @@ hr.contact__line {
     text-align: center;
     
     @include mq("md") {
-      margin-top: 80px;
+      margin-top: 40px;
     }
 }
 
