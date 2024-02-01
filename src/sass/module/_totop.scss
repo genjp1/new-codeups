@@ -7,7 +7,7 @@
     right: 20px;//20px
     bottom: 40px;//40px
     background: #fff;
-    border: solid 2px #fff;
+    border: solid 2px $green2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +15,8 @@
     border-radius: 50%;
 
     @include mq(md) {
-        height: 47px;//47px
-        width: 47px;//47px
+        height: 80px;//47px
+        width: 80px;//47px
         right: 30px;//30px
         bottom: 31px;//31px
         transition: all 0.5s ease 0s;
@@ -24,28 +24,40 @@
 }
 
 .pagetop__arrow {
-    height: 20px;//20px
-    width: 20px;//20px
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
-    transform: translateY(20%) rotate(-45deg);
-    // transition: all 1.0s ease 0s;
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - 10px); /* ボタンのサイズに基づいて調整 */
+    left: 41%;
+    transform: rotate(127deg) skewX(-53deg); /* 回転してから斜めにする */
+    width: 30px; /* 矢印の幅 */
+    height: 25px; /* 矢印の高さ、必要に応じて調整 */
+    background-color: transparent;
+    border-left: 2px solid $green2; /* 矢印の形を作成 */
+    border-bottom: 2px solid $green2; /* 矢印の形を調整 */
+    z-index: 10;
+
+    @include mq("md") {
+        right: 42px;
+        width: 12px;
+        top: calc(50% - 9px);
+    }
 }
 
 
 @media (hover: hover) and (pointer: fine) {
     .pagetop:hover, .pagetop:hover .pagetop__arrow {
-        background-color: #333;
+        background-color: $green2;
         border-color: #fff;
-        border-top: 2px solid #fff;
-        border-right: 2px solid #fff;
+        // border-top: 2px solid #fff;
+        // border-right: 2px solid #fff;
         transition: all 1.0s ease 0s;
     }
 }
 
 @media (hover: hover) and (pointer: fine) {
     .pagetop:hover, .pagetop:hover {
-        border: 2px solid #333;
+        border: 2px solid $green2;
         transition: all 0.3s ease 0s;
     }
 }

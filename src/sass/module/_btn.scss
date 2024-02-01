@@ -28,6 +28,9 @@
   font-weight: $regular;
   line-height: 22px; /* 157.143% */
 
+  box-shadow: 4px 4px 0 red; /* 影の距離・色 */
+  // border: 2px solid $green2; /* 線幅・種類・色 */
+
   @include mq("md") {
     padding: 14px 87px 14px 37px;
   }
@@ -45,6 +48,7 @@
   transform-origin: left top;
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
   z-index: -1;
+
 }
 
 
@@ -81,4 +85,62 @@
 .btn.slide:hover::before {
   border-right: 2px solid $green2;
   border-bottom: 1px solid $green2;
+}
+
+
+
+.shadow_btn02 {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px; /* ボタン幅 */
+  border: 2px solid #F38173; /* 線幅・種類・色 */
+  border-radius: 0;
+  color: #F38173; /* 文字色 */
+  background: #fff; /* 背景色 */
+  -webkit-box-shadow: 4px 4px 0 #F38173; /* 影の距離・色 */
+  box-shadow: 4px 4px 0 #F38173; /* 影の距離・色 */
+  padding: 1em 2em;
+  font-weight: bold; /*文字の太さ*/
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* マウスオーバーした際のデザイン */
+.shadow_btn02:hover {
+  -webkit-box-shadow: -4px -4px 0 #F38173; /* 影の距離・色 */
+  box-shadow: -4px -4px 0 #F38173; /* 影の距離・色 */
+}
+
+
+.css-button-retro--blue {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
+  z-index: 0;
+}
+.css-button-retro--blue:hover:after {
+  top: 0;
+  left: 0;
+}
+.css-button-retro--blue:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #3d348b;
 }
