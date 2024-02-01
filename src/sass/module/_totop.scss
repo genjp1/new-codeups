@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .pagetop {
-    height: 45px;//45px
-    width: 45px;//45px
+    height: 48px;//45px
+    width: 48px;//45px
     position: fixed;
     right: 20px;//20px
     bottom: 40px;//40px
@@ -27,20 +27,22 @@
     content: "";
     display: block;
     position: absolute;
-    top: calc(50% - 10px); /* ボタンのサイズに基づいて調整 */
-    left: 41%;
+    height: 18px; /* 矢印の高さ、必要に応じて調整 */
+    left: 31%;
+    top: calc(50% - 6px); /* ボタンのサイズに基づいて調整 */
+    width: 11px; /* 矢印の幅 */
     transform: rotate(127deg) skewX(-53deg); /* 回転してから斜めにする */
-    width: 30px; /* 矢印の幅 */
-    height: 25px; /* 矢印の高さ、必要に応じて調整 */
     background-color: transparent;
     border-left: 2px solid $green2; /* 矢印の形を作成 */
     border-bottom: 2px solid $green2; /* 矢印の形を調整 */
     z-index: 10;
 
     @include mq("md") {
+        height: 25px; /* 矢印の高さ、必要に応じて調整 */
+        left: 41%;
         right: 42px;
-        width: 12px;
         top: calc(50% - 9px);
+        width: 12px;
     }
 }
 

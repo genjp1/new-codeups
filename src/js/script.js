@@ -128,10 +128,10 @@ topBtn.click(function () {
       speed: 2000,
       slidesPerView: 1.3,
       spaceBetween: 20,
-      autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-      },
+      // autoplay: {
+      //     delay: 2000,
+      //     disableOnInteraction: false,
+      // },
       breakpoints: {
           768: {
               slidesPerView: 3.9,
