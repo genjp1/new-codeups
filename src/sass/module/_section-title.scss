@@ -49,6 +49,10 @@
     }
   }
 
+  .title__main.non-text-transform {
+    text-transform: none;
+  }
+
 .title__sub{
     color: $green2;
     text-align: center;
