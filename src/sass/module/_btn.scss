@@ -51,10 +51,12 @@
 .btn.slide:hover {
   color: $green2;
 }
+
 .btn.slide:hover::after {
   transform: scale(1, 1);
 }
 
+//矢印表示
 .btn.slide::before{
   content: "";
   display: block;
@@ -76,7 +78,7 @@
   }
 }
 
-.btn.slide::before:hover {
+.btn.slide:hover::before {
   border-right: 2px solid $green2;
-  border-bottom: 1px solid  $green2;
+  border-bottom: 1px solid $green2;
 }
