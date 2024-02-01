@@ -61,32 +61,76 @@
 
 }
 
-.pc-nav__item a::after {
-        content: "";
-        position: absolute;
-        bottom: 0.625rem;//10px
-        left: auto;
-        right: auto;
-        width: 4.375rem;//70px
-        height: 0.0625rem;//1px
-        background: transparent;
-        transition: all 0.3s ease 0s;
-      }
-.pc-nav__item a:hover::after,
-.pc-nav__item a.is-active::after  {
-        background: #FFEA2E;
-    }
+/*==================================================
+メニューホバー下線
+===================================*/
+// .pc-nav__item a::after {
+//         content: "";
+//         position: absolute;
+//         bottom: 10px;//10px
+//         left: auto;
+//         right: auto;
+//         width: 70px;//70px
+//         height: 1px;//1px
+//         background: transparent;
+//         transition: all 0.3s ease 0s;
+//       }
+// .pc-nav__item a:hover::after,
+// .pc-nav__item a.is-active::after  {
+//         background: #FFEA2E;
+//     }
+
+
+
+/*==================================================
+メニュー、中心から外に線が伸びる（下部）
+===================================*/
+.pc-nav__items li a{
+    /*線の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+.pc-nav__items li.current a,
+.pc-nav__items li a:hover{
+  color:$white;
+}
+
+.pc-nav__items li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background: $white;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.pc-nav__items li.current a::after,
+.pc-nav__items li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+/*==================================================
+ここまで（中心から外に線が伸びる（下部））
+===================================*/
 
 
 .pc-nav__item.pc-nav__item--white {
-    margin-left: 1rem;
+    margin-left: 16px;
     
 }
 
 .pc-nav__item.pc-nav__item--white a {
     background-color: #fff;
     color: #333;
-    padding: 0 2rem;//0 32px
+    padding: 0 32px;//0 32px
     // transition: 1.0s ;
     transition: all 0.6s ease 0s;
 }
