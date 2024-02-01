@@ -1,0 +1,56 @@
+@use "global" as *;
+
+// /* アニメーションのキーフレーム定義 */
+// @keyframes slide-in-left {
+//     from {
+//       transform: translateX(-50%);
+//     }
+//     to {
+//       transform: translateX(0);
+//     }
+//   }
+  
+//   @keyframes slide-in-right {
+//     from {
+//       transform: translateX(50%);
+//     }
+//     to {
+//       transform: translateX(0);
+//     }
+//   }
+  
+//   /* ローディングアニメーション用のスタイル */
+//   .loading-animation {
+//     width: 100%;
+//     height: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 10;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     overflow: hidden;
+//   }
+  
+//   .loading-animation-part {
+//     width: 50%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//   }
+  
+//   .left-part {
+//     left: 0;
+//     background: url(../images/common/mv1.jpg) no-repeat center left;
+//     background-size: 200% 100%;
+//     animation: slide-in-left 1.5s forwards;
+//   }
+  
+//   .right-part {
+//     right: 0;
+//     background: url(../images/common/mv1.jpg) no-repeat center right;
+//     background-size: 200% 100%;
+//     animation: slide-in-right 1.5s forwards;
+//   }
+  

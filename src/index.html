@@ -105,6 +105,48 @@
     </div>
  </header>
 
+ <!-- <div class="mv__title-wrap">
+  <h2 class="mv__main-title">DIVING</h2>
+  <p class="mv__sub-title">into the ocean</p>
+</div>
+
+<div class="loading-animation">
+  <div class="loading-animation-part left-part"></div>
+  <div class="loading-animation-part right-part"></div>
+</div>
+
+ 
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  const images = document.images,
+        imagesTotalCount = images.length;
+  let imagesLoadedCount = 0;
+
+  for (let i = 0; i < imagesTotalCount; i++) {
+    const imageClone = new Image();
+    imageClone.onload = imageLoaded;
+    imageClone.onerror = imageLoaded;
+    imageClone.src = images[i].src;
+  }
+
+  function imageLoaded() {
+    imagesLoadedCount++;
+    if (imagesLoadedCount >= imagesTotalCount) {
+      setTimeout(() => {
+        document.querySelector('.mv__title-wrap').style.opacity = '0'; // 「DIVING」テキストを徐々に非表示にする
+        document.querySelector('.loading-animation').style.display = 'none'; // ローディングアニメーションを非表示にする
+      }, 1500); // アニメーションの時間に合わせて遅延
+    }
+  }
+}); -->
+
+
+  </script>
+  
+
 <!-- mv -->
 <section class="mv">
   <div class="mv__inner">
@@ -642,7 +684,7 @@
     <div class="footer__copyright"> Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</div>
 </footer>
 <!--   トップに戻るボタン -->
-<a class="pagetop" href="#"><img src="./assets/images/common/pc/totop.svg" alt="facebook"></div></a>
+<a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
 </body>
 
 </html>
