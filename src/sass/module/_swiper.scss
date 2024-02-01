@@ -22,7 +22,7 @@
     top: -633px;//-633px
 
     @include mq("md") {
-        top: -541px;//-541px
+        top: -540px;//-541px
     }
 }
 
@@ -68,3 +68,12 @@
 }
 
 
+
+// .swiper {
+//   overflow: visible;
+// }
+
+
+.swiper-slide {
+  padding-bottom: 10px;
+}
