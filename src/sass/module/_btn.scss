@@ -26,6 +26,7 @@
   font-style: normal;
   font-weight: $regular;
   line-height: rem(22); /* 157.143% */
+  cursor:pointer;
 
   @include mq("md") {
     padding: rem(14) rem(87) rem(14) rem(37);
