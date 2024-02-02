@@ -38,7 +38,7 @@
     padding: rem(12) rem(16) rem(24) rem(15);
 
     @include mq("md") {
-        padding: rem(24) rem(16) rem(40) rem(16);
+        padding: rem(24) rem(16) 36px rem(16);
     }
 }
 
@@ -100,7 +100,7 @@ hr.campaign-card__line {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 .campaign-card__price-before {
@@ -120,7 +120,7 @@ hr.campaign-card__line {
     margin-top: rem(18);
 
     @include mq(md){
-        font-size: min(2.1vw, 24px);
+        font-size: min(1.7vw, 24px);
         line-height: rem(24); /* 100% */
         // margin-top: rem(22);
         margin-top: inherit;
@@ -139,7 +139,7 @@ hr.campaign-card__line {
     margin-left: rem(16);
 
     @include mq(md){
-        font-size: min(2.4vw, 40px);
+        font-size: min(2.8vw, 40px);
         line-height: rem(40); /* 100% */
         margin-left: rem(27);
         margin-top: inherit;

@@ -17,10 +17,10 @@
 
     @include mq("md") {
         margin-top: inherit;
-        top: 0;
+        top: 6px;
         position: absolute;
         width: 100%;
-        right: 2vw;
+        right: 1.7vw;
     }
 }
 
@@ -34,7 +34,7 @@
 }
 
 .campaign-swiper__button-wrap .swiper-button-next {
-    margin-left: rem(100);
+    margin-left: 60px;
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::before,
