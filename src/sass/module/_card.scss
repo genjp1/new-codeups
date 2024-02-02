@@ -7,10 +7,10 @@
   
   .card__img{
     aspect-ratio: 301 / 201;// 横320 / 縦200
-    padding: rem(16) rem(5) rem(16);
+    padding: rem(16) rem(16) rem(5) rem(16);
 
     @include mq("md") {
-        padding: rem(16) rem(6) rem(16);
+        padding: rem(16) rem(16) rem(6) rem(16);
     }
   }
   

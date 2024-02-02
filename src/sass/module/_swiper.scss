@@ -12,7 +12,10 @@
     top: -632px;//-632px
 
     @include mq("md") {
-        top: -540px;//-540px
+      position: relative;
+      top: -5px;
+      left: 277%;
+      right: inherit;
     }
 }
 
@@ -22,7 +25,10 @@
     top: -633px;//-633px
 
     @include mq("md") {
-        top: -540px;//-541px
+      position: relative;
+      top: -5px;
+      left: 264%;
+      right: inherit;
     }
 }
 

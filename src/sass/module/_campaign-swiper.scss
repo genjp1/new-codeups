@@ -6,6 +6,7 @@
     @include mq("md") {
         margin-top: rem(40);
         padding-left: rem(34);
+        position: relative;
     }
 }
 
@@ -16,6 +17,9 @@
 
     @include mq("md") {
         margin-top: rem(-7);
+
+        top:  rem(-80);
+        position: absolute;
     }
 }
 
