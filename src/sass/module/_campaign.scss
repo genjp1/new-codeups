@@ -2,17 +2,17 @@
 
 .campaign {
     overflow-x: hidden;
-    padding-bottom: rem(10);
+    padding-bottom: 10px;
 }
 
 .campaign__inner {
     margin: auto;
-    padding: 0 rem(20) 0 rem(15);
-    max-width: rem(600);
+    padding: 0 20px 0 15px;
+    max-width: 600px;
     width: 100%;
     @include mq(md){
-        padding: 0 rem(25) 0 rem(25);
-        max-width: rem(1200);
+        padding: 0 25px 0 25px;
+        max-width: 1200px;
     }
 }
 

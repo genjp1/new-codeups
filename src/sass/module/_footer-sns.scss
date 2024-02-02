@@ -4,10 +4,10 @@
 .footer-sns {
     align-items: flex-end;
     display: flex;
-    margin-bottom: rem(16);
+    margin-bottom: 16px;
 
     @include mq("md") {
-        margin-left: rem(40);
+        margin-left: 40px;
         margin-bottom: inherit;
     }
 
@@ -19,15 +19,15 @@
 }
 
 .footer-sns__item {
-    width: rem(24);
-    height: rem(24);
-    margin-right: rem(16);
-    margin-top: rem(16);
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    margin-top: 16px;
 
     @include mq("md") {
-        width: rem(32);
-        height: rem(32);
-        margin-right: rem(16);
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
     }
 
 }
