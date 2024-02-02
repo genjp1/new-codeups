@@ -14,12 +14,16 @@
 .mv__title-wrap {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%,-50%);
     // width: 100%;
     color: #fff;
     text-align: center;
+
+    @include mq("md") {
+        top: 50%;
+    }
 }
 
 .mv__main-title {
