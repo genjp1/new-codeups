@@ -2,18 +2,17 @@
 
 .footer-nav {
     height: inherit;
-    margin-top: -13px;//6px
-    // display: none;
+    margin-top: rem(-13);
 
     @include mq(md) {
-    
+
     }
 }
 
 .footer-nav__contents {
     display: flex;
     justify-content: space-around;
-    margin-left: 5px;
+    margin-left: rem(5);
 
     @include mq("md") {
     justify-content: inherit;
@@ -25,51 +24,30 @@
 
     @include mq("md") {
         display: flex;
-    
     }
 }
 
 .footer-nav__item {
-    // margin-bottom: 10px; /* 要素間の間隔調整 */
-    // width: 50%;
 
   }
 
 .footer-nav__items-column {
     list-style-type: none;
-    // padding: 0 37px;
-    // display: grid;
-    // place-items: center;
-    // justify-items: start;
-    // flex: 1;
 
     @include mq("md") {
     width: inherit;
-    margin-right: 120px;
-    margin-left: 22px;
+    margin-right: rem(120);
+    margin-left: rem(22);
     }
   }
   .footer-nav__items-column.footer-nav__items-column--end {
     list-style-type: none;
-    // padding: 0 37px;
-    // display: grid;
-    // place-items: center;
-    // justify-items: start;
-    // flex: 1;
 
     @include mq("md") {
     width: inherit;
-    margin-right:0px;
-    // margin-left: -21px;
+    margin-right: rem(0);
     }
   }
-
-
-
-
-//   .footer-nav__items-column:last-child {
-//     padding-left: 22px;
-//   }
   
 
 
@@ -77,21 +55,20 @@
     //クリック領域を大きくとる（横に広げる）→   display: block;か　inline-block;にする
     display: inline-block;
     width: 100%;
-    margin-top: 0px;
-    padding-top: 38px;
+    margin-top: rem(0);
+    padding-top: rem(38);
     text-align: left;
-    // letter-spacing: 0.125rem;//2px
 
     color: $white;
     font-size: rem(16);
     font-style: normal;
     font-weight: 700;
-    line-height: 18px; /* 112.5% */
+    line-height: rem(18); /* 112.5% */
 
     position: relative;
 
     @include mq("md") {
-        padding-top: 40px;
+        padding-top: rem(40);
     }
 
 }
@@ -99,10 +76,10 @@
 .footer-nav__item a::before{
     position: absolute;
     content: "";
-    top: 47px;
-    left: -22px;
-    width: 18px;
-    height: 18px;
+    top: rem(47);
+    left: rem(-22);
+    width: rem(18);
+    height: rem(18);
     transform: translateY(-50%);
     background: url(../images/common/icon-hitode.svg) no-repeat center center/contain;
 
@@ -110,7 +87,7 @@
 
 
 .footer-nav__item-child {
-    padding-top: 23px;
+    padding-top: rem(23);
     color: $white;
     font-size: rem(16);
     font-style: normal;
@@ -118,55 +95,6 @@
     line-height: rem(18); /* 112.5% */
 
     @include mq("md") {
-        padding-top: 22px;
+        padding-top: rem(22);
     }
 }
-
-// .footer-nav__item {
-//     height: inherit;
-//     line-height: 1.448125;
-//     letter-spacing: 0.075rem;//1.2px
-//     margin-left: 0.25rem;//4px
-// }
-
-// .footer-nav__item + .footer-nav__item {
-//     margin-top: 0.5rem;//8px
-
-//     @include mq(md) {
-//         margin-top: 0.25rem;//4px
-//         margin-left: 0.3125rem;//5px
-//     }
-// }
-
-// .footer-nav__item a {
-//     height: inherit;
-//     color: $white;
-//     //aタグの全体のクリック領域を確保
-//     display: grid;
-//     place-items:center;
-//     padding: 0 0.9375rem;//0 15px
-//     font-size: 1rem;//16px
-//     letter-spacing: 0.125rem;//2px
-//     position: relative;
-
-//     @include mq(md) {
-//     	padding: 0 13px;//0 15px
-//     }
-// }
-
-// .footer-nav__item a::after {
-//         content: "";
-//         position: absolute;
-//         top: 1.875rem;//30px
-//         left: auto;
-//         right: auto;
-//         width: 4.375rem;//70px
-//         height: 0.0625rem;//1px
-//         background: transparent;
-//         transition: all 0.3s ease 0s;
-//       }
-
-// .footer-nav__item a:hover::after,
-// .footer-nav__item a.is-active::after  {
-//         background: #FFEA2E;
-//     }

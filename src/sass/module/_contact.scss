@@ -12,45 +12,43 @@
 .contact__inner {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: rem(40);
+    padding-right: rem(40);
     width: 100%;
 
     @include mq("md") {
-        max-width: 1130px;
-        padding-left: 25px;
-        padding-right: 25px;
+        max-width:rem(1130);
+        padding-left: rem(25);
+        padding-right: rem(25);
     }
 }
 
 .contact__content {
     @include mq("md") {
         display: flex;
-        padding: 53px 20px 74px 50px;
+        padding: rem(53) rem(20) rem(74) rem(50);
         width: 100%;
-        max-width: 1080px;
-        // height: 415px;
+        max-width: rem(1080);
         flex-shrink: 0;;
-        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: rem(4) rem(4) rem(10) rem(0) rgba(0, 0, 0, 0.25);
     }
 }
 
 .contact__left {
     @include mq("md") {
         width: 44%;
-        // margin-right: 24px;
     }
 }
 
 
 .contact__imgTop {
-    margin-top: 28px;
-    width: 174px;
+    margin-top: rem(28);
+    width: rem(174);
     margin-right: auto;
     margin-left: auto;
 
     @include mq("md") {
-      width: 200px;
+      width: rem(200);
     }
 }
 
@@ -61,7 +59,7 @@
     top: 10.5%;
     right: 4.4%;
     transform: translateY(-50%);
-    width: 109px;
+    width: rem(109);
     height: auto;
 
     @include mq("md") {
@@ -71,32 +69,32 @@
         right: 3.5%;
         top: 27%;
         transform: translateY(-50%);
-        width: 301px;
+        width: rem(301);
         height: auto;
     }
 }
 
 hr.contact__line {
     border-color: $green2;
-    margin: 5px 0px 0px 0px;
+    margin: rem(5) rem(0) rem(0) rem(0);
 }
 
 .contact__address-content {
     @include mq("md") {
         display: flex;
-        margin-top: 24px;
+        margin-top: rem(24);
     }
 }
 
 .contact__info {
     text-align: center;
-    margin-top: 16px;
+    margin-top: rem(16);
 
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: 24px; /* 150% */
+    line-height: rem(24); /* 150% */
 
     @include mq("md") {
         margin-top: 0;
@@ -111,26 +109,26 @@ hr.contact__line {
 }
 
 .contact__tel {
-    margin-top: 3px;
+    margin-top: rem(3);
 
 }
 
 .contact__time {
-    margin-top: 4px;
+    margin-top: rem(4);
 }
 
 .contact__holiday {
-    margin-top: 4px;
+    margin-top: rem(4);
 }
 
 .contact__map {
     aspect-ratio: 295 / 160;
-    margin-top: 16px;
+    margin-top: rem(16);
 
     @include mq("md") {
-        margin-top: 0px;
+        margin-top: rem(0);
         aspect-ratio: 273 / 148;
-        margin-left: 21px;
+        margin-left: rem(21);
         width: 61%;
     }
 }
@@ -140,15 +138,11 @@ hr.contact__line {
     height: 100%;
 }
 
-// .contact__center-line {
-//     border-left: 1px solid $green2; ;
-//     width: 10%;
-// }
 
 .contact__right {
     @include mq("md") {
-        border-left: 1px solid $green2;
-        margin-left: 78px;
+        border-left: rem(1) solid $green2;
+        margin-left: rem(78);
         width: 47%;
     }
 
@@ -156,16 +150,16 @@ hr.contact__line {
 
 
 .contact__title {
-    margin-top: 40px;
+    margin-top: rem(40);
 }
 
 
 .contact__btn {
-    margin-top: 40px;
+    margin-top: rem(40);
     text-align: center;
     
     @include mq("md") {
-      margin-top: 40px;
+      margin-top: rem(40);
     }
 }
 

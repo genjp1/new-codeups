@@ -21,24 +21,23 @@
 .aboutUs__img {
     position: relative;
     text-align: right;
-    margin-top: 53px;
+    margin-top: rem(53);
 
     @include mq("md") {
-        margin-top: 120px;
+        margin-top: rem(120);
         
     }
 }
 
 .aboutUs-base {
     width: 100%;
-    max-width: 281px;
-    // height: 186px;
+    max-width: rem(281);
     flex-shrink: 0;
     display: inline-block;
     z-index: 1;
 
     @include mq("md") {
-        max-width: 880px;
+        max-width: rem(880);
         
     }
 
@@ -51,19 +50,18 @@
     top: 50%;
     transform: translateY(-62%);
     width: 100%;
-    max-width: 128px;
-    // height: 194px;
+    max-width: rem(128);
     flex-shrink: 0;
     z-index: 2;
 
 @include mq("md") {
-    max-width: 400px;
+    max-width: rem(400);
    
 }
 }
 
 .aboutUs__content {
-    margin-top: 35px;
+    margin-top: rem(35);
     @include mq("md") {
         margin-top: inherit;
     }
@@ -72,10 +70,10 @@
 .aboutUs__content-title {
     color: $green2;
     font-family: $english-family;
-    font-size: 40px;
+    font-size: rem(40);
     font-style: normal;
     font-weight: $regular;
-    line-height: 40px; /* 100% */
+    line-height: rem(40); /* 100% */
 
     @include mq("md") {
         position: absolute;
@@ -90,19 +88,19 @@
         font-size: rem(80);
         font-style: normal;
         font-weight: $regular;
-        line-height: 100px; /* 125% */
+        line-height: rem(100); /* 125% */
     }
 
 
 }
 
 .aboutUs___content-text {
-    margin-top: 16px;
+    margin-top: rem(16);
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: 24px; /* 150% */
+    line-height: rem(24); /* 150% */
 
     @include mq("md") {
         position: absolute;
@@ -118,13 +116,13 @@
         font-size: rem(16);
         font-style: normal;
         font-weight: $regular;
-        line-height: 24px; /* 150% */
+        line-height: rem(24); /* 150% */
     }
 
 }
 
 .aboutUs__btn {
-    margin-top: 52px;
+    margin-top: rem(52);
     text-align: center;
 
     @include mq("md") {
@@ -134,7 +132,7 @@
         left: 70.6%;
         transform: translate(-50%, -50%);
         width: 100%;
-        max-width: 400px;
+        max-width: rem(400);
         z-index: 3;
     }
 }
@@ -148,7 +146,7 @@
 
     @include mq("md") {
         width: 100%;
-        max-width: 194px;
+        max-width: rem(194);
         height: auto;
         display: block;
         
