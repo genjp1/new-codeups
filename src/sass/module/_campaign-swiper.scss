@@ -1,21 +1,21 @@
 @use "global" as *;
 
 .campaign-swiper {
-    margin-top: 28px;
+    margin-top: rem(28);
 
     @include mq("md") {
-        margin-top: 40px;
-        padding-left: 34px;
+        margin-top: rem(40);
+        padding-left: rem(34);
     }
 }
 
 .campaign-swiper__button-wrap {
-    margin-top: 40px;//41px
+    margin-top: rem(40);
     display: flex;
     justify-content: left;
 
     @include mq("md") {
-        margin-top: -7px;
+        margin-top: rem(-7);
     }
 }
 

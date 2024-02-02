@@ -6,16 +6,11 @@
 
 
 .campaign-card a {
-    // padding: rem(15) rem(15) rem(35);
     height: 100%;
     display: block;
-    // background-color: #fff9ee;
-
-    // width: 280px;
-    // height: 366px;
     flex-shrink: 0;
     background: var(--White, #FFF);
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
     
 }
 
@@ -40,41 +35,41 @@
 }
 
 .campaign-card__body {
-    padding: 12px 16px 24px 15px;
+    padding: rem(12) rem(16) rem(24) rem(15);
 
     @include mq("md") {
-        padding: 24px 16px 40px 16px;
+        padding: rem(24) rem(16) rem(40) rem(16);
     }
 }
 
 .campaign-card__tag {
     display: inline-flex;
-    padding: 4px 12px;
+    padding: rem(4) rem(12);
     align-items: flex-start;
-    gap: 8px;
-    border: 1px solid $green2;
+    gap: rem(8);
+    border: rem(1) solid $green2;
     color: $green2;
-    font-size: 12px;
+    font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
-    line-height: 22px; /* 183.333% */
+    line-height: rem(22); /* 183.333% */
 
     @include mq(md){
-        padding: 6px 16px;
+        padding: rem(6) rem(16);
     }
 }
 
 .campaign-card__title {
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $medium;
-    line-height: 24px; /* 150% */
+    line-height: rem(24); /* 150% */
 
-    margin-top: 4px;
+    margin-top: rem(4);
 
     @include mq("md") {
-        margin-top: 3px;
+        margin-top: rem(3);
     }
 }
 
@@ -82,22 +77,22 @@
 
 hr.campaign-card__line {
     border-color: $green2;
-    margin: 6px 0;
+    margin: rem(6) 0;
 }
 
 .campaign-card__text {
     color: $green1;
-    font-size: 14px;
+    font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
-    line-height: 24px; /* 171.429% */
+    line-height: rem(24); /* 171.429% */
 
     text-align: center;
-    margin-top: 7px;
+    margin-top: rem(7);
 
     @include mq(md){
-       font-size: 16px;
-       margin-top: 16px;
+       font-size: rem(16);
+       margin-top: rem(16);
     }
 }
 
@@ -146,11 +141,3 @@ hr.campaign-card__line {
         margin-left: rem(27);
     }
 }
-
-
-// //カードサイズ調整
-// .campaign-card a {
-//     max-width: 333px; /* 幅の調整 */
-//     // height: 445px; /* 高さの調整 */
-//     /* その他のスタイルは変更せず */
-// }
