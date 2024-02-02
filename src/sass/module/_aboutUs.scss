@@ -79,13 +79,13 @@
         position: absolute;
         content: "";
         top: 51%;
-        left: 40.2%;
-        transform: translate(-50%, -50%);
+        left: 11%;
+        transform: translateY(-50%);
         z-index: 3;
 
         color: $white;
         font-family: $english-family;
-        font-size: rem(80);
+        font-size: min(5.8vw, 80px);
         font-style: normal;
         font-weight: $regular;
         line-height: rem(100); /* 125% */
@@ -94,7 +94,7 @@
 
 }
 
-.aboutUs___content-text {
+.aboutUs__content-text {
     margin-top: rem(16);
     color: $green1;
     font-size: rem(16);

@@ -16,10 +16,11 @@
     justify-content: left;
 
     @include mq("md") {
-        margin-top: rem(-7);
-
-        top:  rem(-80);
+        margin-top: inherit;
+        top: 0;
         position: absolute;
+        width: 100%;
+        right: 2vw;
     }
 }
 

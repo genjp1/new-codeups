@@ -99,6 +99,8 @@ hr.campaign-card__line {
 .campaign-card__price {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .campaign-card__price-before {
@@ -118,9 +120,10 @@ hr.campaign-card__line {
     margin-top: rem(18);
 
     @include mq(md){
-        font-size: rem(24);
+        font-size: min(2.1vw, 24px);
         line-height: rem(24); /* 100% */
-        margin-top: rem(22);
+        // margin-top: rem(22);
+        margin-top: inherit;
     }
 }
 
@@ -136,8 +139,9 @@ hr.campaign-card__line {
     margin-left: rem(16);
 
     @include mq(md){
-        font-size: rem(40);
+        font-size: min(2.4vw, 40px);
         line-height: rem(40); /* 100% */
         margin-left: rem(27);
+        margin-top: inherit;
     }
 }

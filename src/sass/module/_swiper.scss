@@ -13,9 +13,10 @@
 
     @include mq("md") {
       position: relative;
-      top: rem(-5);
-      left: 277%;
+      top: inherit;
+      left: inherit;
       right: inherit;
+      margin-left: 4.9rem;
     }
 }
 
@@ -26,8 +27,8 @@
 
     @include mq("md") {
       position: relative;
-      top: rem(-5);
-      left: 264%;
+      top: inherit;
+      left: inherit;
       right: inherit;
     }
 }
