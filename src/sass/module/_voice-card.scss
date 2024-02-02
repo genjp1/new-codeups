@@ -1,12 +1,12 @@
 @use "global" as *;
 
 .voice-card{
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
     background-color: $white;
-    padding: 15px 16px 24px 16px;
+    padding: rem(15) rem(16) rem(24) rem(16);
 
     @include mq("md") {
-        padding: 24px 24px 24px 24px;
+        padding: rem(24) rem(24) rem(24) rem(24);
     }
   }
   
@@ -38,10 +38,10 @@
 
   .voice-card__age {
     color: $green1;
-    font-size: 12px;
+    font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
-    line-height: 18px; /* 150% */
+    line-height: rem(18); /* 150% */
 
     @include mq("md") {
         display: flex;
@@ -51,49 +51,47 @@
 
   .voice-card__tag {
     display: inline-flex;
-    padding: 4px 12px;
+    padding: rem(4) rem(12);
     align-items: flex-start;
-    gap: 8px;
-    border: 1px solid $green2;
+    gap: rem(8);
+    border: rem(1) solid $green2;
     color: $green2;
-    font-size: 12px;
+    font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
-    line-height: 22px; /* 183.333% */
+    line-height: rem(22); /* 183.333% */
 
     @include mq(md){
-        padding: 6px 16px;
+        padding: rem(6) rem(16);
     }
 }
 
   .voice-card__title{
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $medium;
     line-height: normal;
 
     @include mq("md") {
-      margin-top: 8px;
-      font-size: 24px;
+      margin-top: rem(8);
+      font-size: rem(24);
     }
   }
 
   hr.voice-card__line {
     border-color: $green2;
-    margin: 0px 0px 0px 0px;
+    margin: rem(0) rem(0) rem(0) rem(0);
 }
 
 .voice-card__img{
   width: 50%;
-  margin-left: 13px;
+  margin-left: rem(13);
 
   aspect-ratio: 180 / 140;// 横320 / 縦200
-  // padding: 16px 16px 5px 16px;
 
   @include mq("md") {
     width: 39%;
-      // padding: 16px 16px 6px 16px;
   }
 }
 
@@ -106,13 +104,13 @@
 }
 
   .voice-card__text{
-    margin-top: 16px;
+    margin-top: rem(16);
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: 24px; /* 150% */
+    line-height: rem(24); /* 150% */
     @include mq("md") {
-      margin-top: 40px;
+      margin-top: rem(40);
     }
   }

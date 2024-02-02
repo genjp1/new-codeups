@@ -1,26 +1,24 @@
 @use "global" as *;
 
 .title {
-    // max-width: 80rem;//1280px
-    // margin: auto;
-    // position: relative;
+
 }
 
 .title__main {
-    margin-bottom: 4px;
+    margin-bottom: rem(4);
 
     color: $green1;
     text-align: center;
     font-family: $english-family;
-    font-size: 32px;
+    font-size: rem(32);
     font-style: normal;
     font-weight: $regular;
-    line-height: 40px;
+    line-height: rem(40);
     text-transform:capitalize;
 
     @include mq(md) {
-        margin-bottom: 8px;
-        font-size: 40px;
+        margin-bottom: rem(8);
+        font-size: rem(40);
     }
 }
 
@@ -31,11 +29,11 @@
 }
 
 .title__main.title__main--big {
-    font-size: 80px;
-    line-height: 80px; /* 100% */
-    margin-bottom: -9px;
+    font-size: rem(80);
+    line-height: rem(80); /* 100% */
+    margin-bottom: rem(-9);
     @include mq("lg") {
-        margin-bottom: 0px;
+        margin-bottom: rem(0);
     }
 }
 
@@ -57,10 +55,10 @@
     color: $green2;
     text-align: center;
     font-family: "Noto Sans JP";
-    font-size: 12px;
+    font-size: rem(12);
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 150% */
+    line-height: rem(18); /* 150% */
 }
 
 .title__sub.title__sub--white {
@@ -71,13 +69,13 @@
 }
 
 .title__subText {
-    margin-top: 8px;
+    margin-top: rem(8);
     color: $green2;
     text-align: center;
     font-family: "Noto Sans JP";
-    font-size: 14px;
+    font-size: rem(14);
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 150% */
+    line-height: rem(18); /* 150% */
 }
 

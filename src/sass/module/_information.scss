@@ -21,17 +21,17 @@
 }
 
 .information__img {
-    margin-top: 24px;
+    margin-top: rem(24);
 
     @include mq("md") {
-        margin-top: 40px;
+        margin-top: rem(40);
         width: 50%;
 
     }
 }
 
 .information__img-img {
-    max-width: 540px;
+    max-width: rem(540);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -39,53 +39,53 @@
 
 
 .information__course {
-    margin-top: 26px;
+    margin-top: rem(26);
 
     @include mq("md") {
         width: 46%;
-        margin-left: 47px;
-        margin-top: 101px;
+        margin-left: rem(47);
+        margin-top: rem(101);
     }
 }
 
 .information__course-title {
     color: $green1;
-    font-size: 20px;
+    font-size: rem(20);
     font-style: normal;
     font-weight: $bold;
-    line-height: 24px; /* 120% */
+    line-height: rem(24); /* 120% */
 
     @include mq("md") {
-        font-size: 24px;
+        font-size: rem(24);
     }
 }
 
 hr.information__line {
     border-color: $green2;
-    margin: 3px 0;
+    margin: rem(3) 0;
 
     @include mq("md") {
-        margin: 7px 0;
+        margin: rem(7) 0;
     }
 }
 
 .information__course-text {
-    margin-top: 6px;
+    margin-top: rem(6);
 
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: 24px; /* 150% */
+    line-height: rem(24); /* 150% */
 
     @include mq("md") {
-        max-width: 492px;
+        max-width: rem(492);
         width: 100%;
     }
 }
 
 .information__btn {
-    margin-top: 40px;
+    margin-top: rem(40);
     text-align: center;
 }
 

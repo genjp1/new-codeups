@@ -29,16 +29,16 @@
     font-style: normal;
     font-weight: $regular;
     line-height: normal;
-    letter-spacing: 21.6px;
+    letter-spacing: rem(21.6);
     width: 100%;
-    max-width: 248px;
+    max-width: rem(248);
 
     @include mq(md) {
         font-size: rem(80);
         line-height: rem(100); /* 125% */
-        letter-spacing: 43.2px;
+        letter-spacing: rem(43.2);
         width: 100%;
-        max-width: 496px;
+        max-width: rem(496);
     }
 }
 
@@ -77,8 +77,4 @@
     100% {
         transform: scale(1.2);
     }
-}
-
-.space {
-    margin-top: 1000px;
 }

@@ -25,16 +25,16 @@
   
   .voice__voice-cards{
     display: grid;
-    margin-top: 41px;
+    margin-top: rem(41);
   
-    grid-template-columns: repeat(auto-fit,minmax(301px,1fr));
-    column-gap: 35px;
-    row-gap: 39px;
+    grid-template-columns: repeat(auto-fit,minmax(rem(301),1fr));
+    column-gap: rem(35);
+    row-gap: rem(39);
   
     @include mq("md") {
-      margin-top: 30px;
-      row-gap: 30px;
-      column-gap: 39px;
+      margin-top: rem(30);
+      row-gap: rem(30);
+      column-gap: rem(39);
   }
   }
   
@@ -44,11 +44,11 @@
   
 
   .voice__btn {
-    margin-top: 40px;
+    margin-top: rem(40);
     text-align: center;
     
     @include mq("md") {
-      margin-top: 79px;
+      margin-top: rem(79);
     }
 }
 

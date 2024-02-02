@@ -8,12 +8,12 @@
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: auto;
-    right: 275px;//275px
-    top: -632px;//-632px
+    right: rem(275);
+    top: rem(-632);
 
     @include mq("md") {
       position: relative;
-      top: -5px;
+      top: rem(-5);
       left: 277%;
       right: inherit;
     }
@@ -21,12 +21,12 @@
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
     right: auto;
-    left: -315px;//-315px
-    top: -633px;//-633px
+    left: rem(-315);
+    top: rem(-633);
 
     @include mq("md") {
       position: relative;
-      top: -5px;
+      top: rem(-5);
       left: 264%;
       right: inherit;
     }
@@ -40,17 +40,14 @@
 
 // 円のデザイン調整
 .campaign-swiper__button-wrap .swiper-button-prev, .campaign-swiper__button-wrap .swiper-button-next {
-    // border: 1px solid $green2;
     background-color: $white;
-    // width: 80px;
-    // height: 80px;
 }
 
 /* 幅・高さを指定 */
 .swiper-button-prev,
 .swiper-button-next {
-  height: 50px;
-  width: 50px;
+  height: rem(50);
+  width: rem(50);
 }
  
 /* 矢印を消す、画像に変更 */
@@ -81,5 +78,5 @@
 
 
 .swiper-slide {
-  padding-bottom: 10px;
+  padding-bottom: rem(10);
 }
