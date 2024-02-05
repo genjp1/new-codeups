@@ -10,23 +10,26 @@
 }
 
 .contact__inner {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: rem(40);
-    padding-right: rem(40);
-    width: 100%;
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding-left: rem(40);
+    // padding-right: rem(40);
+    // width: 100%;
 
     @include mq("md") {
-        max-width:rem(1130);
-        padding-left: rem(25);
-        padding-right: rem(25);
+        // max-width:rem(1130);
+        // padding-left: rem(25);
+        // padding-right: rem(25);
     }
 }
 
 .contact__content {
+    padding-left: 25px;
+    padding-right: 25px;
+    
     @include mq("md") {
         display: flex;
-        padding: 52px rem(20) rem(74) rem(50);
+        padding: 52px 20px 74px 50px;
         width: 100%;
         max-width: rem(1080);
         flex-shrink: 0;;

@@ -6,16 +6,20 @@
 }
 
 .campaign__inner {
-    margin: auto;
-    padding: 0 rem(20) 0 rem(15);
-    max-width: rem(600);
-    width: 100%;
+    // margin: auto;
+    // padding: 0 rem(20) 0 rem(15);
+    // max-width: rem(600);
+    // width: 100%;
     @include mq(md){
-        padding: 0 rem(25) 0 rem(25);
-        max-width: rem(1200);
+        // padding: 0 rem(25) 0 rem(25);
+        // max-width: rem(1200);
 
         position: relative;
     }
+}
+
+.campaign__content {
+    // padding-right: 5px;
 }
 
 .campaign__swiper {

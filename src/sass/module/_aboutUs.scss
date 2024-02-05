@@ -9,7 +9,11 @@
 }
 
 .aboutUs__inner {
+    max-width: 600px;
 
+    @include mq("md") {
+        max-width: inherit;
+    }
 }
 
 

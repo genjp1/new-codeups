@@ -14,16 +14,31 @@
   }
   
   .blog__inner{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: rem(21);
-    padding-right: rem(21);
-    width: 100%;
+    max-width: 600px;
 
     @include mq("md") {
-    max-width: rem(1130);
-    padding-left: rem(25);
-    padding-right: rem(25);
+        max-width: inherit;
+    }
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding-left: rem(21);
+    // padding-right: rem(21);
+    // width: 100%;
+
+    // @include mq("md") {
+    // max-width: rem(1130);
+    // padding-left: rem(25);
+    // padding-right: rem(25);
+    // }
+  }
+
+  .blog__content {
+    padding-right: 6px;
+    padding-left: 6px;
+
+    @include mq("md") {
+      padding-right: 0px;
+      padding-left: 0px;
     }
   }
   
