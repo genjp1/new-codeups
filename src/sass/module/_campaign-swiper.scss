@@ -56,3 +56,17 @@
 .campaign-swiper__button-wrap .swiper-button-next::before {
     transform: translate(-50%, -50%) rotate(45deg);
 }
+
+
+
+// ボタンのホバー
+.campaign-swiper__button-wrap .swiper-button-prev, 
+.campaign-swiper__button-wrap .swiper-button-next {
+  opacity: 1;
+  transition: .5s;
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev:hover, 
+.campaign-swiper__button-wrap .swiper-button-next:hover {
+  opacity: .5;
+}

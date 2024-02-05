@@ -80,9 +80,11 @@
 
 .swiper-slide {
   padding-bottom: rem(10);
+  height: auto;
 
   @include mq("md") {
     padding-bottom: rem(10);
   }
 
 }
+
