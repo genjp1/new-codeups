@@ -35,46 +35,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-
-
-
-
-  /*====================================================
-# 旧CodeUps Swiperでズームインしながらフェードで切り替わるスライダー
-=====================================================*/
-  // let swipeOption = {
-  //   loop: true,
-  //   effect: 'fade',
-  //   autoplay: {
-  //     delay: 4000,
-  //     disableOnInteraction: false,
-  //   },
-  //   speed: 2000,
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     clickable: true,
-  //   }
-  // }
-  // new Swiper('.js-top-swiper', swipeOption);
-
-
-
-
 /*====================================================
 # mvセクションのスライダー
 =====================================================*/
-    const mv_swiper = new Swiper(".js-mv-swiper", {
-        loop: true,
-        speed: 2000,
-        effect: "fade",
-        fadeEffect: {
-            crossFade: true,
-        },
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-    });
+    // const mv_swiper = new Swiper(".js-mv-swiper", {
+    //     loop: true,
+    //     speed: 2000,
+    //     effect: "fade",
+    //     fadeEffect: {
+    //         crossFade: true,
+    //     },
+    //     autoplay: {
+    //         delay: 4000,
+    //         disableOnInteraction: false,
+    //     },
+    // });
 
 
 
