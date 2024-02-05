@@ -5,7 +5,7 @@
 }
 
 .title__main {
-    margin-bottom: rem(4);
+
 
     color: $green1;
     text-align: center;
@@ -17,7 +17,7 @@
     text-transform:capitalize;
 
     @include mq(md) {
-        margin-bottom: rem(8);
+
         font-size: rem(40);
     }
 }
@@ -34,6 +34,7 @@
     margin-bottom: rem(-9);
     @include mq("lg") {
         margin-bottom: rem(0);
+        line-height: 46px; /* 100% */
     }
 }
 
@@ -52,6 +53,7 @@
   }
 
 .title__sub{
+    margin-top: rem(4);
     color: $green2;
     text-align: center;
     font-family: "Noto Sans JP";
@@ -59,6 +61,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: rem(18); /* 150% */
+    @include mq("md") {
+        margin-top: rem(8);
+    }
 }
 
 .title__sub.title__sub--white {

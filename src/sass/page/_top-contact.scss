@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .top-contact {
-    padding-top: rem(50);
-    padding-bottom: rem(45);
+    padding-top: 52px;
+    padding-bottom: 49px;
 
     @include mq(md) {
-        padding-top: rem(145);
-        padding-bottom: rem(94);
+        padding-top: 139px;
+        padding-bottom: 94px;
     }
 }

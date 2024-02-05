@@ -21,10 +21,10 @@
 .aboutUs__img {
     position: relative;
     text-align: right;
-    margin-top: rem(53);
+    margin-top: rem(55);
 
     @include mq("md") {
-        margin-top: rem(120);
+        margin-top: 121px;
         
     }
 }
@@ -56,7 +56,7 @@
 
 @include mq("md") {
     max-width: rem(400);
-    top: 50%;
+    top: 50.5%;
 }
 }
 
