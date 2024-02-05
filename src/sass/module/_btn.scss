@@ -2,7 +2,7 @@
 
 .btn {
   background: $green2;
-  border:  rem(2) solid $green2;
+  border:  1px solid $green2;
   color: #fff;
   display: block;
   font-weight: bold;
@@ -50,11 +50,17 @@
 
 
 .btn.slide:hover {
-  color: $green2;
+  @include mq("md") {
+    color: $green2;
+  }
+
 }
 
 .btn.slide:hover::after {
-  transform: scale(1, 1);
+
+  @include mq("md") {
+    transform: scale(1, 1);
+  }
 }
 
 //矢印表示
@@ -80,8 +86,12 @@
 }
 
 .btn.slide:hover::before {
-  border-right:  rem(2) solid $green2;
-  border-bottom:  rem(1) solid $green2;
+  
+  @include mq("md") {
+    border-right:  rem(2) solid $green2;
+    border-bottom:  rem(1) solid $green2;
+  }
+
 }
 
 
@@ -94,7 +104,7 @@
 
 
 .btn-line:before {
-  border:  rem(1) solid $green2;
+  border:  1px solid $green2;
   content: "";
   width: 100%;
   // z-index: -1;
