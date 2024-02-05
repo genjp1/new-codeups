@@ -50,46 +50,52 @@
       <!-- スマホメニュー -->
       <!-- .sp-nav>ul.sp-nav__items>li.sp-nav__item*6>a -->
       <div class="header__sp-nav sp-nav js-drawer-menu">
-        <div class="sp-nav__items sp-nav__inner">
+        <nav class="sp-nav__items sp-nav__inner">
           <ul class="sp-nav__items-column">
-            <li class="sp-nav__item"><a href="#campaign">キャンペーン</a>
-            <div class="sp-nav__item-child">ライセンス取得</div>
-            <div class="sp-nav__item-child">貸切体験ダイビング</div>
-            <div class="sp-nav__item-child">ナイトダイビング</div>
+            <li class="sp-nav__item"><span><a href="#campaign">キャンペーン</a></span>
+              <ul>
+                <li class="sp-nav__item-child"><a href="#">ライセンス取得</a></li>
+                <li class="sp-nav__item-child"><a href="#">貸切体験ダイビング</a></li>
+                <li class="sp-nav__item-child"><a href="#">ナイトダイビング</a></li>
+              </ul>
           </li>
-            <li class="sp-nav__item"><a href="#aboutUs">私たちについて</a>
+            <li class="sp-nav__item"><span><a href="#aboutUs">私たちについて</a></span>
             </li>
-            <li class="sp-nav__item"><a href="#information">ダイビング情報</a>
-              <div class="sp-nav__item-child">ライセンス取得</div>
-              <div class="sp-nav__item-child">体験ダイビング</div>
-              <div class="sp-nav__item-child">ファンダイビング</div>
+            <li class="sp-nav__item"><span><a href="#information">ダイビング情報</a></span>
+              <ul>
+                <li class="sp-nav__item-child"><a href="">ライセンス取得</a></li>
+                <li class="sp-nav__item-child"><a href="">体験ダイビング</a></li>
+                <li class="sp-nav__item-child"><a href="">ファンダイビング</a></li>
+              </ul>
             </li>
-            <li class="sp-nav__item"><a href="#blog">ブログ</a>
+            <li class="sp-nav__item"><span><a href="#blog">ブログ</a></span>
             </li>
           </ul>
           <ul class="sp-nav__items-column">
-            <li class="sp-nav__item"><a href="#voice">お客様の声</a>
+            <li class="sp-nav__item"><span><a href="#voice">お客様の声</a></span>
             </li>
-            <li class="sp-nav__item"><a href="#price">料金一覧</a>
-              <div class="sp-nav__item-child">ライセンス講習</div>
-              <div class="sp-nav__item-child">体験ダイビング</div>
-              <div class="sp-nav__item-child">ファンダイビング</div>
+            <li class="sp-nav__item"><span><a href="#price">料金一覧</a></span>
+              <ul>
+                <li class="sp-nav__item-child"><a href="">ライセンス講習</a></li>
+                <li class="sp-nav__item-child"><a href="">体験ダイビング</a></li>
+                <li class="sp-nav__item-child"><a href="">ファンダイビング</a></li>
+              </ul>
             </li>
-            <li class="sp-nav__item"><a href="#">よくある質問</a>
+            <li class="sp-nav__item"><span><a href="#">よくある質問</a></span>
             </li>
-            <li class="sp-nav__item"><a href="#">プライバシー<br>ポリシー</a>
+            <li class="sp-nav__item"><span><a href="#">プライバシー<br>ポリシー</a></span>
             </li>
-            <li class="sp-nav__item"><a href="#">利用規約</a>
+            <li class="sp-nav__item"><span><a href="#">利用規約</a></span>
             </li>
-            <li class="sp-nav__item"><a href="#contact">おい問わ合せ</a>
+            <li class="sp-nav__item"><span><a href="#contact">おい問わ合せ</a></span>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
       
 
       <!-- pcメニュー -->
-        <div class="header__pc-nav pc-nav js-drawer-menu">
+        <nav class="header__pc-nav pc-nav js-drawer-menu">
           <ul class="pc-nav__items">
             <li class="pc-nav__item"><a href="#campaign">Campaign<span>キャンペーン</span></a></li>
             <li class="pc-nav__item"><a href="#aboutUs">About us<span>私たちについて</span></a></li>
@@ -100,7 +106,7 @@
             <li class="pc-nav__item"><a href="#">FAQ<span>よくある質問</span></a></li>
             <li class="pc-nav__item"><a href="#contact">Contact<span>お問合せ</span></a></li>
           </ul>
-        </div>
+        </nav>
 
     </div>
  </header>
@@ -662,10 +668,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
           <div class="footer-nav__content">
 
             <ul class="footer-nav__items-column">
-              <li class="footer-nav__item"><span><a href="#campaign">キャンペーン</a><span>
-              <div class="footer-nav__item-child"><a href="#">ライセンス取得</a></div>
-              <div class="footer-nav__item-child"><a href="#">貸切体験ダイビング</a></div>
-              <div class="footer-nav__item-child"><a href="#">ナイトダイビング</a></div>
+              <li class="footer-nav__item"><span><a href="#campaign">キャンペーン</a></span>
+                <ul>
+                  <li class="footer-nav__item-child"><a href="#">ライセンス取得</a></li>
+                  <li class="footer-nav__item-child"><a href="#">貸切体験ダイビング</a></li>
+                  <li class="footer-nav__item-child"><a href="#">ナイトダイビング</a></li>
+                </ul>
               </li>
               <li class="footer-nav__item"><span><a href="#aboutUs">私たちについて</a></span>
               </li>
@@ -673,9 +681,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
             <ul class="footer-nav__items-column">
               <li class="footer-nav__item"><span><a href="#information">ダイビング情報</a></span>
-                <div class="footer-nav__item-child"><a href="#">ライセンス取得</a></div>
-                <div class="footer-nav__item-child"><a href="#">体験ダイビング</a></div>
-                <div class="footer-nav__item-child"><a href="#">ファンダイビング</a></div>
+                <ul>
+                  <li class="footer-nav__item-child"><a href="#">ライセンス取得</a></li>
+                  <li class="footer-nav__item-child"><a href="#">体験ダイビング</a></li>
+                  <li class="footer-nav__item-child"><a href="#">ファンダイビング</a></li>
+                </ul>
               </li>
               <li class="footer-nav__item"><span><a href="#blog">ブログ</a></span>
               </li>
@@ -687,9 +697,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
               <li class="footer-nav__item"><span><a href="#voice">お客様の声</a></span>
               </li>
               <li class="footer-nav__item"><span><a href="#price">料金一覧</a></span>
-                <div class="footer-nav__item-child"><a href="#">ライセンス講習</a></div>
-                <div class="footer-nav__item-child"><a href="#">体験ダイビング</a></div>
-                <div class="footer-nav__item-child"><a href="#">ファンダイビング</a></div>
+                <ul>
+                  <li class="footer-nav__item-child"><a href="#">ライセンス講習</a></li>
+                  <li class="footer-nav__item-child"><a href="#">体験ダイビング</a></li>
+                  <li class="footer-nav__item-child"><a href="#">ファンダイビング</a></li>
+                </ul>
               </li>
             </ul>
   

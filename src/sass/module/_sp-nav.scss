@@ -67,7 +67,7 @@
     position: relative;
 }
 
-.sp-nav__item a::before{
+.sp-nav__item span a::before{
     position: absolute;
     content: "";
     top: rem(47);
@@ -77,6 +77,10 @@
     transform: translateY(-50%);
     background: url(../images/common/icon-hitode.svg) no-repeat center center/contain;
 
+}
+
+.sp-nav__item .sp-nav__item-child a {
+    padding-top: rem(0);
 }
 
 
