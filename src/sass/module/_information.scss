@@ -23,6 +23,7 @@
 .information__img {
     margin-top: rem(26);
 
+
     @include mq("md") {
         margin-top: rem(40);
         width: 50%;
@@ -35,6 +36,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    aspect-ratio: 540 / 356;
 }
 
 

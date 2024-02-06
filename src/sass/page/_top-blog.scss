@@ -4,6 +4,6 @@
     padding-top: rem(81);
 
     @include mq(md) {
-        padding-top: rem(100);
+        padding-top: 0;//rem(100)
     }
 }

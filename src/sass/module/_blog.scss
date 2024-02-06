@@ -2,16 +2,39 @@
 
 .blog{
 
-
   @include mq("md") {
-    background-image: url(../images/common/bg-blog.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+  
+    // background-image: url(../images/common/bg-blog.jpg);
+    // background-repeat: no-repeat;
+    // background-size: contain;
     position: relative;
   }
+}
 
+  .blog__bg-img {
+    display: none;
+
+    @include mq("md") {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 0;
+      height: 60.7%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: -1;
+    }
 
   }
+
+  .blog__bg-img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+
   
   .blog__inner{
     max-width: 600px;
@@ -39,11 +62,17 @@
     @include mq("md") {
       padding-right: 0px;
       padding-left: 0px;
+      // margin-top: -300px;
     }
   }
   
   
   .blog__title{
+
+    @include mq("md") {
+      padding-top: 101px;
+    }
+
 
 }
   
