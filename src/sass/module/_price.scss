@@ -62,7 +62,7 @@ hr.price__line {
 
 .price__course {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin-top: rem(7);
 }
 
@@ -77,9 +77,10 @@ hr.price__line {
     font-style: normal;
     font-weight: $regular;
     line-height: rem(24); /* 171.429% */
-
+    width: 80%;
     @include mq("md") {
         font-size: rem(16);
+
     }
 }
 
@@ -89,9 +90,13 @@ hr.price__line {
     font-style: normal;
     font-weight: $regular;
     line-height: rem(24); /* 171.429% */
+    width: 20%;
+    text-align-last: end;
 
     @include mq("md") {
+        margin-left: auto;
         font-size: rem(16);
+
     }
 }
 
@@ -102,6 +107,11 @@ hr.price__line {
         width: 50%;
         margin-left: rem(93);
     }
+}
+
+.price__imageCenter-img {
+    aspect-ratio: 492 / 746;
+    object-fit: cover;
 }
 
 
