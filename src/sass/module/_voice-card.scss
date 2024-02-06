@@ -51,7 +51,7 @@
 
   .voice-card__tag {
     display: inline-flex;
-    padding: 3px rem(12);
+    padding: 3px 12px;
     align-items: flex-start;
     gap: rem(8);
     border: 1px solid $green2;
@@ -62,7 +62,7 @@
     line-height: rem(22); /* 183.333% */
 
     @include mq(md){
-        padding: rem(6) rem(16);
+        padding: 6px 16px 6px 16px;
     }
 }
 
@@ -99,11 +99,8 @@
 }
 
 .voice-card__img img {
-
-  @include mq("md") {
-    // width: 91%;
-  
-  }
+  aspect-ratio: 180 / 140;
+  object-fit: cover;
 }
 
   .voice-card__text{

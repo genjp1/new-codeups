@@ -23,16 +23,16 @@
   .voice__voice-cards{
     display: grid;
     margin-top: 44px;
-  
-    grid-template-columns: repeat(auto-fit,minmax(301px,1fr));
+    grid-template-columns: repeat(1fr);
     column-gap: 35px;
     row-gap: 40px;
-  
+
     @include mq("md") {
-      margin-top: rem(30);
+      margin-top: 30px;
       row-gap: rem(30);
       column-gap: rem(39);
-  }
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   
   .voice__voice-card{
