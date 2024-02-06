@@ -12,7 +12,8 @@
 .footer-nav__contents {
     display: flex;
     justify-content: space-around;
-    margin-left: rem(5);
+    margin-left: 6px;
+    margin-top: 26px;
 
     @include mq("md") {
     justify-content: inherit;
@@ -57,7 +58,8 @@
     display: inline-block;
     width: 100%;
     margin-top: rem(0);
-    padding-top: rem(38);
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: left;
 
     color: $white;
@@ -66,12 +68,15 @@
     font-weight: 700;
     line-height: rem(18); /* 112.5% */
 
+    margin-top: 12px;
+
     position: relative;
 
     @include mq("md") {
         transition: .5s ;   
         padding-top: 20px;
         padding-bottom: 20px;
+        margin-top: 0;
     }
 
 }
@@ -79,6 +84,8 @@
 .footer-nav__item .footer-nav__item-child a {
     padding-top: 11px;
     padding-bottom: 11px;
+    font-weight: $regular;
+    margin-top: 0;
 }
 
 .footer-nav__item a:hover,
@@ -89,12 +96,16 @@
 .footer-nav__item span a::before{
     position: absolute;
     content: "";
-    top: 31px;
+    top: 26px;
     left: rem(-22);
     width: rem(18);
     height: rem(18);
     transform: translateY(-50%);
     background: url(../images/common/icon-hitode.svg) no-repeat center center/contain;
+
+    @include mq("md") {
+        top: 31px;
+    }
 
 }
 
