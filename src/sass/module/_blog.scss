@@ -80,20 +80,20 @@
   .blog__cards{
     display: grid;
     margin-top: rem(27);
-  
-    grid-template-columns: repeat(auto-fit,minmax( rem(301),1fr));
+    grid-template-columns: repeat(1fr);
     column-gap: rem(35);
     row-gap: rem(39);
-  
+
     @include mq("md") {
       margin-top: rem(81);
       row-gap: rem(30);
       column-gap: rem(39);
+      grid-template-columns: repeat(3,1fr);
+    }
   }
-  }
-  
+
   .blog__card{
-    
+
   }
   
 
