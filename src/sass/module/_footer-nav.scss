@@ -17,6 +17,7 @@
     @include mq("md") {
     justify-content: inherit;
     margin-left: inherit;
+    margin-top: 19px;
     }
 }
 
@@ -68,14 +69,16 @@
     position: relative;
 
     @include mq("md") {
-        padding-top: rem(40);
         transition: .5s ;   
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
 }
 
 .footer-nav__item .footer-nav__item-child a {
-    padding-top: rem(0);
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 
 .footer-nav__item a:hover,
@@ -86,7 +89,7 @@
 .footer-nav__item span a::before{
     position: absolute;
     content: "";
-    top: rem(47);
+    top: 31px;
     left: rem(-22);
     width: rem(18);
     height: rem(18);
@@ -97,7 +100,7 @@
 
 
 .footer-nav__item-child {
-    padding-top: rem(23);
+    // padding-top: rem(23);
     color: $white;
     font-size: rem(16);
     font-style: normal;
@@ -106,7 +109,8 @@
 
 
     @include mq("md") {
-        padding-top: rem(22);
+        // padding-top: rem(11);
+        // padding-bottom: rem(11);
         transition: .5s ;   
     }
 }
