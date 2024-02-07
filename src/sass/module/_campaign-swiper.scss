@@ -5,7 +5,7 @@
 
     @include mq("md") {
         margin-top: rem(40);
-        padding-left: rem(34);
+        // padding-left: rem(34);
         position: relative;
     }
 }
@@ -20,7 +20,7 @@
         top: rem(6);
         position: absolute;
         width: 100%;
-        right: 1.7vw;
+        right: 0.5vw;
     }
 }
 
@@ -28,13 +28,13 @@
 .campaign-swiper__button-wrap .swiper-button-next {
     position: relative;
     width: rem(100);
-    height: rem(100);
+    height: rem(104);
     background-color: #fff9ee;
     border-radius: 50%;
 }
 
 .campaign-swiper__button-wrap .swiper-button-next {
-    margin-left: rem(60);
+    margin-left: 60px;
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::before,

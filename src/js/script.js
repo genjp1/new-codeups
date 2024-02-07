@@ -110,8 +110,8 @@ topBtn.click(function () {
       // },
       breakpoints: {
           768: {
-              slidesPerView: 3.9,
-              spaceBetween: 40
+              slidesPerView: 3.5,
+              spaceBetween: 42
           }
       },
       navigation: {
