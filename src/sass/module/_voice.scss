@@ -22,13 +22,13 @@
   
   .voice__voice-cards{
     display: grid;
-    margin-top: 44px;
+    margin-top: rem(44);
     grid-template-columns: repeat(1fr);
-    column-gap: 35px;
-    row-gap: 40px;
+    column-gap: rem(35);
+    row-gap: rem(40);
 
     @include mq("md") {
-      margin-top: 30px;
+      margin-top: rem(30);
       row-gap: rem(30);
       column-gap: rem(39);
       grid-template-columns: repeat(2, 1fr);

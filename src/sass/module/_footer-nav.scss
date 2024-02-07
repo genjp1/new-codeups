@@ -12,13 +12,13 @@
 .footer-nav__contents {
     display: flex;
     justify-content: space-around;
-    margin-left: 6px;
-    margin-top: 26px;
+    margin-left: rem(6);
+    margin-top: rem(26);
 
     @include mq("md") {
     justify-content: inherit;
     margin-left: inherit;
-    margin-top: 19px;
+    margin-top: rem(19);
     }
 }
 
@@ -58,8 +58,8 @@
     display: inline-block;
     width: 100%;
     margin-top: rem(0);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: rem(15);
+    padding-bottom: rem(15);
     text-align: left;
 
     color: $white;
@@ -67,22 +67,22 @@
     font-style: normal;
     font-weight: 700;
     line-height: rem(18); /* 112.5% */
-    margin-top: 12px;
+    margin-top: rem(12);
 
     position: relative;
 
     @include mq("md") {
         transition: .5s ;   
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: rem(20);
+        padding-bottom: rem(20);
         margin-top: 0;
     }
 
 }
 
 .footer-nav__item .footer-nav__item-child a {
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: rem(11);
+    padding-bottom: rem(11);
     font-weight: $regular;
     margin-top: 0;
 }
@@ -95,7 +95,7 @@
 .footer-nav__item span a::before{
     position: absolute;
     content: "";
-    top: 26px;
+    top: rem(26);
     left: rem(-22);
     width: rem(18);
     height: rem(18);
@@ -103,7 +103,7 @@
     background: url(../images/common/icon-hitode.svg) no-repeat center center/contain;
 
     @include mq("md") {
-        top: 31px;
+        top: rem(31);
     }
 
 }

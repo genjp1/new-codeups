@@ -37,20 +37,20 @@
 .footer__copyright {
     text-align: center;
     text-align: center;
-    margin: 20px 0 0 5px;
+    margin:  rem(20) 0 0  rem(5);
 
     color: $white;
     font-family: $english-family;
-    font-size: 12px;
+    font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
-    line-height: 18px; /* 150% */
+    line-height: rem(18); /* 150% */
 
     @include mq(md) {
-        font-size: 11px;
-        line-height: 4px;
-        margin-left: 5px;
-        margin-top: 73px;
-        margin: 35px 0 0 5px;
+        font-size: rem(11);
+        line-height: rem(4);
+        margin-left: rem(5);
+        margin-top: rem(73);
+        margin: rem(35) 0 0 rem(5);
     }
 }

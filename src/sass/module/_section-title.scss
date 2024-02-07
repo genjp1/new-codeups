@@ -34,7 +34,7 @@
     margin-bottom: rem(-9);
     @include mq("lg") {
         margin-bottom: rem(0);
-        line-height: 46px; /* 100% */
+        line-height: rem(46); /* 100% */
     }
 }
 
