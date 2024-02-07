@@ -23,7 +23,7 @@
   .voice__voice-cards{
     display: grid;
     margin-top: rem(44);
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(1,1fr);
     column-gap: rem(35);
     row-gap: rem(40);
 
@@ -31,7 +31,7 @@
       margin-top: rem(30);
       row-gap: rem(30);
       column-gap: rem(39);
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2,1fr);
     }
   }
   

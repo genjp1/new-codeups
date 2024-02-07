@@ -64,7 +64,7 @@
   .blog__cards{
     display: grid;
     margin-top: rem(27);
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(1,1fr);
     column-gap: rem(35);
     row-gap: rem(39);
 
