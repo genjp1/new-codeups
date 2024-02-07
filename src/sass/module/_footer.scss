@@ -46,8 +46,6 @@
     font-weight: $regular;
     line-height: 18px; /* 150% */
 
-
-
     @include mq(md) {
         font-size: 11px;
         line-height: 4px;
@@ -55,6 +53,4 @@
         margin-top: 73px;
         margin: 35px 0 0 5px;
     }
-
-
 }

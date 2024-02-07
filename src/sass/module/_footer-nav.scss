@@ -67,7 +67,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: rem(18); /* 112.5% */
-
     margin-top: 12px;
 
     position: relative;
@@ -111,7 +110,6 @@
 
 
 .footer-nav__item-child {
-    // padding-top: rem(23);
     color: $white;
     font-size: rem(16);
     font-style: normal;
@@ -120,8 +118,6 @@
 
 
     @include mq("md") {
-        // padding-top: rem(11);
-        // padding-bottom: rem(11);
         transition: .5s ;   
     }
 }

@@ -110,7 +110,6 @@ hr.campaign-card__line {
     text-decoration: line-through;
     text-decoration-color: $red;
     text-decoration-thickness: rem(3);
-    // width: 50%;
     text-align: center;
 
     color: $green1;
@@ -125,7 +124,6 @@ hr.campaign-card__line {
     @include mq(md){
         font-size: min(1.7vw, rem(24));
         line-height: rem(24); /* 100% */
-        // margin-top: rem(22);
         margin-top: inherit;
     }
 }

@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .top-information {
-    padding-top: 83px;
+    padding-top: rem(83);
     padding-bottom: rem(80);
 
     @include mq(md) {
-        padding-top: 100px;
-        padding-bottom: 77px;
+        padding-top: rem(100);
+        padding-bottom: rem(77);
     }
 }

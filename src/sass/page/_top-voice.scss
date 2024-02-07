@@ -8,7 +8,7 @@
     // padding-left: auto;
 
     @include mq(md) {
-        padding-top: 143px;
-        padding-bottom: 141px;
+        padding-top: rem(143);
+        padding-bottom: rem(141);
     }
 }

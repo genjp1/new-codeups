@@ -7,15 +7,12 @@
 
     @include mq(md) {
         width: rem(133);
-        // height: rem(50);
     }
 }
 
 .footer__logo {
     width: rem(120);
     position: relative;
-    // z-index: 9999;
-    // margin: auto;
 
     @include mq(md) {
         width: rem(200);

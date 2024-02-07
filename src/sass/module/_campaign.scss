@@ -6,31 +6,21 @@
 }
 
 .campaign__inner {
-    // margin-right: auto;
-    // margin-left: auto;
-    // padding-right: 20px;
-    // padding-left: 15px;
-    // max-width: rem(600);
-    // width: 100%;
-    @include mq(md){
-        // padding-right: 25px;
-        // padding-left: 25px;
-        // max-width: rem(1200);//1200px
 
+    @include mq(md){
         position: relative;
     }
 }
 
 .campaign__content {
-    // padding-right: 5px;
-    // max-width: 1200px;//1200px
+
 }
 
 .campaign__swiper {
     margin-right: calc(50% - 53vw);
+
     @include mq("md") {
         margin-right: calc(50% - 50.5vw);
-    // width: 100vw;
     }
 
 }

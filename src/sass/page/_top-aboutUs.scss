@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .top-aboutUs {
-    padding-top: 73px;
+    padding-top: rem(73);
     padding-bottom: rem(70);
 
     @include mq(md) {
         padding-top: rem(130);
-        padding-bottom: 161px;
+        padding-bottom: rem(161);
     }
 }
