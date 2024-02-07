@@ -79,7 +79,11 @@
 
 hr.contact__line {
     border-color: $green2;
-    margin: 7px rem(0) rem(0) rem(0);
+    margin: 5px rem(0) rem(0) rem(0);
+
+    @include mq("md") {
+        margin: 7px rem(0) rem(0) rem(0);
+    }
 }
 
 .contact__address-content {

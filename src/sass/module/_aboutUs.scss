@@ -25,7 +25,7 @@
     margin-top: 28px;
 
     @include mq("md") {
-        margin-top: 42px;
+        margin-top: 40px;
     }
 }
 
@@ -210,7 +210,7 @@
         
         position: absolute;
         content: "";
-        top: 84.3%;
+        top: 84.8%;
         right: 5.8%;
         transform: translateY(-50%);
         z-index: 3;
