@@ -18,6 +18,15 @@
     opacity: 1;
 }
 
+
+.campaign-card__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: inherit;
+}
+
 .campaign-card__img {
     width: 100%;
     overflow: hidden;
@@ -78,6 +87,10 @@
 hr.campaign-card__line {
     border-color: $green2;
     margin: rem(6) 0;
+}
+
+.campaign-card__text-block {
+    vertical-align:bottom
 }
 
 .campaign-card__text {

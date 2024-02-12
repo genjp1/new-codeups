@@ -4,6 +4,7 @@
 // ボタン位置の調整
 .campaign-swiper__button-wrap {
     justify-content: right;
+    height: 6.5rem;
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
@@ -15,8 +16,8 @@
       position: relative;
       top: inherit;
       left: inherit;
-      right: inherit;
-      margin-left: 4.9rem;
+      right: rem(68);
+      // margin-left: 4.9rem;
     }
 }
 
