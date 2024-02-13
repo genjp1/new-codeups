@@ -59,11 +59,12 @@
         display: block;
         content: "";
         position: absolute;
-        right: 3.5%;
+        // right: 3.5%;
         top: 27%;
         transform: translateY(-50%);
         width: rem(301);
         height: auto;
+        right: calc(50% - min(48vw, rem(668)));
     }
 }
 

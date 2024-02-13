@@ -57,9 +57,10 @@
     content: "";
     position: absolute;
     top: 10%;
-    left: 7%;
+    // left: 7%;
     transform: translateY(-50%);
     width: auto;
+    left: calc(50% - min(48vw, rem(620)));
   }
 
 
@@ -71,11 +72,12 @@
     display: block;
     content: "";
     position: absolute;
-    top: 124%;
-    right: 12.5%;
+    top: 124.5%;
+    // right: 12.5%;
     transform: translateY(-50%);
     width: auto;
     height: 100%;
+    right: calc(50% - min(48vw, 541px));
   }
 
 

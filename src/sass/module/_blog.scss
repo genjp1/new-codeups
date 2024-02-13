@@ -98,9 +98,10 @@
     content: "";
     position: absolute;
     top: 15%;
-    left: 7%;
+    // left: 7%;
     transform: translateY(-50%);
     width: auto;
+    left: calc(50% - min(48vw, rem(620)));
   }
 
 

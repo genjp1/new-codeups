@@ -130,9 +130,10 @@ hr.price__line {
         content: "";
         position: absolute;
         bottom: -3.4%;
-        left: 7%;
+        // left: 7%;
         transform: translateY(-50%);
         width: rem(432);
         height: auto;
+        left: calc(50% - min(48vw, rem(620)));
     }
 }
