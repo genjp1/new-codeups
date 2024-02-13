@@ -10,7 +10,7 @@
     // 100vhで全画面表示
     height: 100vh;
     z-index: 8888;
-    overflow: scroll;
+    overflow: scroll;//スクロールバーを表示（全体表示出来ていない状態で）
 
     // 横からスライドインバージョン(-100%：左から右、100%：右から左)
     transform: translateX(100%);
