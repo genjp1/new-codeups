@@ -55,18 +55,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 /*====================================================
 # mvセクションのスライダー
 // =====================================================*/
-//     const mv_swiper = new Swiper(".js-mv-swiper", {
-//         loop: true,
-//         speed: 2000,
-//         effect: "fade",
-//         fadeEffect: {
-//             crossFade: true,
-//         },
-//         autoplay: {
-//             delay: 4000,
-//             disableOnInteraction: false,
-//         },
-//     });
+    const mv_swiper = new Swiper(".js-mv-swiper", {
+        loop: true,
+        speed: 2000,
+        effect: "fade",
+        fadeEffect: {
+            crossFade: true,
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+    });
 
 /*====================================================
 # ボタンをクリックしたらスクロールして上に戻る
