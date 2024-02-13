@@ -4,7 +4,11 @@
 // ボタン位置の調整
 .campaign-swiper__button-wrap {
     justify-content: right;
-    height: 6.5rem;
+
+    @include mq("md") {
+      height: 6.5rem;
+    }
+
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
