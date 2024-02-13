@@ -14,20 +14,17 @@
 
 
 .information__content {
-
+    margin-top: rem(26);
     @include mq("md") {
         display: flex;
+        margin-top: rem(40);
     }
 }
 
 .information__img {
-    margin-top: rem(26);
-
-
+    
     @include mq("md") {
-        margin-top: rem(40);
         width: 50%;
-
     }
 }
 
@@ -47,7 +44,7 @@
     @include mq("md") {
         width: 46%;
         margin-left: rem(47);
-        margin-top: rem(101);
+        margin-top: rem(61);
     }
 }
 
