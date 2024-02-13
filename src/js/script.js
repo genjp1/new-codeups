@@ -17,6 +17,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $('.js-drawer-menu').addClass('is-open');
       $(this).addClass('is-open');
     }
+
+    
+      // 現在のbodyタグのoverflowスタイルを確認
+      if ($("body").css("overflow") === "hidden") {
+
+        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+        $("body").css({ height: "", overflow: "" });
+  
+      } else {
+  
+        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+        $("body").css({ height: "100%", overflow: "hidden" });
+  
+      }
   });
 
     // ドロワーメニュー内のリンクをクリックした時にドロワーを閉じる

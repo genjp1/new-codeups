@@ -10,6 +10,7 @@
     // 100vhで全画面表示
     height: 100vh;
     z-index: 8888;
+    overflow: scroll;
 
     // 横からスライドインバージョン(-100%：左から右、100%：右から左)
     transform: translateX(100%);
