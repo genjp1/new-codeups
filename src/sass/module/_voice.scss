@@ -77,7 +77,7 @@
     transform: translateY(-50%);
     width: auto;
     height: 100%;
-    right: calc(50% - min(48vw, 541px));
+    right: calc(50% - min(48vw, rem(541)));
   }
 
 

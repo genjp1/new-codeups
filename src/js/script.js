@@ -119,10 +119,10 @@ topBtn.click(function () {
       slidesPerView: 1.3,
       spaceBetween: 20,
       autoHeight: true,
-      // autoplay: {
-      //     delay: 2000,
-      //     disableOnInteraction: false,
-      // },
+      autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+      },
       breakpoints: {
           768: {
               slidesPerView: 3.5,

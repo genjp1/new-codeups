@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .top-contact {
-    margin-top: 80px;
+    margin-top: rem(80);
 
     @include mq(md) {
         margin-top: rem(139);

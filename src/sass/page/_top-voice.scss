@@ -3,9 +3,6 @@
 .top-voice {
     margin-top: rem(80);
     margin-bottom: rem(80);
-    // width: 100%;
-    // margin-right: auto;
-    // margin-left: auto;
 
     @include mq(md) {
         margin-top: rem(143);
