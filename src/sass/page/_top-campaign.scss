@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .top-campaign {
-    padding-top: rem(30);
+    margin-top: rem(30);
 
     @include mq(md) {
-        padding-top: rem(109)
+        margin-top: rem(109)
     }
 }

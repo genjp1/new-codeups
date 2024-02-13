@@ -3,12 +3,12 @@
 
 .footer {
     background-color: $green2;
-    margin-top: rem(52);
+    margin-top: rem(101);
     padding-top: rem(48);
     padding-bottom: rem(56);
 
     @include mq(md) {
-        margin-top: rem(33);
+        margin-top: rem(127);
         padding-top: rem(80);
         padding-bottom: rem(80);
     }

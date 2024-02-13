@@ -1,14 +1,14 @@
 @use "global" as *;
 
 .top-voice {
-    padding-top: rem(80);
-    padding-bottom: rem(80);
+    margin-top: rem(80);
+    margin-bottom: rem(80);
     // width: 100%;
-    // padding-right: auto;
-    // padding-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
 
     @include mq(md) {
-        padding-top: rem(143);
-        padding-bottom: rem(141);
+        margin-top: rem(143);
+        margin-bottom: rem(141);
     }
 }
