@@ -118,7 +118,7 @@ topBtn.click(function () {
       speed: 2000,
       slidesPerView: 1.3,
       spaceBetween: 20,
-      autoHeight: true,
+      // autoHeight: true,
       autoplay: {
           delay: 2000,
           disableOnInteraction: false,
