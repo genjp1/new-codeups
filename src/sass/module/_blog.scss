@@ -37,6 +37,7 @@
 
     @include mq("md") {
         max-width: inherit;
+        position: relative;
     }
   }
 
@@ -90,19 +91,36 @@
     }
 }
 
-.blog__img {
-  display: none;
+// .blog__img {
+//   display: none;
 
-  @include mq("md") {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 15%;
-    // left: 7%;
-    transform: translateY(-50%);
-    width: auto;
-    left: calc(50% - min(48vw, rem(620)));
+//   @include mq("md") {
+//     display: block;
+//     content: "";
+//     position: absolute;
+//     top: 15%;
+//     // left: 7%;
+//     transform: translateY(-50%);
+//     width: auto;
+//     left: calc(50% - min(48vw, rem(620)));
+//   }
+
+
+// }
+
+.blog__inner::before {
+
+    @include mq("md") {
+      background-image: url(../images/common/blog4.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      content: "";
+      position: absolute;
+      top: 3.5%;
+      transform: translateY(-50%);
+      width: rem(437);
+      height: rem(201);
+      left: calc(50% - min(48vw, rem(620)));
+    }
   }
-
-
-}
