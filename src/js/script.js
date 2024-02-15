@@ -93,6 +93,29 @@ topBtn.click(function () {
   return false;
 });
 
+ // フッター手前でストップ
+let scrollHeight = $(document).height();
+let scrollPosition = $(window).height() + $(window).scrollTop();
+let footHeight = $("footer").innerHeight();
+
+ $(".pagetop").hide();
+ $(window).on("scroll", function () {
+   scrollHeight = $(document).height();
+   scrollPosition = $(window).height() + $(window).scrollTop();
+   footHeight = $("footer").innerHeight();
+   if (scrollHeight - scrollPosition <= footHeight) {
+     $(".pagetop").css({
+       position: "absolute",
+       bottom: footHeight + 20,
+     });
+   } else {
+     $(".pagetop").css({
+       position: "fixed",
+       bottom: "20px",
+     });
+   }
+ });
+
 
 /*====================================================
 # campaignセクションのスライダー
