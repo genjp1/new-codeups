@@ -9,7 +9,7 @@
     top: rem(-632);
 
     @include mq("md") {
-      position: relative;
+      // position: relative;
       top: inherit;
       left: inherit;
       right: rem(68);
@@ -23,7 +23,7 @@
     top: rem(-633);
 
     @include mq("md") {
-      position: relative;
+      // position: relative;
       top: inherit;
       left: inherit;
       right: inherit;
@@ -38,7 +38,7 @@
   background-size: contain;
   height: rem(80);
   width: rem(80);
-  margin: auto;
+  margin: 0;
 }
  
 /* 前に戻る画像パス */

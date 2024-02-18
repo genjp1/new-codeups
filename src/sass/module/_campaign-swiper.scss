@@ -17,11 +17,12 @@
 
     @include mq("md") {
         margin-top: inherit;
-        top: rem(6);
         position: absolute;
         // width: 100%;
-        right: 0.5vw;
         height: rem(104);
+        right: 1vw;
+        top: rem(-11);
+        gap: rem(61);
     }
 }
 
@@ -81,4 +82,6 @@
 // 円のデザイン調整
 .campaign-swiper__button-wrap .swiper-button-prev, .campaign-swiper__button-wrap .swiper-button-next {
     background-color: $white;
+    position:initial;
+    margin: 0;
 }
