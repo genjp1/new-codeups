@@ -15,7 +15,7 @@
     
     @include mq("md") {
         display: flex;
-        padding: rem(52) rem(20) rem(74) rem(50);
+        padding: rem(81) rem(20) rem(76) rem(50);
         width: 100%;
         max-width: rem(1080);
         flex-shrink: 0;;
@@ -25,7 +25,11 @@
 
 .contact__left {
     @include mq("md") {
-        width: 44%;
+        // width: 44%;
+
+        width: 51.7%;
+        padding-right: rem(80);
+        border-right: 0.0625rem solid #408F95;
     }
 }
 
@@ -38,6 +42,7 @@
 
     @include mq("md") {
       width: rem(200);
+      margin-top: 0;
     }
 }
 
@@ -69,7 +74,7 @@ hr.contact__line {
     margin: rem(5) rem(0) rem(0) rem(0);
 
     @include mq("md") {
-        margin: rem(7) rem(0) rem(0) rem(0);
+        margin: rem(8) rem(0) rem(0) rem(0);
     }
 }
 
@@ -135,9 +140,9 @@ hr.contact__line {
 
 .contact__right {
     @include mq("md") {
-        margin-top: rem(68);
-        border-left: rem(1) solid $green2;
-        margin-left: rem(78);
+        margin-top: rem(39);
+        // border-left: rem(1) solid $green2;
+        // margin-left: rem(78);
         width: 47%;
     }
 
