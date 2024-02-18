@@ -14,7 +14,6 @@
 
     // 横からスライドインバージョン(-100%：左から右、100%：右から左)
     transform: translateX(100%);
-    transition: ease .3s;
 
     @include mq(md) {
     display: none;
@@ -32,6 +31,7 @@
 
 .sp-nav__items {
     padding-top: rem(66);
+    padding-bottom: rem(15);
     overflow: scroll;
 
     display: flex;
