@@ -12,7 +12,8 @@
 .campaign-swiper__button-wrap {
     margin-top: inherit;
     display: flex;
-    justify-content: left;
+    // justify-content: left;
+    // justify-content: right;
 
     @include mq("md") {
         margin-top: inherit;
@@ -20,6 +21,7 @@
         position: absolute;
         // width: 100%;
         right: 0.5vw;
+        height: rem(104);
     }
 }
 
@@ -68,4 +70,15 @@
 .campaign-swiper__button-wrap .swiper-button-prev:hover, 
 .campaign-swiper__button-wrap .swiper-button-next:hover {
   opacity: .5;
+}
+
+
+// 既定のやじるしを消す
+.campaign-swiper__button-wrap .swiper-button-prev::before, .campaign-swiper__button-wrap .swiper-button-next::before {
+    display: none;
+}
+
+// 円のデザイン調整
+.campaign-swiper__button-wrap .swiper-button-prev, .campaign-swiper__button-wrap .swiper-button-next {
+    background-color: $white;
 }
