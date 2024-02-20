@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .top-information {
-    padding-top: rem(83);
+    padding-top: rem(82);
     padding-bottom: rem(80);
 
     @include mq(md) {

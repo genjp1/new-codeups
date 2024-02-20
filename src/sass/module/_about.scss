@@ -20,7 +20,7 @@
 
 
 .about__img-wrap {
-    margin-top: rem(24);
+    margin-top: rem(28);
 
     @include mq("md") {
         margin-top: rem(38);
@@ -47,7 +47,7 @@
 
 .about__img-big {
     margin-left: auto;
-    margin-top: -49%;
+    margin-top: -48.7%;
     width: 81.45%;
     z-index: 1;
 
@@ -99,7 +99,7 @@
 }
 
 .about__text-wrap {
-    margin-top: rem(19);
+    margin-top: rem(16);
 
     @include mq("md") {
         margin-left: rem(38);
@@ -123,8 +123,14 @@
 
 
 .about__button {
-    margin-top: rem(40);
+    margin-top: rem(50);
     text-align: center;
+
+    @include mq("md") {
+        margin-top: rem(40);
+        text-align: center;
+    }
+
 }
 
 
