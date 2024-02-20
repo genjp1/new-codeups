@@ -3,7 +3,7 @@
 /*====================================================
 # campaign
 =====================================================*/
-.campaign .swiper-button-prev, .swiper-rtl .swiper-button-next {
+.campaign .swiper-button-prev, .campaign .swiper-rtl .swiper-button-next {
     left: auto;
     right: rem(275);
     top: rem(-632);
@@ -17,7 +17,7 @@
     }
 }
 
-.campaign .swiper-button-next, .swiper-rtl .swiper-button-prev {
+.campaign .swiper-button-next, .campaign .swiper-rtl .swiper-button-prev {
     right: auto;
     left: rem(-315);
     top: rem(-633);
@@ -50,16 +50,18 @@
   background-image: url(../images/common/swiper-arrow-right.png);
 }
 
-.campaign .swiper-slide {
-  padding-bottom: rem(10);
-  height: auto;
-  // height: 100% !important;
-  width: rem(280);
 
-  @include mq("md") {
+.campaign .swiper-slide {
     padding-bottom: rem(10);
-    width: rem(333);
+    height: auto;
+    // height: 100% !important;
+    width: rem(280);
+  
+    @include mq("md") {
+      padding-bottom: rem(10);
+      width: rem(333);
+    }
+  
   }
 
-}
 

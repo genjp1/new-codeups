@@ -4,24 +4,26 @@
 
 }
 
-
+.campaign-card__style {
+    height: 100%;
+    display: block;
+    flex-shrink: 0;
+    background: var(--White, #FFF);
+    box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
+    // transition: all  .7s ease;
+}
 
 .campaign-card__item {
-    // height: 100%;
-    // display: block;
-    flex-shrink: 0;
-    background: $white;
-    box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: inherit;
+
 }
 
-.campaign-card__item a:hover {
-    opacity: 1;
+.campaign-card__style:hover {
+    // opacity: 0.5;
 }
 
 .campaign-card__img {

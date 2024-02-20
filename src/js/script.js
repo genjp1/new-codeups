@@ -38,18 +38,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 /*====================================================
 # mvセクションのスライダー
 // =====================================================*/
-    // const mv_swiper = new Swiper(".js-mv-swiper", {
-    //     loop: true,
-    //     speed: 2000,
-    //     effect: "fade",
-    //     fadeEffect: {
-    //         crossFade: true,
-    //     },
-    //     autoplay: {
-    //         delay: 4000,
-    //         disableOnInteraction: false,
-    //     },
-    // });
+    const mv_swiper = new Swiper(".js-mv-swiper", {
+        loop: true,
+        speed: 2000,
+        effect: "fade",
+        fadeEffect: {
+            crossFade: true,
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+    });
 
 /*====================================================
 # ボタンをクリックしたらスクロールして上に戻る
@@ -120,25 +120,26 @@ let footHeight = $("footer").innerHeight();
 
   // Swiper
   var campaign_swiper = new Swiper(".js-campaign-swiper", {
-      loop: true,
-      speed: 2000,
-      slidesPerView: "auto",
-      spaceBetween: 20,
-      // autoHeight: true,
-      // autoplay: {
-      //     delay: 2000,
-      //     disableOnInteraction: false,
-      // },
-      breakpoints: {
-          768: {
-              spaceBetween: 42
-          }
-      },
-      navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-      },
-  });
+    loop: true,
+    speed: 2000,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    // autoHeight: true,
+    // autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false,
+    // },
+    breakpoints: {
+        768: {
+            // slidesPerView: 3.5,
+            spaceBetween: 42
+        }
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 
 
   

@@ -77,23 +77,6 @@
     }
 }
 
-// .blog__img {
-//   display: none;
-
-//   @include mq("md") {
-//     display: block;
-//     content: "";
-//     position: absolute;
-//     top: 15%;
-//     // left: 7%;
-//     transform: translateY(-50%);
-//     width: auto;
-//     left: calc(50% - min(48vw, rem(620)));
-//   }
-
-
-// }
-
 .blog__inner::before {
 
     @include mq("md") {

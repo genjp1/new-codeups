@@ -37,41 +37,6 @@
     }
 }
 
-// .voice__imgTop {
-//   display: none;
-
-//   @include mq("md") {
-//     display: block;
-//     content: "";
-//     position: absolute;
-//     top: -8%;
-//     // left: 7%;
-//     transform: translateY(-50%);
-//     width: auto;
-//     left: calc(50% - min(48vw, rem(620)));
-//   }
-
-
-// }
-// .voice__imgBttom {
-//   display: none;
-
-//   @include mq("md") {
-//     display: block;
-//     content: "";
-//     position: absolute;
-//     top: 98%;
-//     // right: 12.5%;
-//     transform: translateY(-50%);
-//     width: rem(71);
-//     height: rem(162);
-//     right: calc(50% - min(48vw, rem(541)));
-//   }
-
-
-// }
-
-
 .voice__inner::before {
 
     @include mq("md") {

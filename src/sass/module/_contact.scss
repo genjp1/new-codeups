@@ -46,28 +46,6 @@
     }
 }
 
-// .contact__imgSecond {
-//     display: block;
-//     content: "";
-//     position: absolute;
-//     top: 0%;
-//     right: 4.4%;
-//     transform: translateY(-50%);
-//     width: rem(109);
-//     height: auto;
-
-//     @include mq("md") {
-//         display: block;
-//         content: "";
-//         position: absolute;
-//         // right: 3.5%;
-//         top: 8%;
-//         transform: translateY(-50%);
-//         width: rem(301);
-//         height: auto;
-//         right: calc(50% - min(48vw, rem(668)));
-//     }
-// }
 
 hr.contact__line {
     border-color: $green2;
@@ -141,8 +119,6 @@ hr.contact__line {
 .contact__right {
     @include mq("md") {
         margin-top: rem(39);
-        // border-left: rem(1) solid $green2;
-        // margin-left: rem(78);
         width: 47%;
     }
 

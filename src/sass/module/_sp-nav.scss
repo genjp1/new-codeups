@@ -21,7 +21,6 @@
 }
 
 .sp-nav__inner {
-//    padding: 0  rem(37);
 
 }
     // 横からスライドインバージョン
@@ -32,21 +31,18 @@
 .sp-nav__items {
     padding-top: rem(66);
     padding-bottom: rem(15);
-    // overflow: scroll;
-    // display: flex;
     justify-content: space-around;
 }
 
 .sp-nav__scroll-container {
     overflow: scroll;
-    height: calc(100vh - 80px);
+    height: calc(100vh - rem(80));
     display: flex;
     padding: 0  rem(37);
 }
 
 .sp-nav__items-column {
     list-style-type: none;
-    // display: grid;
     width: 50%;
   }
 
