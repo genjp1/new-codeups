@@ -1,0 +1,148 @@
+@use "global" as *;
+
+.about {
+
+}
+
+.top-about {
+
+}
+
+.about__inner {
+    position: relative;
+}
+
+
+.about__title {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.about__img-wrap {
+    margin-top: rem(24);
+
+    @include mq("md") {
+        margin-top: rem(38);
+    }
+}
+
+.about__img-small {
+    position: relative;
+    width: 37.1014%;
+    z-index: 2;
+}
+
+.about__img-small img {
+    aspect-ratio: 128/194;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+
+    @include mq("md") {
+        aspect-ratio: 400/606;
+    }
+}
+
+
+.about__img-big {
+    margin-left: auto;
+    margin-top: -49%;
+    width: 81.45%;
+    z-index: 1;
+
+    @include mq("md") {
+        margin-top: -48.8%;
+    }
+}
+
+.about__img-big img {
+    aspect-ratio: 281/186;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+
+    @include mq("md") {
+        aspect-ratio: 880/581;
+    }
+}
+
+.about__content-wrap {
+    margin-top: rem(40);
+    
+    @include mq("md") {
+        display: flex;
+        left: 19.8%;
+        margin-top: 0;
+        position: absolute;
+        top: 40%;
+        width: 74.78%;
+        z-index: 2;
+    }
+
+}
+
+.about__title {
+    color: $green2;
+    font-family: $english-family;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: rem(40); /* 100% */
+
+    @include mq("md") {
+        color: $white;
+        font-size: rem(80);
+        line-height: rem(100); /* 125% */
+        width: 50%;
+    }
+}
+
+.about__text-wrap {
+    margin-top: rem(19);
+
+    @include mq("md") {
+        margin-left: rem(38);
+        margin-top: 0;
+        width: 50%;
+    }
+}
+
+
+.about__text {
+    color: $green1;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: rem(24); /* 150% */
+
+    @include mq("md") {
+        color: $white;
+    }
+}
+
+
+.about__button {
+    margin-top: rem(40);
+    text-align: center;
+}
+
+
+
+.about__inner::after {
+
+    @include mq("md") {
+        background-image: url(../images/common/about-us3.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        top: 100%;
+        // right: 12.5%;
+        transform: translateY(-50%);
+        width: rem(194);
+        height: rem(181);
+        right: calc(50% - min(48vw, rem(636)));
+    }
+  }
