@@ -8,7 +8,7 @@
     background-color: $green2;
     width: 100%;
     // 100vhで全画面表示
-    // height: 100vh;
+    height: 100vh;
     z-index: 8888;
     overflow: scroll;//スクロールバーを表示（全体表示出来ていない状態で）
 
@@ -21,7 +21,7 @@
 }
 
 .sp-nav__inner {
-   padding: 0  rem(37);
+//    padding: 0  rem(37);
 
 }
     // 横からスライドインバージョン
@@ -32,15 +32,21 @@
 .sp-nav__items {
     padding-top: rem(66);
     padding-bottom: rem(15);
-    overflow: scroll;
-
-    display: flex;
+    // overflow: scroll;
+    // display: flex;
     justify-content: space-around;
+}
+
+.sp-nav__scroll-container {
+    overflow: scroll;
+    height: calc(100vh - 80px);
+    display: flex;
+    padding: 0  rem(37);
 }
 
 .sp-nav__items-column {
     list-style-type: none;
-    display: grid;
+    // display: grid;
     width: 50%;
   }
 
@@ -56,7 +62,7 @@
     //クリック領域を大きくとる（横に広げる）→   display: block;か　inline-block;にする
     display: inline-block;
     width: 100%;
-    padding-top: rem(37);
+    padding-top: rem(38);
     text-align: left;
 
     color: $white;
