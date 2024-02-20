@@ -38,7 +38,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     // ドロワーメニュー内のリンクをクリックした時にドロワーを閉じる
   // 横からスライドインバージョン
-  $('.sp-nav__item').on('click', function () {
+  $('.sp-nav__item, .header__logo').on('click', function () {
     if ($('.js-hamburger').hasClass('is-open')) {
       // $('.js-drawer-menu').fadeOut();
       //横からスライドインバージョン
