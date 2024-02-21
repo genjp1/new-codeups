@@ -30,7 +30,6 @@
 
 .sp-nav__items {
     padding-top: rem(66);
-    padding-bottom: rem(15);
     justify-content: space-around;
 }
 
@@ -96,3 +95,8 @@
     font-weight: $regular;
     line-height: rem(18); /* 112.5% */
 }
+
+// //ドロワーオープン時のbodyのスクロールを禁止
+// body {
+//     overflow:hidden;
+// }
