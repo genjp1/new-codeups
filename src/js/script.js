@@ -3,37 +3,28 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 /*====================================================
 # ドロワーメニュー
 =====================================================*/
-    // ハンバーガーメニューをクリックした時にドロワーを開閉する
-  // 横からスライドインバージョン
-  $('.js-hamburger').on('click', function () {
-    if ($('.js-hamburger').hasClass('is-open')) {
-      // $('.js-drawer-menu').fadeOut();
-      //横からスライドインバージョン
-      $('.js-drawer-menu').removeClass('is-open');
-      $(this).removeClass('is-open');
-    } else {
-      // $('.js-drawer-menu').fadeIn();
-      //横からスライドインバージョン
-      $('.js-drawer-menu').addClass('is-open');
-      $(this).addClass('is-open');
+    // ハンバーガーメニューのクリックイベント
+    $('.js-hamburger').on('click', function() {
+      $('.js-drawer-menu, .js-hamburger').toggleClass('is-open');
+      toggleBodyScroll();
+    });
+  
+    // ドロワーメニュー内のリンククリックイベント
+    $('.sp-nav__item').on('click', function() {
+      if ($('.js-hamburger').hasClass('is-open')) {
+        $('.js-drawer-menu, .js-hamburger').removeClass('is-open');
+        toggleBodyScroll();
+      }
+    });
+  
+    // bodyのスクロール設定を切り替える関数
+    function toggleBodyScroll() {
+      if ($("body").css("overflow") === "hidden") {
+        $("body").css({ height: "", overflow: "" });
+      } else {
+        $("body").css({ height: "100%", overflow: "hidden" });
+      }
     }
-  });
-
-    // ドロワーメニュー内のリンクをクリックした時にドロワーを閉じる
-  // 横からスライドインバージョン
-  $('.sp-nav__item').on('click', function () {
-    if ($('.js-hamburger').hasClass('is-open')) {
-      // $('.js-drawer-menu').fadeOut();
-      //横からスライドインバージョン
-      $('.js-drawer-menu').removeClass('is-open');
-      $('.js-hamburger').removeClass('is-open');
-    } else {
-      // $('.js-drawer-menu').fadeIn();
-      //横からスライドインバージョン
-      $('.js-drawer-menu').addClass('is-open');
-      $('.js-hamburger').addClass('is-open');
-    }
-  });
 
 /*====================================================
 # mvセクションのスライダー
