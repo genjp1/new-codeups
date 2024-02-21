@@ -2,10 +2,8 @@
 
 .top-about {
     margin-top: rem(83);
-    margin-bottom: rem(71);
 
     @include mq(md) {
         margin-top: rem(140);
-        margin-bottom: rem(165);
     }
 }
