@@ -60,7 +60,11 @@
 }
 
   .blog__cards {
-    
+    margin-top: rem(27);
+
+      @include mq("md") {
+        margin-top: rem(81);
+      }
   }
 
   .blog__card{

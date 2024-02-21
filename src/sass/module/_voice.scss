@@ -21,7 +21,11 @@
 }
 
   .voice__voice-cards {
+    margin-top: rem(44);
 
+      @include mq("md") {
+        margin-top: rem(30);
+      }
   }
 
   .voice__voice-card {
