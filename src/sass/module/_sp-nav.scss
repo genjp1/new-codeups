@@ -14,6 +14,7 @@
 
     // 横からスライドインバージョン(-100%：左から右、100%：右から左)
     transform: translateX(100%);
+    
 
     @include mq(md) {
     display: none;
