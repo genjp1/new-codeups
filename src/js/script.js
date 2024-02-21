@@ -124,14 +124,12 @@ let footHeight = $("footer").innerHeight();
     speed: 2000,
     slidesPerView: "auto",
     spaceBetween: 20,
-    // autoHeight: true,
-    // autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
     breakpoints: {
         768: {
-            // slidesPerView: 3.5,
             spaceBetween: 42
         }
     },
