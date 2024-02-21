@@ -14,10 +14,11 @@
 
     // 横からスライドインバージョン(-100%：左から右、100%：右から左)
     transform: translateX(100%);
-    
+    //ドロワーオープン時の横スライドアニメーション及び、縦幅を伸ばした際伸ばした際のアニメーション効果無し（transition: ease .3s だと余計な箇所にアニメーションがつく）
+    transition: transform 0.3s ease-in-out;
 
     @include mq(md) {
-    display: none;
+        display: none;
     }
 }
 
