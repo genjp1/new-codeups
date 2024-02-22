@@ -14,14 +14,14 @@
 .mv__title-wrap {
     position: absolute;
     z-index: 2;
-    top: 49%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
     text-align: center;
 
     @include mq("md") {
-        top: 49.5%;
+        top: 50%;
     }
 }
 
@@ -55,21 +55,21 @@
 }
 
 .mv__swiper,
-.mv__swiper .swiper-img,
-.mv__swiper .swiper-img img {
+.mv__swiper-img,
+.mv__swiper-img img {
     height: inherit;
     min-height: inherit;
 }
 
-.mv__swiper .swiper-img img {
+.mv__swiper-img img {
     width: 100%;
-    height: 100vh; /* 全画面表示 */
+    // height: 100vh; /* 全画面表示 */
     object-fit: cover;
 }
 
-.mv__swiper .swiper-slide.swiper-slide-active .swiper-img,
-.mv__swiper .swiper-slide.swiper-slide-duplicate-active .swiper-img,
-.mv__swiper .swiper-slide.swiper-slide-prev .swiper-img {
+.swiper-slide.swiper-slide-active .mv__swiper-img,
+.swiper-slide.swiper-slide-duplicate-active .mv__swiper-img,
+.swiper-slide.swiper-slide-prev .mv__swiper-img {
     animation: scale 8s linear 0s normal both;
 }
 
