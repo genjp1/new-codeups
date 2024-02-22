@@ -1,12 +1,15 @@
 @use "global" as *;
 
 .logo {
-    width: rem(102);
+    width: rem(109);
+    margin-top: rem(7);
     position: relative;
     z-index: 9999;
+    display: flex;
 
     @include mq(md) {
-        width: rem(133);
+        width: rem(141);
+        margin-top: rem(8);
     }
 }
 

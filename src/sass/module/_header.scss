@@ -23,10 +23,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 rem(9) 0 rem(11);
+    padding-left: rem(12);
+    padding-right: rem(9);
 
     @include mq(md) {
-    	padding-left: rem(40);
+        padding-left: rem(36);
         padding-right: rem(20);
     }
 }
