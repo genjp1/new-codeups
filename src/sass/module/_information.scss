@@ -15,9 +15,10 @@
 
 .information__content {
     margin-top: rem(26);
+
     @include mq("md") {
         display: flex;
-        margin-top: rem(40);
+        margin-top: rem(41);
     }
 }
 
@@ -39,7 +40,7 @@
 
 
 .information__course {
-    margin-top: rem(26);
+    margin-top: rem(25);
 
     @include mq("md") {
         width: 46%;

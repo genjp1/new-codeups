@@ -3,22 +3,13 @@
 .btn {
   background: $green2;
   border:  1px solid $green2;
-  color: #fff;
-  display: block;
-  font-weight: bold;
-  max-width: rem(300);
-  padding: rem(14) rem(25) rem(14) rem(25);
-  text-align: center;
-}
-
-
-.btn.slide {
-  background: $green2;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
   z-index: 1;
   display: inline-block;
+  max-width: rem(300);
   padding: rem(14) rem(87) rem(14) rem(37);
+  text-align: center;
 
   color: $white;
   font-family: $english-family;
@@ -33,7 +24,7 @@
   }
 }
 
-.btn.slide::after {
+.btn::after {
   background: $white;
   position: absolute;
   top: 0;
@@ -45,29 +36,25 @@
   transform-origin: left top;
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
   z-index: -1;
-
 }
 
-
-.btn.slide:hover {
+.btn:hover {
   @include mq("md") {
     color: $green2;
   }
-
 }
 
-.btn.slide:hover::after {
-
+.btn:hover::after {
   @include mq("md") {
     transform: scale(1, 1);
   }
 }
 
 //矢印表示
-.btn.slide::before{
+.btn::before {
+  position: absolute;
   content: "";
   display: block;
-  position: absolute;
   top: calc(50% -  rem(2));
   right: rem(40);
   width: rem(40);
@@ -85,31 +72,26 @@
   }
 }
 
-.btn.slide:hover::before {
-  
+.btn:hover::before {
   @include mq("md") {
     border-right:  rem(2) solid $green2;
     border-bottom:  rem(1) solid $green2;
   }
+}
 
+.btn span {
+	position: relative; /* 要素に position: relative; を追加 */
 }
 
 
-.btn-line {
-    max-width: rem(300);
-    margin: auto;
-    position: relative;
-    display: inline-block;
+.btn span::after {
+	content: "";
+	border: rem(1) solid $green2;
+	position: absolute;
+	top: rem(-12);
+	right: rem(-118);
+	left: rem(-35);
+	width: rem(202);
+	height: rem(54);
+	z-index: -1;
 }
-
-
-.btn-line:before {
-  border:  1px solid $green2;
-  content: "";
-  width: 100%;
-  position: absolute;
-  height: 90%;
-  top: rem(4);
-  left: rem(3);
-}
-

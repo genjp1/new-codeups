@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .campaign {
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 .campaign__inner {
@@ -25,15 +25,15 @@
 }
 
 .campaign__card {
-    
+
 }
 
 .campaign__btn {
     text-align: center;
-    margin-top: rem(30);
+    margin-top: rem(34);
 
     @include mq("md") {
-        margin-top: rem(71);
+        margin-top: rem(69);
     }
 }
 
