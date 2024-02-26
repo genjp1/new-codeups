@@ -7,31 +7,24 @@
   }
 }
 
-  .blog__bg-img {
-    display: none;
+.blog::before {
 
-    @include mq("md") {
-      display: block;
-      position: absolute;
-      content: "";
-      top: 0;
-      height: 60.2%;
-      left: 0;
-      right: 0;
-      width: 100%;
-      z-index: -1;
-    }
-
-  }
-
-  .blog__bg-img img {
-    height: 100%;
-    object-fit: cover;
+  @include mq("md") {
+    background-image: url(../images/common/bg-blog.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60.6%;
     width: 100%;
+    z-index: -1;
   }
+}
 
-
-  
   .blog__inner{
     max-width: rem(600);
 
