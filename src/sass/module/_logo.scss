@@ -13,12 +13,13 @@
     }
 }
 
-.footer__logo {
+.logo.logo--footer {
     width: rem(120);
     position: relative;
+    margin: 0;
 
     @include mq(md) {
         width: rem(200);
-        margin: 0;
+   
     }
 }
