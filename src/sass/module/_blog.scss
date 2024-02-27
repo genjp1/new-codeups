@@ -34,17 +34,6 @@
     }
   }
 
-  .blog__content {
-    padding-right: rem(6);
-    padding-left: rem(6);
-
-    @include mq("md") {
-      padding-right: rem(0);
-      padding-left: rem(0);
-    }
-  }
-  
-  
   .blog__title{
 
     @include mq("md") {
@@ -54,9 +43,13 @@
 
   .blog__cards {
     margin-top: rem(27);
+    padding-right: rem(6);
+    padding-left: rem(6);
 
       @include mq("md") {
         margin-top: rem(81);
+        padding-right: rem(0);
+        padding-left: rem(0);
       }
   }
 
