@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.breadcrumb {
+    padding: rem(8) 0;
+    color: $green1;
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
