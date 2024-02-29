@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.tab {
+    width: 100%;
+  }
+  
+  .tab__list {
+    display: flex;
+  }
+  
+  .tab__button {
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+  
+  .tab__button:not(:first-child) {
+    margin-left: 20px;
+  }
+  
+  .tab__button.is-active {
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .tab__contents {
+    margin-top: 20px;
+  }
+  
+  .tab__content {
+    display: none;
+    padding: 20px;
+    background-color: #c0c0c0;
+  }
+  
+  .tab__content.is-active {
+    display: block;
+  }
+  
+  .tab__img {
+    margin-top: 24px;
+  }
