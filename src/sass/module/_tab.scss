@@ -77,3 +77,14 @@
         margin-top: rem(40);
       }
   }
+
+  .tab__contents.tab__contents--campaign {
+    padding-right: rem(32);
+    padding-left: rem(32);
+    
+    @include mq("md") {
+      padding-right: inherit;
+      padding-left: inherit;
+    }
+
+  }

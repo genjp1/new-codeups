@@ -36,10 +36,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         fadeEffect: {
             crossFade: true,
         },
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 4000,
+        //     disableOnInteraction: false,
+        // },
     });
 
 /*====================================================
@@ -115,10 +115,10 @@ let footHeight = $("footer").innerHeight();
     speed: 2000,
     slidesPerView: "auto",
     spaceBetween: 20,
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false,
+    // },
     breakpoints: {
         768: {
             spaceBetween: 42

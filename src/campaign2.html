@@ -125,50 +125,134 @@
   </div>
 </div>
 
-<section class="campaign-tab top-campaign-tab">
+<section class="campaign-tab">
   <div class="campaign-tab__inner inner">
 
     <div class="tab">
       <div class="tab__list">
-        <button class="tab__button js-tab-button is-active">ALL</button>
-        <button class="tab__button js-tab-button">ライセンス講習</button>
-        <button class="tab__button js-tab-button">ファンダイビング</button>
-        <button class="tab__button js-tab-button">体験ダイビング</button>
+        <button class="tab__button js-tab-button is-active">タブ1</button>
+        <button class="tab__button js-tab-button">タブ2</button>
+        <button class="tab__button js-tab-button">タブ3</button>
+        <button class="tab__button js-tab-button">タブ4</button>
       </div>
 
-      <div class="tab__contents tab__contents--campaign">
+      <div class="tab__contents">
         <div class="tab__content js-tab-content is-active">
-          <!-- ALL -->
-          <ul class="tab__cards voice-cards">
+          <p class="tab__text">タイトル1</p>
+          <ul class="voice__voice-cards voice-cards">
+            <li class="voice-cards__card voice-card">
+                <div class="voice-card__content">
+                  <div class="voice-card__info">
+                    <div class="voice-card__meta">
+                      <p class="voice-card__age">20代(女性)</p>
+                      <p class="voice-card__tag">ライセンス講習</p>
+                    </div>
+                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
+                    <hr class="voice-card__line">
+                  </div>
+                    <div class="voice-card__img colorbox">
+                      <img src="./assets/images/common/voice1.jpg" alt="麦わら帽子を被った女性の様子" class="voice-card__img-img">
+                    </div>
+                </div>
+                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+            </li>
+            <li class="voice-cards__card voice-card">
+                <div class="voice-card__content">
+                  <div class="voice-card__info">
+                    <div class="voice-card__meta">
+                      <p class="voice-card__age">20代(男性)</p>
+                      <p class="voice-card__tag">ファンダイビング</p>
+                    </div>
+                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
+                    <hr class="voice-card__line">
+                  </div>
+                    <div class="voice-card__img colorbox">
+                      <img src="./assets/images/common/voice2.jpg" alt="男性がグッドサインをしている様子" class="voice-card__img-img">
+                    </div>
+                </div>
+                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+            </li>
+          </ul>
+        </div>
+        <div class="tab__content js-tab-content">
+          <p class="tab__text">タイトル2</p>
+          <img src="./assets/images/common/campaign2.jpg" alt="ダミー画像" class="tab__img">
+        </div>
+        <div class="tab__content js-tab-content">
+          <p class="tab__text">タイトル3</p>
+          <img src="./assets/images/common/campaign3.jpg" alt="ダミー画像" class="tab__img">
+        </div>
+        <div class="tab__content js-tab-content">
+          <p class="tab__text">タイトル4</p>
+          <img src="./assets/images/common/campaign4.jpg" alt="ダミー画像" class="tab__img">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="pagenavi">
+      <div class="pagenavi__inner">
+        <!-- WP-PageNaviで出力される部分 ここから -->
+        <div class='wp-pagenavi' role='navigation'>
+          <a class="previouspostslink" rel="prev" href="#"></a>
+          <span class='current'>1</span>
+          <a class="page larger" href="#">2</a>
+          <a class="page larger" href="#">3</a>
+          <a class="page larger" href="#">4</a>
+          <a class="page larger" href="#">5</a>
+          <a class="page larger" href="#">6</a>
+          <a class="nextpostslink" rel="next" href="#"></a>
+        </div>
+        <!-- WP-PageNaviで出力される部分 ここまで -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- campaign -->
+<!-- <div id="campaign" class="campaign top-campaign">
+  <div class="campaign__inner inner">
+    <div class="campaign__content">
+
+      <div class="campaign-swiper__button-wrap">
+        <div class="swiper-button-prev js-campaign-arrow"></div>
+        <div class="swiper-button-next js-campaign-arrow"></div>
+      </div>
+      <div class="campaign__title title">
+        <p class="title__main">campaign</p>
+        <h2 class="title__sub">キャンペーン</h2>
+      </div>
+      <div class="campaign__swiper campaign-swiper">
+        <div class="swiper js-campaign-swiper">
+          <ul class="swiper-wrapper">
             <li class="campaign__card swiper-slide">
               <div class="campaign-card">
                 <div class="campaign-card__item">
                   <div class="campaign-card__img">
                     <img src="./assets/images/common/campaign1.jpg" alt="水中に複数の魚がいる様子">
                   </div>
-                  <div class="campaign-card__body campaign-card__body--under">
+                  <div class="campaign-card__body">
                     <div class="campaign-card__head">
-                      <p class="campaign-card__tag campaign-card__tag--under">ライセンス講習</p>
-                      <p class="campaign-card__title campaign-card__title--under">ライセンス取得</p>
+                      <p class="campaign-card__tag">ライセンス講習</p>
+                      <p class="campaign-card__title">ライセンス取得</p>
                     </div>
                     <div class="campaign-card__text-blok">
-                      <hr class="campaign-card__line campaign-card__line--under">
-                      <p class="campaign-card__text campaign-card__text--under">全部コミコミ(お一人様)</p>
-                      <div class="campaign-card__price campaign-card__price--under">
-                        <p class="campaign-card__price-before campaign-card__price-before--under">¥56,000</p>
-                        <p class="campaign-card__price-discount campaign-card__price-discount--under">¥46,000</p>
+                      <hr class="campaign-card__line">
+                      <p class="campaign-card__text">全部コミコミ(お一人様)</p>
+                      <div class="campaign-card__price">
+                        <p class="campaign-card__price-before">¥56,000</p>
+                        <p class="campaign-card__price-discount">¥46,000</p>
                       </div>
                     </div>
-                    <p class="campaign-card__description u-desktop">
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                      
-                    </p>
-                    <div class="campaign-card__schedule u-desktop">2023/6/1-9/30</div>
-                    <div class="campaign-card__button u-desktop">
-                      <a href="#" class="btn"><span>View more</span></a>
-                    </div>
-
                   </div>
                 </div>
               </div>
@@ -244,161 +328,18 @@
             </li>
           </ul>
         </div>
-        <!-- ライセンス講習 -->
-        <div class="tab__content js-tab-content">
-          <ul class="tab__cards voice-cards">
-            <li class="voice-cards__card voice-card">
-                <div class="voice-card__content">
-                  <div class="voice-card__info">
-                    <div class="voice-card__meta">
-                      <p class="voice-card__age">20代(女性)</p>
-                      <p class="voice-card__tag">ライセンス講習</p>
-                    </div>
-                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
-                    <hr class="voice-card__line">
-                  </div>
-                    <div class="voice-card__img colorbox">
-                      <img src="./assets/images/common/voice1.jpg" alt="麦わら帽子を被った女性の様子" class="voice-card__img-img">
-                    </div>
-                </div>
-                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
-            </li>
-            <li class="voice-cards__card voice-card">
-                <div class="voice-card__content">
-                  <div class="voice-card__info">
-                    <div class="voice-card__meta">
-                      <p class="voice-card__age">20代(女性)</p>
-                      <p class="voice-card__tag">ライセンス講習</p>
-                    </div>
-                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
-                    <hr class="voice-card__line">
-                  </div>
-                    <div class="voice-card__img colorbox">
-                      <img src="./assets/images/common/voice6.jpg" alt="男性がグッドサインをしている様子" class="voice-card__img-img">
-                    </div>
-                </div>
-                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
-            </li>
-          </ul>
-        </div>
-        <!-- ファンダイビング -->
-        <div class="tab__content js-tab-content">
-          <ul class="tab__cards voice-cards">
-            <li class="voice-cards__card voice-card">
-                <div class="voice-card__content">
-                  <div class="voice-card__info">
-                    <div class="voice-card__meta">
-                      <p class="voice-card__age">30代(男性)</p>
-                      <p class="voice-card__tag">ファンダイビング</p>
-                    </div>
-                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
-                    <hr class="voice-card__line">
-                  </div>
-                    <div class="voice-card__img colorbox">
-                      <img src="./assets/images/common/voice2.jpg" alt="男性がグッドサインをしている様子" class="voice-card__img-img">
-                    </div>
-                </div>
-                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
-            </li>
-            <li class="voice-cards__card voice-card">
-                <div class="voice-card__content">
-                  <div class="voice-card__info">
-                    <div class="voice-card__meta">
-                      <p class="voice-card__age">30代(カップル)</p>
-                      <p class="voice-card__tag">ファンダイビング</p>
-                    </div>
-                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
-                    <hr class="voice-card__line">
-                  </div>
-                    <div class="voice-card__img colorbox">
-                      <img src="./assets/images/common/voice5.jpg" alt="麦わら帽子を被った女性の様子" class="voice-card__img-img">
-                    </div>
-                </div>
-                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
-            </li>
-          </ul>
-        </div>
-        <!-- 体験ダイビング -->
-        <div class="tab__content js-tab-content">
-          <ul class="tab__cards voice-cards">
-            <li class="voice-cards__card voice-card">
-                <div class="voice-card__content">
-                  <div class="voice-card__info">
-                    <div class="voice-card__meta">
-                      <p class="voice-card__age">30代(女性)</p>
-                      <p class="voice-card__tag">体験ダイビング</p>
-                    </div>
-                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
-                    <hr class="voice-card__line">
-                  </div>
-                    <div class="voice-card__img colorbox">
-                      <img src="./assets/images/common/voice3.jpg" alt="麦わら帽子を被った女性の様子" class="voice-card__img-img">
-                    </div>
-                </div>
-                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
-            </li>
-            <li class="voice-cards__card voice-card">
-                <div class="voice-card__content">
-                  <div class="voice-card__info">
-                    <div class="voice-card__meta">
-                      <p class="voice-card__age">20代(女性)</p>
-                      <p class="voice-card__tag">体験ダイビング</p>
-                    </div>
-                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
-                    <hr class="voice-card__line">
-                  </div>
-                    <div class="voice-card__img colorbox">
-                      <img src="./assets/images/common/voice4.jpg" alt="男性がグッドサインをしている様子" class="voice-card__img-img">
-                    </div>
-                </div>
-                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
-            </li>
-          </ul>
-        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="campaign__btn">
+          <a href="#" class="btn"><span>View more</span></a>
       </div>
     </div>
-
   </div>
-</section>
-
-<div class="pagenavi">
-  <div class="pagenavi__inner inner">
-    <!-- WP-PageNaviで出力される部分 ここから -->
-    <div class='wp-pagenavi' role='navigation'>
-      <a class="previouspostslink" rel="prev" href="#"></a>
-      <span class='current'>1</span>
-      <a class="page larger" href="#">2</a>
-      <a class="page larger" href="#">3</a>
-      <a class="page larger" href="#">4</a>
-      <a class="page larger u-pc" href="#">5</a>
-      <a class="page larger u-pc" href="#">6</a>
-      <a class="nextpostslink" rel="next" href="#"></a>
-    </div>
-    <!-- WP-PageNaviで出力される部分 ここまで -->
-  </div>
-</div>
+</div> -->
 
 
 <!-- contact -->
- <section  id="contact" class="contact top-contact top-voice-contact">
+ <section  id="contact" class="contact top-contact">
   <div class="contact__inner inner">
     <div class="contact__content">
       <div class="contact__left">
@@ -432,7 +373,7 @@
   </div>
 </section>
 
- <footer class="footer top-footer top-voice-footer">
+ <footer class="footer top-footer">
   <div class="footer__inner inner">
     <div class="footer__icon">
       <div class="footer__logo">
