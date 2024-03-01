@@ -1,0 +1,18 @@
+@use "global" as *;
+//voiceページ
+.top-pagenavi {
+    margin-top: 85px;
+
+    @include mq("md") {
+        margin-top: 81px;
+    }
+}
+
+//campaignページ
+.top-pagenavi.top-pagenavi--campaign {
+
+    @include mq("md") {
+        margin-top: 86px;
+    }
+
+}

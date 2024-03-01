@@ -176,7 +176,7 @@ hr.campaign-card__line {
 }
 .campaign-card__price-discount.campaign-card__price-discount--under {
     margin-left: 17px;
-    
+
     @include mq("md") {
         margin-left: 41px;
     }
@@ -220,7 +220,7 @@ hr.campaign-card__line.campaign-card__line--under {
     padding: 14px rem(16) rem(24) rem(15);
 
     @include mq("md") {
-        padding: rem(21) rem(24) 44px rem(24);
+        padding: rem(21) rem(24) 46px rem(24);
     }
 }
 
@@ -252,11 +252,25 @@ hr.campaign-card__line.campaign-card__line--under {
 
 }
 
+.campaign-card__reserve {
+    @include mq("md") {
+        margin-top: 5px;
+        color: $green2;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: $regular;
+        line-height: rem(18); /* 128.571% */
+    }
+
+}
+
 .campaign-card__button {
 
     @include mq("md") {
-        margin-top: 40px;
+        margin-top: 16px;
         text-align: center;
+        margin-right: 6px;
     }
 
 }
