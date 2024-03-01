@@ -35,6 +35,7 @@
     font-style: normal;
     font-weight: $regular;
     line-height: rem(22); /* 157.143% */
+    background-color: $white;
 
     @include mq("md") {
       width: 162px;
