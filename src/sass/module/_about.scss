@@ -97,6 +97,22 @@
     }
 }
 
+.about__title.about__title--under {
+    color: $green2;
+    font-family: $english-family;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: rem(40); /* 100% */
+
+    @include mq("md") {
+        color: $white;
+        font-size: rem(80);
+        line-height: rem(100); /* 125% */
+        width: 50%;
+    }
+}
+
 .about__text-wrap {
     margin-top: rem(16);
 
@@ -148,5 +164,61 @@
         width: rem(194);
         height: rem(181);
         right: calc(50% - min(48vw, rem(636)));
+    }
+  }
+
+/*====================================================
+# 下層ページ：aboutページ
+=====================================================*/
+
+  .about__page-inner {
+    position: relative;
+  }
+
+  .about__content-wrap.about__content-wrap--under {
+
+    @include mq("md") {
+        top: 30.5%;
+    }
+ }
+
+ .about__text-wrap.about__text-wrap--under {
+
+    @include mq("md") {
+        margin-top: 24px;
+    }
+ }
+
+  .about__page-inner::before {
+
+    @include mq("md") {
+        background-image: url(../images/common/voice-fish.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        top: 0%;
+        transform: translateY(-50%);
+        width: rem(290);
+        height: rem(138);
+        left: calc(50% - min(48vw, rem(614)));
+    }
+  }
+
+  .about__page-inner::after {
+
+    @include mq("md") {
+        background-image: url(../images/common/contact.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        bottom: -38%;
+        transform: translateY(-50%);
+        width: rem(301);
+        height: rem(138);
+        right: calc(50% - min(48vw, 634px));
     }
   }
