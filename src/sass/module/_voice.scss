@@ -43,7 +43,7 @@
 .voice__inner::before {
 
     @include mq("md") {
-      background-image: url(../images/common/voice3.svg);
+      background-image: url(../images/common/voice-fish.svg);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -60,7 +60,7 @@
 .voice__inner::after {
 
   @include mq("md") {
-    background-image: url(../images/common/voice4.svg);
+    background-image: url(../images/common/voice-seahorse.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

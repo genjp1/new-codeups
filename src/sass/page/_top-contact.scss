@@ -7,3 +7,11 @@
         margin-top: rem(139);
     }
 }
+
+.top-contact.top-voice-contact {
+    margin-top: 113px;
+
+    @include mq(md) {
+        margin-top: 145px;
+    }
+}

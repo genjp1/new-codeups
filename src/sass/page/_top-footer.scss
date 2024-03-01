@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.top-footer {
+    background-color: $green2;
+    margin-top: rem(105);
+    padding-top: rem(48);
+    padding-bottom: rem(56);
+
+    @include mq(md) {
+        margin-top: rem(127);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
+
+}
+
+.top-footer.top-voice-footer {
+    margin-top: 105px;
+
+    @include mq("md") {
+        margin-top: rem(159);
+    }
+
+}
