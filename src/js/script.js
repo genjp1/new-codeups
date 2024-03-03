@@ -178,6 +178,46 @@ $(function () {
 });
 
 
+/*====================================================
+# モーダルウィンドウ aboutページ
+=====================================================*/
+$(function () {
+  const open = $(".js-modal-open"),
+    close = $(".js-modal__close"),
+    modal = $(".js-modal");
+
+  //開くボタンをクリックしたらモーダルを表示する
+  open.on("click", function () {
+    modal.addClass("is-open");
+  });
+
+  //閉じるボタンをクリックしたらモーダルを閉じる
+  close.add(modal).on("click", function () {
+    modal.removeClass("is-open");
+  });
+});
+
+
+const close = $(".js-modal__close"),
+modal = $(".js-modal"),
+modalContent = $(".js-modal__content img");
+
+// 画像をクリックしたらモーダルを表示する
+$(".js-modal-open img").on("click", function () {
+const src = $(this).attr("src");
+const alt = $(this).attr("alt");
+modalContent.attr("src", src);
+modalContent.attr("alt", alt);
+modal.addClass("is-open");
+});
+
+// 閉じるボタンをクリックしたらモーダルを閉じる
+close.add(modal).on("click", function (event) {
+// モーダルのコンテンツ部分のクリックは無視する
+if (!$(event.target).closest(".modal__body").length) {
+modal.removeClass("is-open");
+}
+});
 
 
 
