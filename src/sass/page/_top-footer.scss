@@ -14,11 +14,11 @@
 
 }
 
-.top-footer.top-voice-footer {
+.top-footer.top-under-footer {
     margin-top: 105px;
 
     @include mq("md") {
-        margin-top: rem(159);
+        margin-top: 159px;
     }
 
 }

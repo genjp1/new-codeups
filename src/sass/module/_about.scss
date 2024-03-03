@@ -97,21 +97,6 @@
     }
 }
 
-.about__title.about__title--under {
-    color: $green2;
-    font-family: $english-family;
-    font-size: rem(40);
-    font-style: normal;
-    font-weight: $regular;
-    line-height: rem(40); /* 100% */
-
-    @include mq("md") {
-        color: $white;
-        font-size: rem(80);
-        line-height: rem(100); /* 125% */
-        width: 50%;
-    }
-}
 
 .about__text-wrap {
     margin-top: rem(16);
@@ -175,6 +160,49 @@
     position: relative;
   }
 
+  .about__img-big.about__img-big--under {
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+
+
+    @include mq("md") {
+        margin-left: auto;
+        margin-top: -48.8%;
+        width: 81.45%;
+        z-index: 1;
+        position: initial;
+    }
+}
+
+.about__title.about__title--under {
+    position: absolute;
+    content: "";
+    top: 16%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+
+    color: $white;
+    font-family: $english-family;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: rem(40); /* 100% */
+    z-index: 1;
+
+    @include mq("md") {
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+
+        font-size: rem(80);
+        line-height: rem(100); /* 125% */
+        width: 50%;
+    }
+}
+
+
   .about__content-wrap.about__content-wrap--under {
 
     @include mq("md") {
@@ -190,6 +218,18 @@
  }
 
   .about__page-inner::before {
+    background-image: url(../images/common/voice-fish.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 50px;
+    left: calc(50% - min(48vw, 168px));
+    z-index: -1;
 
     @include mq("md") {
         background-image: url(../images/common/voice-fish.svg);

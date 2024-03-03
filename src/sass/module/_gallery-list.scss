@@ -2,7 +2,7 @@
 
 .gallery-list {
     display: grid;
-    gap: rem(10);
+    gap: 10px;
     @include mq(md) {
         grid-template-columns: repeat(9, 1fr);
         grid-auto-flow: dense;
@@ -27,11 +27,19 @@
 .gallery-list__item img {
     width: 100%;
     height: 100%;
-    aspect-ratio: 580/369;
+    aspect-ratio: 580/365;
     object-fit: cover;
+
+    @include mq("md") {
+        aspect-ratio: 580/358;//580/369
+    }
 }
 
 .gallery-list__item:nth-of-type(6n+1) img,
 .gallery-list__item:nth-of-type(6n+6) img {
-    aspect-ratio: 746/492;
+    aspect-ratio: 746/1129;
+
+    @include mq("md") {
+        aspect-ratio: 746/492;
+    }
 }
