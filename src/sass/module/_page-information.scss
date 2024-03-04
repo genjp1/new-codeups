@@ -1,15 +1,15 @@
 @use "global" as *;
 
-.information-tab {
+.page-information {
 
 }
 
-.information-tab__inner {
+.page-information__inner {
     position: relative;
 }
 
 
-.information-tab__inner::before {
+.page-information__inner::before {
 
     background-image: url(../images/common/voice-fish.svg);
     background-position: center;
@@ -29,4 +29,8 @@
       height: rem(138);
       left: calc(50% - min(48vw, rem(614)));
     }
+  }
+
+  .page-information__tab {
+    
   }

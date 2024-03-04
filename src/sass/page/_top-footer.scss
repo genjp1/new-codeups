@@ -31,3 +31,21 @@
     }
 
 }
+
+.top-footer.top-page-information-footer {
+    margin-top: 105px;
+
+    @include mq("md") {
+        margin-top: 159px;
+    }
+
+}
+
+.top-footer.top-page-about-footer {
+    margin-top: 105px;
+
+    @include mq("md") {
+        margin-top: 159px;
+    }
+
+}
