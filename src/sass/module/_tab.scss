@@ -212,7 +212,6 @@
   
   .tab__contents {
     margin-top: -8px;
-    
     @include mq("md") {
       margin-top: 20px;
     }
@@ -241,12 +240,13 @@
   }
   
   .tab__cards {
-    margin-top: 40px;
+    margin-top: 48px;
 
       @include mq("md") {
         margin-top: rem(40);
       }
   }
+
 
   .tab__cards.tab__cards--page-information {
     margin-top: 22px;
