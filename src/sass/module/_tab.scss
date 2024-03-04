@@ -16,16 +16,28 @@
       column-gap: 0px;
       row-gap: 10px;
     }
+  }
+
+    .tab__list.tab__list--information {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      column-gap: rem(20);
+      row-gap: 16px;
+      justify-items: center;
+  
+      @include mq("md") {
+        column-gap: rem(90);
+      }
 
   }
   
   .tab__button {
     display: flex;
-    width: 100%;
-    height: 34px;
-    padding: 6px 0px;
     justify-content: center;
     align-items: center;
+    height: 34px;
+    width: 100%;
+    padding: 6px 0px;
     flex-shrink: 0;
     cursor: pointer;
     border: 1px solid $green2;
@@ -42,11 +54,153 @@
     }
 
   }
+
+  .tab__button.tab__button--information {
+    // display: inherit;
+    // justify-content: inherit;
+    // align-items: inherit;
+    // height: inherit;
+    // line-height: inherit; /* 157.143% */
+
+    // width: 100%;
+    // padding: 6px 0px;
+    // flex-shrink: 0;
+    cursor: pointer;
+
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    line-height: inherit; /* 157.143% */
+    max-width: rem(300);
+    font-size: rem(14);
+    padding: 10px 15px 10px 15px;//29px 30px 26px 35px; rem(29) rem(30) rem(26) rem(35)
+    text-align: right;
+
+    border: none;
+    text-align: center;
+
+    color: $green2;
+    // font-size: 14px;
+    font-style: normal;
+    font-weight: $regular;
+    background-color: $green3;
+
+    position: relative;
+
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @include mq("md") {
+      display: inherit;
+      justify-content: inherit;
+      align-items: inherit;
+      height: inherit;
+      line-height: inherit; /* 157.143% */
+      width: 100%;
+      max-width: rem(300);
+      font-size: rem(24);
+      padding: 29px 30px 26px 35px;//29px 30px 26px 35px; rem(29) rem(30) rem(26) rem(35)
+      text-align: right;
+      box-shadow: none;
+    }
+
+  }
+  .tab__button.tab__button--information.tab__button--information-fun {
+    padding: 10px 15px 10px 15px;
+
+      @include mq("md") {
+        padding: 29px 18px 26px 35px;
+      }
+
+  }
+
+  .tab__button.tab__button--information-license,
+  .tab__button.tab__button--information-fun,
+  .tab__button.tab__button--information-experience{
+    position: relative;
+  }
+
+  .tab__button.tab__button--information-license::before,
+  .tab__button.tab__button--information-fun::before,
+  .tab__button.tab__button--information-experience::before {
+    @include mq("md") {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: calc(50% - (min(46.062vw, rem(121))));
+      transform: translateY(-50%);
+      width: 100%;
+      height: rem(63);
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+
+  }
+
+
+  .tab__button.tab__button--information-license::before {
+
+    @include mq("md") {
+      background-image: url(../images/common/icon-information1-green.svg);
+    }
+
+    
+  }
+  .tab__button.tab__button--information-license.is-active::before {
+
+    @include mq("md") {
+      background-image: url(../images/common/icon-information1-white.svg);
+    }
+
+    
+  }
+
+  .tab__button.tab__button--information-fun::before {
+
+    @include mq("md") {
+      background-image: url(../images/common/icon-information2.svg);
+      left: calc(50% - (min(46.062vw, rem(132))));
+    }
+
+  }
+  .tab__button.tab__button--information-fun.is-active::before {
+
+    @include mq("md") {
+      background-image: url(../images/common/icon-information1-white.svg);
+      left: calc(50% - (min(46.062vw, rem(132))));
+    }
+
+  }
+
+  .tab__button.tab__button--information-experience::before {
+
+    @include mq("md") {
+      background-image: url(../images/common/icon-information3.svg);
+    }
+
+  }
+  .tab__button.tab__button--information-experience.is-active::before {
+    
+    @include mq("md") {
+      background-image: url(../images/common/icon-information1-white.svg);
+    }
+
+  }
   
   .tab__button:not(:first-child) {
     
     @include mq("md") {
       margin-left: 32px;
+    }
+
+  }
+
+  .tab__button.tab__button--information:not(:first-child) {
+    
+    @include mq("md") {
+      margin-left: 0px;
     }
 
   }
@@ -88,3 +242,8 @@
     }
 
   }
+
+
+  /*====================================================
+# 下層ページ：Informationページ用
+=====================================================*/
