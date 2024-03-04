@@ -1,15 +1,15 @@
 @use "global" as *;
 
-.voice-tab {
+.information-tab {
 
 }
 
-.voice-tab__inner {
+.information-tab__inner {
     position: relative;
 }
 
 
-.voice-tab__inner::before {
+.information-tab__inner::before {
 
     background-image: url(../images/common/voice-fish.svg);
     background-position: center;
