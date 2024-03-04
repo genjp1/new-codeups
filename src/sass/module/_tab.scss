@@ -18,7 +18,7 @@
     }
   }
 
-    .tab__list.tab__list--information {
+    .tab__list.tab__list--page-information {
       display: grid;
       grid-template-columns: repeat(3,1fr);
       column-gap: rem(20);
@@ -55,7 +55,7 @@
 
   }
 
-  .tab__button.tab__button--information {
+  .tab__button.tab__button--page-information {
     // display: inherit;
     // justify-content: inherit;
     // align-items: inherit;
@@ -105,7 +105,7 @@
     }
 
   }
-  .tab__button.tab__button--information.tab__button--information-fun {
+  .tab__button.tab__button--page-information.tab__button--page-information-fun {
     padding: 10px 15px 10px 15px;
 
       @include mq("md") {
@@ -114,15 +114,15 @@
 
   }
 
-  .tab__button.tab__button--information-license,
-  .tab__button.tab__button--information-fun,
-  .tab__button.tab__button--information-experience{
+  .tab__button.tab__button--page-information-license,
+  .tab__button.tab__button--page-information-fun,
+  .tab__button.tab__button--page-information-experience{
     position: relative;
   }
 
-  .tab__button.tab__button--information-license::before,
-  .tab__button.tab__button--information-fun::before,
-  .tab__button.tab__button--information-experience::before {
+  .tab__button.tab__button--page-information-license::before,
+  .tab__button.tab__button--page-information-fun::before,
+  .tab__button.tab__button--page-information-experience::before {
     @include mq("md") {
       content: "";
       display: block;
@@ -140,7 +140,7 @@
   }
 
 
-  .tab__button.tab__button--information-license::before {
+  .tab__button.tab__button--page-information-license::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information1-green.svg);
@@ -148,7 +148,7 @@
 
     
   }
-  .tab__button.tab__button--information-license.is-active::before {
+  .tab__button.tab__button--page-information-license.is-active::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information1-white.svg);
@@ -157,7 +157,7 @@
     
   }
 
-  .tab__button.tab__button--information-fun::before {
+  .tab__button.tab__button--page-information-fun::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information2.svg);
@@ -165,7 +165,7 @@
     }
 
   }
-  .tab__button.tab__button--information-fun.is-active::before {
+  .tab__button.tab__button--page-information-fun.is-active::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information1-white.svg);
@@ -174,14 +174,14 @@
 
   }
 
-  .tab__button.tab__button--information-experience::before {
+  .tab__button.tab__button--page-information-experience::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information3.svg);
     }
 
   }
-  .tab__button.tab__button--information-experience.is-active::before {
+  .tab__button.tab__button--page-information-experience.is-active::before {
     
     @include mq("md") {
       background-image: url(../images/common/icon-information1-white.svg);
@@ -197,7 +197,7 @@
 
   }
 
-  .tab__button.tab__button--information:not(:first-child) {
+  .tab__button.tab__button--page-information:not(:first-child) {
     
     @include mq("md") {
       margin-left: 0px;
