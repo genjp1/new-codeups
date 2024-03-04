@@ -23,3 +23,11 @@
         margin-top: 138px;
     }
 }
+
+.top-contact.top-information-contact {
+    margin-top: 106px;
+
+    @include mq(md) {
+        margin-top: 138px;
+    }
+}

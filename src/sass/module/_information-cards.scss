@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.information-cards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: rem(35);
+    row-gap: rem(40);
+
+    @include mq("md") {
+      row-gap: rem(80);
+      column-gap: rem(39);
+    }
+  }
+
+  .information-cards__card {
+    
+  }

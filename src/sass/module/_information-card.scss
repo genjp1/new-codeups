@@ -1,0 +1,81 @@
+@use "global" as *;
+
+.information-card{
+    box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+    background-color: $white;
+    padding: rem(24) ;
+    border: 1px solid $green2;
+
+    @include mq("md") {
+        padding: rem(24) rem(24) rem(24) rem(24);
+    }
+  }
+  
+
+  .information-card__content{
+
+    
+    @include mq("md") {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .information-card__info {
+    // width: 92%;
+    width: 100%;
+    @include mq("md") {
+      width: 50%;
+    }
+  }
+
+  
+
+  .information-card__title{
+    margin-top: -6px;
+    color: $green1;
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: $bold;
+    line-height: normal;
+
+    @include mq("md") {
+      margin-top: -3px;
+      font-weight: $medium;
+    }
+  }
+
+  hr.information-card__line {
+    border-color: $green2;
+    margin: 0px rem(0) 0ch rem(0);
+}
+
+.information-card__img{
+  margin-top: 8px;
+  width: 100%;
+  aspect-ratio: 492 / 313;// 横320 / 縦200
+
+  @include mq("md") {
+    width: 50%;
+    margin-left: 48px;
+    margin-top: 0px;
+  }
+}
+
+.information-card__img img {
+  aspect-ratio: 492 / 313;
+  object-fit: cover;
+}
+
+  .information-card__text{
+    color: $green1;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: rem(24); /* 150% */
+    margin-top: 8px;
+
+    @include mq("md") {
+      margin-top: 8px;
+    }
+  }
