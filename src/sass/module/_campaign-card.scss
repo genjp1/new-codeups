@@ -124,7 +124,7 @@ hr.campaign-card__line {
     }
 }
 
-// .campaign-card__price.campaign-card__price--under  {
+// .campaign-card__price.campaign-card__price--page-campaign  {
 
 //     @include mq("md") {
 //         margin-top: 8px;
@@ -152,7 +152,7 @@ hr.campaign-card__line {
         margin-top: rem(15);
     }
 }
-.campaign-card__price-before.campaign-card__price-before--under {
+.campaign-card__price-before.campaign-card__price-before--page-campaign {
     margin-top: 12px;
 }
 
@@ -174,7 +174,7 @@ hr.campaign-card__line {
         margin-top: rem(2);
     }
 }
-.campaign-card__price-discount.campaign-card__price-discount--under {
+.campaign-card__price-discount.campaign-card__price-discount--page-campaign {
     margin-left: 17px;
 
     @include mq("md") {
@@ -186,14 +186,14 @@ hr.campaign-card__line {
 # 下層ページ：キャンペーンページ用
 =====================================================*/
 
-.campaign-card__tag.campaign-card__tag--under {
+.campaign-card__tag.campaign-card__tag--page-campaign {
 
     @include mq("md") {
         padding: 6px rem(16);
     }
 }
 
-.campaign-card__title.campaign-card__title--under {
+.campaign-card__title.campaign-card__title--page-campaign {
     
     @include mq("md") {
         font-size: 24px;
@@ -202,13 +202,13 @@ hr.campaign-card__line {
 }
 
 
-hr.campaign-card__line.campaign-card__line--under {
+hr.campaign-card__line.campaign-card__line--page-campaign {
     @include mq("md") {
         margin: 2px 0;
     }
 }
 
-.campaign-card__text.campaign-card__text--under {
+.campaign-card__text.campaign-card__text--page-campaign {
     
     @include mq("md") {
         margin-top: 23px;
@@ -216,7 +216,7 @@ hr.campaign-card__line.campaign-card__line--under {
 }
 
 
-.campaign-card__body.campaign-card__body--under {
+.campaign-card__body.campaign-card__body--page-campaign {
     padding: 14px rem(16) rem(24) rem(15);
 
     @include mq("md") {
