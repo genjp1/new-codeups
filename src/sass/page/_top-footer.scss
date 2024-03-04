@@ -14,7 +14,7 @@
 
 }
 
-.top-footer.top-under-footer {
+.top-footer.top-page-voice-footer {
     margin-top: 105px;
 
     @include mq("md") {
@@ -22,7 +22,8 @@
     }
 
 }
-.top-footer.top-page-voice-footer {
+
+.top-footer.top-page-campaign-footer {
     margin-top: 105px;
 
     @include mq("md") {

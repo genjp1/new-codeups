@@ -1,15 +1,15 @@
 @use "global" as *;
 
-.campaign-tab {
+.page-campaign {
 
 }
 
-.campaign-tab__inner {
+.page-campaign__inner {
     position: relative;
 }
 
 
-.campaign-tab__inner::before {
+.page-campaign__inner::before {
 
     background-image: url(../images/common/voice-fish.svg);
     background-position: center;

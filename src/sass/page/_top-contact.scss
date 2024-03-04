@@ -16,6 +16,14 @@
     }
 }
 
+.top-contact.top-page-campaign-contact {
+    margin-top: 113px;
+
+    @include mq(md) {
+        margin-top: 145px;
+    }
+}
+
 .top-contact.top-about-contact {
     margin-top: 106px;
 
