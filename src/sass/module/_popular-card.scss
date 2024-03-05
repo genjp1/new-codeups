@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.popular-card{
+    box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+    background-color: $white;
+    padding: 10px 16px 16px 15px;
+  }
+  
+
+  .popular-card__content{
+      display: flex;
+  }
+
+  .popular-card__img{
+    width: 47%;
+    aspect-ratio: 121 /90;// 横320 / 縦200
+    margin-top: 6px;
+  }
+  
+  .popular-card__img img {
+    aspect-ratio: 121 / 90;
+    object-fit: cover;
+  }
+
+
+  .popular-card__info {
+    width: 48%;
+    margin-left: 14px;
+  }
+
+  .popular-card__date{
+    color: $green1;
+    font-family: $english-family;
+    font-size: rem(12);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: rem(18); /* 150% */
+  }
+  
+
+  .popular-card__title{
+    margin-top: -6px;
+    color: $green1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @include mq("md") {
+      margin-top: 3px;
+    }
+  }
+
+
+
+

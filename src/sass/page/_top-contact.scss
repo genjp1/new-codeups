@@ -39,3 +39,11 @@
         margin-top: 138px;
     }
 }
+
+.top-contact.top-page-blog-contact {
+    margin-top: 113px;
+
+    @include mq(md) {
+        margin-top: 145px;
+    }
+}

@@ -70,7 +70,7 @@
 .blog__inner::before {
 
     @include mq("md") {
-      background-image: url(../images/common/blog4.svg);
+      background-image: url(../images/common/blog-fish.svg);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;

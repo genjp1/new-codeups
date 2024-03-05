@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.sidebar {
+    margin-top: 81px;
+
+    @include mq("md") {
+        margin-top: 81px;
+    }
+
+}
+
+.sidebar__popular {
+
+}
+
+.sidebar__title {
+    padding: 8px 74px;
+    border-left: 7px solid $green2;
+
+    color: $green1;
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    position: relative;
+}
+
+.sidebar__title::before {
+    content: "";
+    position: absolute;
+    top: -1%;
+    left: 5.5%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/common/icon-blog.svg);
+    z-index: -1;
+}
+.sidebar__cards {
+    margin-top: 22px;
+
+    @include mq("md") {
+      margin-top: 22px;
+    }
+  }
+
+  .sidebar__reviews {
+    margin-top: 77px;
+  }
