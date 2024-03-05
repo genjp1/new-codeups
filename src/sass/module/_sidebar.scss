@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .sidebar {
-    margin-top: 81px;
+    margin-top: 87px;
 
     @include mq("md") {
         margin-top: 81px;
@@ -9,12 +9,22 @@
 
 }
 
+.sidebar__inner {
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @include mq("md") {
+    padding-right: inherit;
+    padding-left: inherit;
+  }
+}
+
 .sidebar__popular {
 
 }
 
 .sidebar__title {
-    padding: 8px 74px;
+    padding: 8px 8px 8px 74px;
     border-left: 7px solid $green2;
 
     color: $green1;
@@ -39,10 +49,33 @@
     margin-top: 22px;
 
     @include mq("md") {
-      margin-top: 22px;
+      margin-top: 23.5px;
     }
   }
 
-  .sidebar__reviews {
-    margin-top: 77px;
+  .sidebar__review {
+    margin-top: 82px;
+    
+    @include mq("md") {
+      margin-top: 79px;
+    }
+ 
+  }
+
+  .sidebar__campaign {
+    margin-top: 85px;
+
+    @include mq("md") {
+      margin-top: 87px;
+    }
+ 
+  }
+
+  .sidebar__archive {
+    margin-top: 85px;
+
+    @include mq("md") {
+      margin-top: 87px;
+    }
+ 
   }

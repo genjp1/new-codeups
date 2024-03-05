@@ -35,6 +35,10 @@
     transition: .6s;
 }
 
+.campaign-card__img.campaign-card__img--page-blog img {
+    aspect-ratio: 294/188;
+}
+
 .campaign-card:hover .campaign-card__img img {
     transform: scale(1.2);
 }
@@ -50,6 +54,11 @@
     @include mq("md") {
         padding: rem(24) rem(16) rem(40) rem(16);
     }
+}
+
+.campaign-card__body.campaign-card__body--page-blog {
+
+    padding: 11px 16px 21px 16px;
 }
 
 
@@ -84,6 +93,10 @@
     }
 }
 
+.campaign-card__title.campaign-card__title--blog {
+    text-align: center;
+}
+
 
 
 hr.campaign-card__line {
@@ -112,7 +125,11 @@ hr.campaign-card__line {
     }
 }
 
-
+.campaign-card__text.campaign-card__text--page-blog {
+    font-size: 14px;
+    margin-left: 0px;
+    margin-top: 7px;
+}
 
 .campaign-card__price {
     display: flex;
@@ -122,6 +139,10 @@ hr.campaign-card__line {
     @include mq("md") {
         margin-top: rem(6);
     }
+}
+
+.campaign-card__price.campaign-card__price--page-blog {
+    margin-top: 2px;
 }
 
 // .campaign-card__price.campaign-card__price--page-campaign  {
@@ -156,6 +177,13 @@ hr.campaign-card__line {
     margin-top: 12px;
 }
 
+.campaign-card__price-before.campaign-card__price-before--page-blog {
+    font-size: min(1.7vw, 20px);
+}
+
+
+
+
 .campaign-card__price-discount {
     color: $green2;
     font-family: $mv-english-family;
@@ -181,6 +209,11 @@ hr.campaign-card__line {
         margin-left: 41px;
     }
 } 
+
+.campaign-card__price-discount.campaign-card__price-discoun--page-blog {
+    font-size: min(2.8vw, rem(32));
+    margin-left: 18px;
+}
 
 /*====================================================
 # 下層ページ：キャンペーンページ用

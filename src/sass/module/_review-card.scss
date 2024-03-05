@@ -1,0 +1,63 @@
+@use "global" as *;
+
+.review-card{
+    // box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+    // background-color: $white;
+    // padding: 10px 16px 16px 15px;
+  }
+  
+
+  .review-card__content{
+      
+  }
+
+  .review-card__img{
+    width: 100%;
+    aspect-ratio: 294 /218;// 横320 / 縦200
+    margin-top: 0px;
+
+    @include mq("md") {
+      margin-top: 2px;
+    }
+  }
+  
+  .review-card__img img {
+    aspect-ratio: 294 /218;
+    object-fit: cover;
+  }
+
+
+  .review-card__info {
+    width: 100%;
+    margin-top: 14px;
+  }
+
+  .review-card__age {
+    color: $green1;
+    font-size: rem(12);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: rem(18); /* 150% */
+  }
+  
+
+  .review-card__title{
+    margin-top: 8px;
+    color: $green1;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: normal;
+  }
+
+  .review-card__btn {
+    text-align: center;
+    margin-top: 45px;
+
+    @include mq("md") {
+      margin-top: 44px;
+    }
+  }
+
+
+
