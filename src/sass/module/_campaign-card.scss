@@ -58,7 +58,7 @@
 
 .campaign-card__body.campaign-card__body--page-blog {
 
-    padding: 11px 16px 21px 16px;
+    padding: 13px 23px 21px 23px;
 }
 
 
@@ -142,7 +142,7 @@ hr.campaign-card__line {
 }
 
 .campaign-card__price.campaign-card__price--page-blog {
-    margin-top: 2px;
+    margin-top: 0px;
 }
 
 // .campaign-card__price.campaign-card__price--page-campaign  {
@@ -213,6 +213,7 @@ hr.campaign-card__line {
 .campaign-card__price-discount.campaign-card__price-discoun--page-blog {
     font-size: min(2.8vw, rem(32));
     margin-left: 18px;
+    margin-top: 3px;
 }
 
 /*====================================================

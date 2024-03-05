@@ -29,7 +29,7 @@
 
   .review-card__info {
     width: 100%;
-    margin-top: 14px;
+    margin-top: 15px;
   }
 
   .review-card__age {
@@ -50,14 +50,7 @@
     line-height: normal;
   }
 
-  .review-card__btn {
-    text-align: center;
-    margin-top: 45px;
 
-    @include mq("md") {
-      margin-top: 44px;
-    }
-  }
 
 
 
