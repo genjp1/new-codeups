@@ -12,6 +12,7 @@
     @include mq(md){
         // padding: 0 25px;
         max-width: 1200px;
+        margin-left: -18px;
     }
 }
 
@@ -83,6 +84,7 @@
 
 }
 
+
 .pagenavi .wp-pagenavi .nextpostslink {
     position: relative;
     margin-left: 31.5px;
@@ -90,7 +92,7 @@
     padding: 6px 18px;
 
     @include mq("md") {
-        margin-left: rem(36);
+        margin-left: 46px;
 
     }
 
@@ -109,4 +111,13 @@
     display: inline-block; /* インライン要素化 */
     transform: rotate(45deg); /* ボックスを回転させる（左向き矢印） */
 
+}
+/*=====================================================================
+# pagenaviのpreviouspostslink と .nextpostslink にホバーした際の処理（jsとセット記述）
+======================================================================*/
+// hover-effectクラスが適用された時の::after疑似要素のスタイル
+.pagenavi .wp-pagenavi .previouspostslink.hover-effect::after,
+.pagenavi .wp-pagenavi .nextpostslink.hover-effect::after {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
 }

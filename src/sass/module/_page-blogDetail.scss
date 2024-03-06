@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.page-blog{
+.page-blogDetail {
 
 }
 
-.page-blog__inner {
+.page-blogDetail__inner {
     position: relative;
 
     @include mq("md") {
@@ -13,7 +13,7 @@
 }
 
 
-.page-blog__inner::before {
+.page-blogDetail__inner::before {
 
     background-image: url(../images/common/voice-fish.svg);
     background-position: center;
@@ -36,21 +36,17 @@
     }
   }
 
-  .page-blog__content {
+  .page-blogDetail__content {
 
     @include mq("md") {
       width: 70%;
     }
   }
 
-  .page-blogDetail__article {
-    margin-top: 75px;
-  }
 
 
 
-
-  .page-blog__sidebar {
+  .page-blogDetail__sidebar {
 
     @include mq("md") {
       width: 29%;

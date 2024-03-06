@@ -220,6 +220,18 @@ modal.removeClass("is-open");
 });
 
 
+/*=====================================================================
+# pagenaviのpreviouspostslink と .nextpostslink にホバーした際の処理（cssとセット記述）
+======================================================================*/
+$('.pagenavi .wp-pagenavi .previouspostslink, .pagenavi .wp-pagenavi .nextpostslink').hover(
+  function() {
+    // マウスが乗った時、hover-effectクラスを追加
+    $(this).addClass('hover-effect');
+  }, function() {
+    // マウスが離れた時、hover-effectクラスを削除
+    $(this).removeClass('hover-effect');
+  }
+);
 
 
 

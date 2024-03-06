@@ -44,8 +44,10 @@
   }
 
   hr.card__line {
-    border-color: $green2;
     margin:  rem(3) 0;
+    background-color: $green2;
+    height: 2px;
+    border: none;
 }
 
 .card__title{
