@@ -1,0 +1,174 @@
+@use "global" as *;
+
+.price-list {
+    width: 100%;
+    max-width: 702px;
+    line-height: 1;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.price-list__head {
+    max-width: 702px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    @include mq("md") {
+        max-width: inherit;
+    }
+  }
+
+.price-list__titleSp {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border: 1px solid $green2;
+    padding: 7px 16px 6px 47px;
+
+    color: $white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: 24px; /* 150% */
+    background: $green2;
+
+    @include mq("md") {
+        text-align: center;
+        width: 28.849%;
+        border: 1px solid $green2;
+
+        color: $white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $bold;
+        line-height: 24px; /* 150% */
+        background: $green2;
+    }
+}
+
+.price-list__titlePc {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border: 1px solid $green2;
+    padding: 7px 16px 6px 47px;
+
+    color: $white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: 24px; /* 150% */
+    background: $green2;
+
+    @include mq("md") {
+        text-align: center;
+        width: 28.849%;
+        border: 1px solid $green2;
+        padding: 7px 16px 85px 13px;
+
+        color: $white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $bold;
+        line-height: 24px; /* 150% */
+        background: $green2;
+    }
+}
+
+
+.price-list__titleSp::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 32.2%;//25.2%
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/common/icon-price.svg);
+}
+
+.price-list__titlePc::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;//25.2%
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/common/icon-price.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.price-list__data {
+    text-align: center;
+    padding: 6.9px 8px;
+    width: 58%;
+    border: 1px solid $green2;
+
+    color: $green1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 24px; /* 150% */
+    
+    @include mq(md){
+        text-align: left;
+        padding: 18px 12px;
+        width: 48%;
+        border: 1px solid $green2;
+    
+        color: $green1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $regular;
+        line-height: 24px; /* 150% */
+
+        
+    }
+}
+
+.price-list__cost {
+    text-align: right;
+    padding: 16px 16px;
+    width: 20%;
+    border: 1px solid $green2;
+
+    color: $green1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 24px; /* 150% */
+
+    @include mq(md){
+        text-align: right;
+        padding: 18px 16px;
+        width: 23.076%;
+        border: 1px solid $green2;
+    
+        color: $green1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $regular;
+        line-height: 24px; /* 150% */
+        
+    }
+}
+
+
+
+// .price-list__titleSp, .price-list__titlePc {
+//     position: relative; // 親要素に相対位置を設定
+// }
+
+// // 疑似要素の位置を調整
+// .price-list__titleSp::before, .price-list__titlePc::before {
+//     position: absolute;
+//     // 位置指定を親要素に対して固定にする例
+//     left: 50%; // 左から50%の位置に
+//     transform: translateX(-50%); // 自身の幅の半分だけ左にずらす
+//     // 上部の位置も適切に調整
+// }

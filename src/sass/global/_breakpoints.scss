@@ -84,6 +84,14 @@ $mediaquerys: (
   }
 }
 
+.u-desktopTable-cell {
+  display: none;
+
+  @include mq("md") {
+    display: table-cell;
+  }
+}
+
 .u-pc {
   display: none;
 
@@ -99,3 +107,4 @@ $mediaquerys: (
     display: none;
   }
 }
+
