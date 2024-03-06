@@ -32,6 +32,14 @@
     }
 }
 
+.top-contact.top-page-price-contact {
+    margin-top: 104px;
+
+    @include mq(md) {
+        margin-top: 138px;
+    }
+}
+
 .top-contact.top-page-information-contact {
     margin-top: 106px;
 

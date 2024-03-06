@@ -32,8 +32,24 @@
     }
   }
 
-  .page-price__table:not(:first-child) {
-    margin-top: 40px;
+  .page-price__table:nth-child(2) {
+    margin-top: 42px;
+    
+    @include mq("md") {
+        margin-top: 74px;
+    }
+  }
+
+  .page-price__table:nth-child(3) {
+    margin-top: 35px;
+    
+    @include mq("md") {
+        margin-top: 74px;
+    }
+  }
+
+  .page-price__table:nth-child(4) {
+    margin-top: 37px;
     
     @include mq("md") {
         margin-top: 74px;
