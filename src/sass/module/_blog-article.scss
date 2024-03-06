@@ -19,63 +19,83 @@
   }
 
 
-  .blog-articl__title{
-    margin-top: 18px;
+  .blog-article__title{
+    margin-top: 8px;
     color: $green1;
-    font-size: rem(32);
+    font-size: rem(24);
     font-style: normal;
     font-weight: $medium;
-    line-height: rem(24); /* 150% */
+    line-height: normal;
+
+    @include mq("md") {
+      margin-top: 7px;
+      font-size: rem(32);
+    }
+
 
   }
 
 
-  hr.blog-articl__line {
-    margin-top: 10px;
+  hr.blog-article__line {
+    margin-top: 3px;
     background-color: $green2;
     height: 2px;
     border: none;
+
+    @include mq("md") {
+        margin-top: -1px;
+    }
   }
 
-    .blog-articl__img {
-        margin-top: 40px;
-        aspect-ratio: 708 / 468;
+    .blog-article__img {
+        margin-top: 23.5px;
+        aspect-ratio: 700 / 468;
         object-fit: cover;
         // padding: rem(16) rem(16) rem(5) rem(16);
     
         @include mq("md") {
+          margin-top: 40px;
+          aspect-ratio: 708 / 468;
             // padding: rem(16) rem(16) rem(6) rem(16);
             transition: .5s ;
         }
     }
 
-    .blog-articl__text{
-        margin-top: 40px;
+    .blog-article__text{
+        margin-top: 24px;
         color: $green1;
         font-size: rem(16);
         font-style: normal;
         font-weight: $regular;
         line-height: rem(24); /* 150% */
+
+        @include mq("md") {
+          margin-top: 40px;
+        }
       
       }
 
-      .blog-articl__list {
-        margin-top: 39px;
+      .blog-article__list {
+        margin-top: 23px;
+
+        @include mq("md") {
+         margin-top: 39px;
+        }
       }
 
-      .blog-articl__list ul {
+      .blog-article__list ul {
         line-height: 1.6;
         padding: 0px 16px 0px 29px;
         position: relative;
       }
       
-      .blog-articl__list ul li {
+      .blog-article__list ul li {
         // line-height: 1.5;
         padding: 1px 0;
         list-style-type: none!important;
       }
       
-      .blog-articl__list ul li:before {
+      .blog-article__list ul li:before {
         color: skyblue;/*アイコン色*/
 
         content: "";

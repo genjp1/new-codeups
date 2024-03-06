@@ -178,7 +178,10 @@ hr.campaign-card__line {
 }
 
 .campaign-card__price-before.campaign-card__price-before--page-blog {
-    font-size: min(1.7vw, 20px);
+    font-size: rem(20);
+    @include mq("md") {
+        font-size: min(1.7vw, 20px);
+    }
 }
 
 
@@ -211,9 +214,13 @@ hr.campaign-card__line {
 } 
 
 .campaign-card__price-discount.campaign-card__price-discoun--page-blog {
-    font-size: min(2.8vw, rem(32));
+    font-size: rem(32);
     margin-left: 18px;
     margin-top: 3px;
+    
+    @include mq("md") {
+        font-size: min(2.8vw, rem(32));
+    }
 }
 
 /*====================================================

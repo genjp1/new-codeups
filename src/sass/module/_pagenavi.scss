@@ -87,13 +87,13 @@
 
 .pagenavi .wp-pagenavi .nextpostslink {
     position: relative;
-    margin-left: 31.5px;
+    margin-left: 51px;
     margin-right: 0;
     padding: 6px 18px;
 
     @include mq("md") {
         margin-left: 46px;
-
+        margin-left: 31.5px;
     }
 
 }
