@@ -65,6 +65,8 @@
     font-style: normal;
     font-weight: $regular;
     line-height: normal;
+    transition: .5s ;
+    cursor: pointer;
   }
   
   details[open] {
@@ -79,10 +81,20 @@
 
   .toggl__age {
     font-size: 24px;
+    transition: .5s ;
+    cursor: pointer;
 
   }
 
   .toggl__month {
     font-size: 24px;
     margin-left: -6px;
+    transition: .5s ;
+    cursor: pointer;
+  }
+
+  .toggl__age:hover,
+  .toggl__month:hover,
+  .folder p:hover  {
+    opacity: .5;
   }

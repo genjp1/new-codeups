@@ -5,7 +5,10 @@
     background-color: $white;
     padding: 10px 16px 16px 15px;
   }
-  
+
+  .popular-card:hover .popular-card__img img {
+    transform: scale(1.2);
+  }
 
   .popular-card__content{
       display: flex;
@@ -15,11 +18,13 @@
     width: 47%;
     aspect-ratio: 121 /90;// 横320 / 縦200
     margin-top: 6px;
+    overflow: hidden;
   }
   
   .popular-card__img img {
     aspect-ratio: 121 / 90;
     object-fit: cover;
+    transition: .6s;
   }
 
 

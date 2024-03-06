@@ -1,11 +1,14 @@
 @use "global" as *;
 
-.review-card{
+.review-card {
     // box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
     // background-color: $white;
     // padding: 10px 16px 16px 15px;
   }
   
+  .review-card:hover .review-card__img img {
+    transform: scale(1.2);
+  }
 
   .review-card__content{
       
@@ -15,15 +18,18 @@
     width: 100%;
     aspect-ratio: 294 /218;// 横320 / 縦200
     margin-top: 0px;
+    overflow: hidden;
 
     @include mq("md") {
       margin-top: 2px;
+
     }
   }
   
   .review-card__img img {
     aspect-ratio: 294 /218;
     object-fit: cover;
+    transition: .6s;
   }
 
 
