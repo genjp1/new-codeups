@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .form-select select {
-    padding: 7px 50px 6px 8px;//rem(11.5) rem(50) rem(11.5) rem(15)
+    padding: 11px 50px 11px 8px;//rem(11.5) rem(50) rem(11.5) rem(15)
     width: 100%;
     border-radius: 0;
     border: 1px solid $green2;
@@ -17,6 +17,10 @@
     font-style: normal;
     font-weight: $regular;
     line-height: normal;
+
+    @include mq("md") {
+        padding: 7px 50px 6px 8px;//rem(11.5) rem(50) rem(11.5) rem(15)
+    }
 }
 
 ::-ms-expand {
