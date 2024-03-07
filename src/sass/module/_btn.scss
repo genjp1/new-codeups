@@ -21,7 +21,7 @@
 }
 
 .btn.btn--contact {
-  padding: rem(14) rem(116) rem(14) rem(37);
+  padding: rem(14) 106px rem(14) 47px;//rem(14) rem(116) rem(14) rem(37)
 }
 
 .btn::after {
@@ -72,6 +72,10 @@
   }
 }
 
+.btn.btn--contact::before {
+  right: 58px;
+}
+
 .btn:hover::before {
   @include mq("md") {
     border-right:  rem(2) solid $green2;
@@ -97,5 +101,5 @@
 }
 
 .btn.btn--contact span::after {
-  left: rem(-79);
+  left: -90px;
 }
