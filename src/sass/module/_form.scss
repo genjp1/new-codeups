@@ -1,0 +1,111 @@
+@use "global" as *;
+
+.form__wrap {
+    @include mq(md){
+        display: flex;
+        align-items: center;
+        border-bottom: 1px dotted $green2;
+        padding-bottom: 40px;
+    }
+}
+
+.form__wrap.form__wrap--textarea {
+    @include mq(md){
+        align-items: flex-start;
+    }
+}
+
+.form__wrap + .form__wrap {
+    margin-top: rem(30);
+}
+
+.form__label {
+    // line-height: 1;
+    // letter-spacing: 0.08em;
+
+    color: $green1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: normal;
+    @include mq(md){
+        max-width: rem(200);
+        width: 100%;
+    }
+}
+
+.form__wrap.form__wrap--textarea .form__label {
+    @include mq(md){
+        margin-top: rem(10);
+    }
+}
+
+.form__label span {
+    margin-left: 10px;
+    padding: 0 16px;
+    // display: inline-block;
+
+    background-color: $red;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.form__input,
+.form__select,
+.form__radio,
+.form__checkbox,
+.form__textarea {
+    margin-top: rem(10);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+.form__input,
+.form__textarea,
+.form__select {
+    flex-grow: 1;
+}
+
+.form__privacy {
+    margin-top: rem(34);
+    text-align: center;
+  
+    @include mq("md") {
+      margin-top: rem(73);
+    }
+  }
+  
+  .form__privacy input + span {
+    cursor: pointer;
+    display: inline-block;
+    font-size: rem(14);
+    padding: 0 0 0 rem(31);
+  
+    @include mq("md") {
+      padding: 0 0 0 rem(36);
+    }
+  }
+  
+  .form__privacy input + span::before {
+    width: rem(22);
+    height: rem(22);
+  }
+
+
+
+
+
+
+.form__submit {
+    margin-top: rem(24);
+    text-align: center;
+
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}

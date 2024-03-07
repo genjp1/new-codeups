@@ -18,10 +18,10 @@
   font-weight: $regular;
   line-height: rem(22); /* 157.143% */
   cursor:pointer;
+}
 
-  @include mq("md") {
-    padding: rem(14) rem(87) rem(14) rem(37);
-  }
+.btn.btn--contact {
+  padding: rem(14) rem(116) rem(14) rem(37);
 }
 
 .btn::after {
@@ -38,7 +38,7 @@
   z-index: -1;
 }
 
-.btn:hover {
+.btn:hover{
   @include mq("md") {
     color: $green2;
   }
@@ -94,4 +94,8 @@
 	width: rem(202);
 	height: rem(54);
 	z-index: -1;
+}
+
+.btn.btn--contact span::after {
+  left: rem(-79);
 }
