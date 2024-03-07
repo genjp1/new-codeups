@@ -36,7 +36,7 @@
 .form-checkbox input + span::before {
     content: "";
     position: absolute;
-    top: 28%;
+    top: 55%;
     left: 0;
     transform: translateY(-50%);
     background: #fff;
@@ -50,12 +50,20 @@
     }
 }
 
+.form-checkbox.form-checkbox--consent input + span::before {
+    top: 29%;
+  
+    @include mq("md") {
+      top: 49%;
+    }
+  }
+
 .form-checkbox input + span::after {
     content: "";
     margin-top: rem(-2);
     position: absolute;
-    top: 32%;
-    left: 2%;
+    top: 58%;
+    left: 1.2%;
     transform: translateY(-50%) rotate(-45deg);
     display: block;
     width: 10px;
@@ -69,6 +77,19 @@
         left: 1.4%;
     }
 }
+
+.form-checkbox.form-checkbox-bg input + span::after {
+    left: rem(3);
+    transform: translateY(-50%) rotate(-35deg);
+    display: block;
+    width: rem(16);
+    height: rem(8);
+    top: 28%;
+  
+    @include mq("md") {
+      top: 45%;
+    }
+  }
 
 .form-checkbox input:checked + span::after {
     opacity: 1;
