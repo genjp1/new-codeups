@@ -11,20 +11,26 @@
 
 .footer-nav__contents {
     display: flex;
-    justify-content: space-around;
-    margin-left: rem(6);
+    // justify-content: space-around;
+    margin-left: rem(22);
     margin-top: rem(26);
+    gap: 40px;
 
     @include mq("md") {
     justify-content: inherit;
     margin-left: inherit;
     margin-top: rem(19);
+    gap: 0px;
     }
 }
 
 .footer-nav__contents.footer-nav__contents--sitemap {
+    justify-content: inherit;
+    gap: 51px;
+    margin-left: 22px;
     @include mq("md") {
     gap: 22px;
+    margin-left: 0px;
     }
 }
 
@@ -70,8 +76,8 @@
     display: inline-block;
     width: 100%;
     margin-top: rem(0);
-    padding-top: rem(15);
-    padding-bottom: rem(15);
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: left;
 
     color: $white;
@@ -85,8 +91,8 @@
 
     @include mq("md") {
         transition: .5s ;   
-        padding-top: rem(20);
-        padding-bottom: rem(20);
+        padding-top: 20px;
+        padding-bottom: 20px;
         margin-top: 0;
     }
 
