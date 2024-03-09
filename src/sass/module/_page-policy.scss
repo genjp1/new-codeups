@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.page-policy {
+
+}
+
+.page-policy__inner {
+    position: relative;
+  }
+
+.page-policy__inner::before {
+    background-image: url(../images/common/voice-fish.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 50px;
+    left: calc(50% - min(48vw, 168px));
+    z-index: -1;
+
+    @include mq("md") {
+        background-image: url(../images/common/voice-fish.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        top: 0%;
+        transform: translateY(-50%);
+        width: rem(290);
+        height: rem(138);
+        left: calc(50% - min(48vw, rem(614)));
+    }
+}
+
+
+.page-policy__img {
+    
+}
