@@ -33,7 +33,7 @@
 }
 
 .privacy-policy__items {
-    margin-top: 32px;
+    margin-top: 40px;
 
     color: var(--green, #0D2936);
     font-family: "Noto Sans JP";
@@ -50,17 +50,11 @@
 }
 
 .privacy-policy__item {
+    margin-top: 32px;
     // padding-bottom: rem(20);
     // border-bottom: 1px solid #ccc;
     @include mq(md){
-        // padding-bottom: rem(40);
-    }
-}
-
-.privacy-policy__item {
-    margin-top: 20px;
-    @include mq(md){
-        margin-top: 32px;
+    // padding-bottom: rem(40);
     }
 }
 // .privacy-policy__item + .privacy-policy__item {
@@ -101,7 +95,7 @@
 }
 
 .privacy-policy__description-text {
-    margin-top: 20px;
+    margin-top: 32px;
     @include mq(md){
         margin-top: 33px;
     }
