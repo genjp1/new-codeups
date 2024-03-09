@@ -49,6 +49,14 @@
     }
 
 }
+.top-footer.top-page-terms-footer {
+    margin-top: 105px;
+
+    @include mq("md") {
+        margin-top: 159px;
+    }
+
+}
 
 .top-footer.top-page-contact-footer {
     margin-top: 148px;
