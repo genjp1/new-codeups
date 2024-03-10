@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.top-page-404 {
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    @include mq(md) {
+        padding-top: 48px;
+        padding-bottom: 94px;
+    }
+}

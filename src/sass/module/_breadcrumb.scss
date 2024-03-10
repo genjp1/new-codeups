@@ -8,3 +8,14 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.breadcrumb.breadcrumb--404 {
+    background-color: $green2;
+    color: $white;
+    padding-top: 88px;
+
+    @include mq("md") {
+        padding-top: 90px;
+        
+    }
+}

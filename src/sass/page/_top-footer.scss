@@ -74,6 +74,15 @@
     }
 
 }
+.top-footer.top-page-404-footer {
+    padding-top: 164px;
+    margin-top: 0;
+
+    @include mq("md") {
+        padding-top: 247px;
+    }
+
+}
 
 .top-footer.top-page-sitemap-footer {
     margin-top: 106px;
