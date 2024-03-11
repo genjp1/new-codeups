@@ -80,8 +80,8 @@
 .price-list__titleSp::before {
     content: '';
     position: absolute;
-    top: 15%;
-    left: 32.2%;//25.2%
+    top: 20%;
+    left: calc(50% - min(45vw, 61px));
     transform: translateX(-50%);
     width: 24px;
     height: 24px;
