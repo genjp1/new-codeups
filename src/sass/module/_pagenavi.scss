@@ -12,7 +12,7 @@
     @include mq(md){
         // padding: 0 25px;
         max-width: 1200px;
-        margin-left: -18px;
+        // margin-left: -18px;
     }
 }
 
@@ -24,6 +24,13 @@
     // @include mq("md") {
     //     display: block;
     // }
+}
+
+.pagenavi.pagenavi--page-blogDetail .wp-pagenavi {
+
+    @include mq("md") {
+        margin-left: -34px;
+    }
 }
 
 .pagenavi .wp-pagenavi a,
@@ -58,15 +65,19 @@
 
 .pagenavi .wp-pagenavi .previouspostslink {
     position: relative;
-    margin-right: 31.5px;
+    margin-right: 36px;
     margin-left: 0;
     padding: 6px 18px;
 
-    @include mq("md") {
-        margin-right: rem(36);
+    // @include mq("md") {
+    //     margin-right: 36px;
 
-    }
+    // }
 
+}
+
+.pagenavi.pagenavi--page-blogDetail .wp-pagenavi .previouspostslink {
+    margin-right: 41px;
 }
 
 .pagenavi .wp-pagenavi .previouspostslink::after {
@@ -87,16 +98,21 @@
 
 .pagenavi .wp-pagenavi .nextpostslink {
     position: relative;
-    margin-left: 51px;
+    margin-left: 36px;
     margin-right: 0;
     padding: 6px 18px;
 
-    @include mq("md") {
-        margin-left: 46px;
-        margin-left: 31.5px;
-    }
+    // @include mq("md") {
+    //     margin-left: 36px;
+    //     // margin-left: 31.5px;
+    // }
 
 }
+
+.pagenavi.pagenavi--page-blogDetail .wp-pagenavi .nextpostslink {
+    margin-left: 41px;
+}
+
 
 .pagenavi .wp-pagenavi .nextpostslink::after {
     content: "";

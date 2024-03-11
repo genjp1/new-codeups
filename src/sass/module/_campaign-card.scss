@@ -44,7 +44,7 @@
 }
 
 .campaign-card__body {
-    padding: rem(12) rem(16) rem(24) rem(15);
+    padding: rem(15) rem(16) rem(24) rem(15);
 
     flex: 1;
     display: flex;
@@ -52,7 +52,7 @@
     justify-content: space-between;
 
     @include mq("md") {
-        padding: rem(24) rem(16) rem(40) rem(16);
+        padding: rem(24) rem(16) rem(40) rem(16);//24px 16px 40px 16px;//rem(24) rem(16) rem(40) rem(16)
     }
 }
 
