@@ -61,7 +61,7 @@
 }
 
 .page-contact-complete__textBlock {
-    margin-top: 40px;
+    margin-top: 39px;
 
     color: $green1;;
     text-align: center;
@@ -76,9 +76,16 @@
 }
 
 .page-contact-complete__textCenter {
-
+    margin-top: -2px;
+    @include mq("md") {
+        margin-top: -1px;
+    }
 }
 
 .page-contact-complete__textBttom {
+    margin-top: -2px;
 
+    @include mq("md") {
+        margin-top: -1px;
+    }
 }

@@ -28,7 +28,7 @@
 }
 
 .btn.btn--contact {
-  padding: rem(14) 106px rem(14) 47px;//rem(14) rem(116) rem(14) rem(37)
+  padding: rem(14) 106px rem(14) rem(47);//rem(14) rem(116) rem(14) rem(37)
 }
 
 .btn::after {
@@ -136,5 +136,5 @@
 }
 
 .btn.btn--contact span::after {
-  left: -90px;
+  left: rem(-90);
 }
