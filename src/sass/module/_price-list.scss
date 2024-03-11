@@ -88,6 +88,14 @@
     background-image: url(../images/common/icon-price.svg);
 }
 
+.price-list__titleSp.price-list__titleSp--medium::before {
+    left: calc(50% - min(45vw, 69px));
+}
+
+.price-list__titleSp.price-list__titleSp--long::before {
+    left: calc(50% - min(45vw, 84px));
+}
+
 .price-list__titlePc::before {
     content: '';
     position: absolute;

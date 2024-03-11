@@ -50,7 +50,7 @@
     background-color: $white;
 
     @include mq("md") {
-      width: 162px;
+      width: rem(162);
     }
 
   }
@@ -128,7 +128,7 @@
       display: block;
       position: absolute;
       top: 50%;
-      left: calc(50% - (min(46.062vw, 121px)));
+      left: calc(50% - (min(46.062vw, rem(121))));
       transform: translateY(-50%);
       width: 100%;
       height: rem(63);

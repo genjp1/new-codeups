@@ -3,17 +3,20 @@
 .footer-nav {
     height: inherit;
     margin-top: rem(-13);
+    justify-content: center;
+    display: flex;
 
     @include mq(md) {
-
+        justify-content: inherit;
+        display: inline-block;
     }
 }
 
 .footer-nav__contents {
     display: flex;
     // justify-content: space-around;
-    margin-left: rem(22);
-    margin-top: rem(26);
+    margin-left: rem(10);
+    margin-top: rem(10);
     gap: 40px;
 
     @include mq("md") {
