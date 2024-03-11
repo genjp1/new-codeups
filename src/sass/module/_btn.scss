@@ -20,6 +20,13 @@
   cursor:pointer;
 }
 
+.btn.btn--white {
+  background: $white;
+  border:  1px solid $white;
+  color: $green2;
+  padding: rem(14) rem(96) rem(14) rem(37);
+}
+
 .btn.btn--contact {
   padding: rem(14) 106px rem(14) 47px;//rem(14) rem(116) rem(14) rem(37)
 }
@@ -38,9 +45,19 @@
   z-index: -1;
 }
 
+.btn.btn--white::after {
+  background: $green2;
+}
+
 .btn:hover{
   @include mq("md") {
     color: $green2;
+  }
+}
+
+.btn.btn--white:hover{
+  @include mq("md") {
+    color: $white;
   }
 }
 
@@ -72,6 +89,11 @@
   }
 }
 
+.btn.btn--white::before {
+  border-right:  rem(2) solid $green2;
+  border-bottom:  rem(1) solid $green2;
+}
+
 .btn.btn--contact::before {
   right: 58px;
 }
@@ -83,8 +105,17 @@
   }
 }
 
+.btn.btn--white:hover::before {
+  @include mq("md") {
+    border-right:  rem(2) solid $white;
+    border-bottom:  rem(1) solid $white;
+  }
+}
+
+
 .btn span {
 	position: relative; /* 要素に position: relative; を追加 */
+  transition: .3s;
 }
 
 
@@ -98,6 +129,10 @@
 	width: rem(202);
 	height: rem(54);
 	z-index: -1;
+}
+
+.btn.btn--white span::after{
+  border: rem(1) solid $white;
 }
 
 .btn.btn--contact span::after {

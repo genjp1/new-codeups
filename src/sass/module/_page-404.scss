@@ -19,31 +19,30 @@
   }
 
 .page-404__inner::before {
-    background-image: url(../images/common/voice-fish.svg);
+    background-image: url(../images/common/icon-404-sp.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     content: "";
     position: absolute;
-    top: 0%;
-    transform: translateY(-50%);
-    width: 120px;
-    height: 50px;
-    left: calc(50% - min(48vw, 168px));
-    z-index: -1;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 328.843px;
+    height: 293.594px;
+    left: 50%;
 
     @include mq("md") {
-        background-image: url(../images/common/voice-fish.svg);
+        background-image: url(../images/common/icon-404.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         content: "";
         position: absolute;
-        top: 0%;
+        top: 54%;
         transform: translateY(-50%);
-        width: rem(290);
-        height: rem(138);
-        left: calc(50% - min(48vw, rem(614)));
+        width: 698px;
+        height: 698px;
+        left: calc(50% - min(48vw, 541px));
     }
 }
 
@@ -68,7 +67,7 @@
         font-size: 160px;
         letter-spacing: 80px;
         // padding-left: 77px;
-        margin-top: 51px;
+        margin-top: 41px;
     }
 }
 
@@ -98,5 +97,15 @@
 }
 
 .page-404__textBttom {
+
+}
+
+.page-404__button {
+    margin-top: 40px;
+    text-align: center;
+
+    @include mq("md") {
+        margin-top: 81px;
+    }
 
 }
