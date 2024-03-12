@@ -52,13 +52,13 @@
     justify-content: space-between;
 
     @include mq("md") {
-        padding: rem(24) rem(16) rem(40) rem(16);//24px 16px 40px 16px;//rem(24) rem(16) rem(40) rem(16)
+        padding: rem(24) rem(16) rem(40) rem(16);
     }
 }
 
 .campaign-card__body.campaign-card__body--page-blog {
 
-    padding: 13px 23px 21px 23px;
+    padding: rem(13) rem(23) rem(21) rem(23);
 }
 
 
@@ -101,7 +101,7 @@
 
 hr.campaign-card__line {
     border-color: $green2;
-    margin: 6px 0;
+    margin: rem(6) 0;
 }
 
 .campaign-card__text-block {
@@ -126,9 +126,9 @@ hr.campaign-card__line {
 }
 
 .campaign-card__text.campaign-card__text--page-blog {
-    font-size: 14px;
-    margin-left: 0px;
-    margin-top: 7px;
+    font-size: rem(14);
+    margin-left: rem(0);
+    margin-top: rem(7);
 }
 
 .campaign-card__price {
@@ -142,15 +142,8 @@ hr.campaign-card__line {
 }
 
 .campaign-card__price.campaign-card__price--page-blog {
-    margin-top: 0px;
+    margin-top: rem(0);
 }
-
-// .campaign-card__price.campaign-card__price--page-campaign  {
-
-//     @include mq("md") {
-//         margin-top: 8px;
-//     }
-// }
 
 .campaign-card__price-before {
     text-decoration: line-through;
@@ -174,13 +167,13 @@ hr.campaign-card__line {
     }
 }
 .campaign-card__price-before.campaign-card__price-before--page-campaign {
-    margin-top: 12px;
+    margin-top: rem(12);
 }
 
 .campaign-card__price-before.campaign-card__price-before--page-blog {
     font-size: rem(20);
     @include mq("md") {
-        font-size: min(1.7vw, 20px);
+        font-size: min(1.7vw, rem(20));
     }
 }
 
@@ -206,17 +199,17 @@ hr.campaign-card__line {
     }
 }
 .campaign-card__price-discount.campaign-card__price-discount--page-campaign {
-    margin-left: 17px;
+    margin-left: rem(17);
 
     @include mq("md") {
-        margin-left: 41px;
+        margin-left: rem(41);
     }
 } 
 
 .campaign-card__price-discount.campaign-card__price-discoun--page-blog {
     font-size: rem(32);
-    margin-left: 18px;
-    margin-top: 3px;
+    margin-left: rem(18);
+    margin-top: rem(3);
     
     @include mq("md") {
         font-size: min(2.8vw, rem(32));
@@ -230,14 +223,14 @@ hr.campaign-card__line {
 .campaign-card__tag.campaign-card__tag--page-campaign {
 
     @include mq("md") {
-        padding: 6px rem(16);
+        padding: rem(6) rem(16);
     }
 }
 
 .campaign-card__title.campaign-card__title--page-campaign {
     
     @include mq("md") {
-        font-size: 24px;
+        font-size: rem(24);
         line-height: normal;
     }
 }
@@ -245,32 +238,32 @@ hr.campaign-card__line {
 
 hr.campaign-card__line.campaign-card__line--page-campaign {
     @include mq("md") {
-        margin: 2px 0;
+        margin: rem(2) 0;
     }
 }
 
 .campaign-card__text.campaign-card__text--page-campaign {
     
     @include mq("md") {
-        margin-top: 23px;
+        margin-top: rem(23);
     }
 }
 
 
 .campaign-card__body.campaign-card__body--page-campaign {
-    padding: 14px rem(16) rem(24) rem(15);
+    padding: rem(14) rem(16) rem(24) rem(15);
 
     @include mq("md") {
-        padding: rem(21) rem(24) 46px rem(24);
+        padding: rem(21) rem(24) rem(46) rem(24);
     }
 }
 
 .campaign-card__description {
 
     @include mq("md") {
-        margin-top: 24px;
+        margin-top: rem(24);
         color: $green1;
-        font-size: 16px;
+        font-size: rem(16);
         font-style: normal;
         font-weight: $regular;
         line-height: rem(24); /* 150% */
@@ -280,25 +273,25 @@ hr.campaign-card__line.campaign-card__line--page-campaign {
 .campaign-card__schedule{
 
     @include mq("md") {
-        margin-top: 33px;
+        margin-top: rem(33);
         color: $green2;
         text-align: center;
         font-family: $english-family;
-        font-size: 16px;
+        font-size: rem(16);
         font-style: normal;
         font-weight: $bold;
         line-height: rem(18); /* 112.5% */
-        margin-right: 12px;
+        margin-right: rem(12);
     }
 
 }
 
 .campaign-card__reserve {
     @include mq("md") {
-        margin-top: 5px;
+        margin-top: rem(5);
         color: $green2;
         text-align: center;
-        font-size: 14px;
+        font-size: rem(14);
         font-style: normal;
         font-weight: $regular;
         line-height: rem(18); /* 128.571% */
@@ -309,9 +302,9 @@ hr.campaign-card__line.campaign-card__line--page-campaign {
 .campaign-card__button {
 
     @include mq("md") {
-        margin-top: 16px;
+        margin-top: rem(16);
         text-align: center;
-        margin-right: 6px;
+        margin-right: rem(6);
     }
 
 }
