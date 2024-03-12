@@ -22,11 +22,11 @@
 .form-checkbox input + span {
     cursor: pointer;
     display: inline-block;
-    padding: 0 0 0 25px;
+    padding: 0 0 0 rem(25);
     position: relative;
 
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
     line-height: normal;
@@ -66,8 +66,8 @@
     left: 1.2%;
     transform: translateY(-50%) rotate(-45deg);
     display: block;
-    width: 10px;
-    height: 5px;
+    width: rem(10);
+    height: rem(5);
     border-bottom: rem(2) solid $red;
     border-left: rem(2) solid $red;
     transition:  .3s;

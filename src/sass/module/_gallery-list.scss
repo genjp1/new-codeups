@@ -2,7 +2,7 @@
 
 .gallery-list {
     display: grid;
-    gap: 10px;
+    gap: rem(10);
     @include mq(md) {
         grid-template-columns: repeat(9, 1fr);
         grid-auto-flow: dense;

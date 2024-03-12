@@ -20,9 +20,9 @@
 }
 
 .gallery__list {
-    margin-top: 39px;
+    margin-top: rem(39);
     @include mq("md") {
-        margin-top: 79px;
+        margin-top: rem(79);
     }
     
 }
