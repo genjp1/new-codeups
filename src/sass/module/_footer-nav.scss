@@ -94,7 +94,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: rem(18); /* 112.5% */
-    margin-top: 12px;
+    margin-top: 11px;
 
     position: relative;
 
@@ -109,13 +109,24 @@
 
 .footer-nav__item.footer-nav__item--sitemap a {
     color: $green1;
+    margin-top: 11px;
+    @include mq("md") {
+        margin-top: 0px;
+    }
+
 }
 
 .footer-nav__item .footer-nav__item-child a {
-    padding-top: rem(6);
-    padding-bottom: rem(19);
+    padding-top: 11px;
+    padding-bottom: 13px;
     font-weight: $regular;
     margin-top: 0;
+
+    @include mq("md") {
+        padding-top: 6px;
+        padding-bottom: 19px;
+
+    }
 }
 
 .footer-nav__item a:hover,
