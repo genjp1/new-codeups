@@ -1,10 +1,10 @@
 @use "global" as *;
 //voiceページ
 .top-pagenavi {
-    margin-top: 86px;
+    margin-top: rem(86);
 
     @include mq("md") {
-        margin-top: 81px;
+        margin-top: rem(81);
     }
 }
 
@@ -12,7 +12,7 @@
 .top-pagenavi.top-pagenavi--page-campaign {
 
     @include mq("md") {
-        margin-top: 86px;
+        margin-top: rem(86);
     }
 
 }
@@ -21,7 +21,7 @@
 .top-pagenavi.top-pagenavi--page-blog {
 
     @include mq("md") {
-        margin-top: 86px;
+        margin-top: rem(86);
     }
 
 }
@@ -31,6 +31,6 @@
     margin-top: 46px;
 
     @include mq("md") {
-        margin-top: 85px;
+        margin-top: rem(85);
     }
 }
