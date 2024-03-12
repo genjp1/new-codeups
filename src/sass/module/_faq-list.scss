@@ -7,37 +7,36 @@
     margin-right: auto;
     margin-left: auto;
     @include mq("md") {
-        max-width: 700px;
+        max-width: rem(700);
     }
 
 }
 
 .faq-list__item + .faq-list__item {
-    margin-top: 41.5px;
+    margin-top: rem(41.5);
 
     @include mq("md") {
-        margin-top: 40px;
+        margin-top: rem(40);
     }
 }
 
 .faq-list__item-question {
 
-    padding: 16px 16px 16px 16px;//rem(12) rem(40) rem(12) rem(60)
+    padding: rem(16) rem(16) rem(16) rem(16);
     position: relative;
-    // text-indent: rem(-20);
     background-color: $green2;
     cursor: pointer;
 
     color: $white;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
     line-height: normal;
 
     @include mq(md){
 
-        padding: 26px 40px 25px 40px;//rem(14) rem(60) rem(14) rem(80)
-        font-size: 20px;
+        padding: rem(26) rem(40) rem(25) rem(40);
+        font-size: rem(20);
     }
 }
 
@@ -45,17 +44,17 @@
 .faq-list__item-question::after {
     content: "";
     position: absolute;
-    top: 26px;
-    right: 16px;
-    width: 28px;
-    height: 1px;
+    top: rem(26);
+    right: rem(16);
+    width: rem(28);
+    height: rem(1);
     background: $white;
     transition: .3s;
     
     @include mq(md){
-        top: 40px;
-        right: 40px;
-        width: 32px;
+        top: rem(40);
+        right: rem(40);
+        width: rem(32);
     }
 }
 
@@ -67,33 +66,20 @@
     transform: rotate(0deg);
 }
 
-// .faq-list__item-question span {
-//     margin-right: rem(20);
-//     display: inline-block;
-//     color: #F6D970;
-// }
-
 .faq-list__item-answer {
-    padding: 24px 16px 24px 16px;
+    padding: rem(24) rem(16) rem(24) rem(16);
     display: none;
-    // text-indent: rem(-20);
 
     border: 1px solid $green2;
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
     line-height: 1.4;
 
     @include mq(md){
-        padding: 40px 40px 40px 39px;
-        margin-top: 16px;
+        padding: rem(40) rem(40) rem(40) rem(39);
+        margin-top: rem(16);
 
     }
 }
-
-// .faq-list__item-answer span {
-//     margin-right: rem(20);
-//     display: inline-block;
-//     color: #DE8430;
-// }

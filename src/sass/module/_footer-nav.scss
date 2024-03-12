@@ -15,9 +15,9 @@
 .footer-nav__contents {
     display: flex;
     // justify-content: space-around;
-    margin-left: 12px;
+    margin-left: rem(12);
     margin-top: rem(10);
-    gap: 18px;
+    gap: rem(18);
     justify-content: space-around;
     width: 100%;
 
@@ -25,17 +25,17 @@
     justify-content: inherit;
     margin-left: inherit;
     margin-top: rem(19);
-    gap: 0px;
+    gap: rem(0);
     }
 }
 
 .footer-nav__contents.footer-nav__contents--sitemap {
-    gap: 51px;
-    margin-left: 22px;
+    gap: rem(51);
+    margin-left: rem(22);
 
     @include mq("md") {
-    gap: 22px;
-    margin-left: 0px;
+    gap: rem(22);
+    margin-left: rem(0);
     }
 }
 
@@ -48,7 +48,7 @@
 
 .footer-nav__content.footer-nav__content--sitemap {
     @include mq("md") {
-        gap: 25px;
+        gap: rem(25);
         }
 }
 
@@ -57,7 +57,7 @@
   }
 
   .footer-nav__item ul {
-    margin-top: -2px;
+    margin-top: rem(-2);
   }
 
 .footer-nav__items-column {
@@ -85,8 +85,8 @@
     display: inline-block;
     width: 100%;
     margin-top: rem(0);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: rem(15);
+    padding-bottom: rem(15);
     text-align: left;
 
     color: $white;
@@ -94,14 +94,14 @@
     font-style: normal;
     font-weight: 700;
     line-height: rem(18); /* 112.5% */
-    margin-top: 11px;
+    margin-top: rem(11);
 
     position: relative;
 
     @include mq("md") {
         transition: .5s ;   
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: rem(20);
+        padding-bottom: rem(20);
         margin-top: 0;
     }
 
@@ -109,22 +109,22 @@
 
 .footer-nav__item.footer-nav__item--sitemap a {
     color: $green1;
-    margin-top: 11px;
+    margin-top: rem(11);
     @include mq("md") {
-        margin-top: 0px;
+        margin-top: rem(0);
     }
 
 }
 
 .footer-nav__item .footer-nav__item-child a {
-    padding-top: 11px;
-    padding-bottom: 13px;
+    padding-top: rem(11);
+    padding-bottom: rem(13);
     font-weight: $regular;
-    margin-top: 0;
+    margin-top: rem(0);
 
     @include mq("md") {
-        padding-top: 6px;
-        padding-bottom: 19px;
+        padding-top: rem(6);
+        padding-bottom: rem(19);
 
     }
 }
