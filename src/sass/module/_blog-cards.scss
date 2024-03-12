@@ -16,7 +16,7 @@
   .blog-cards.blog-cards--page-blog {
 
     @include mq("md") {
-      row-gap: 79px;
+      row-gap: rem(79);
       grid-template-columns: repeat(2,1fr);
     }
   }

@@ -13,10 +13,10 @@
 .breadcrumb.breadcrumb--404 {
     background-color: $green2;
     color: $white;
-    padding-top: 88px;
+    padding-top: rem(88);
 
     @include mq("md") {
-        padding-top: 98px;
+        padding-top: rem(98);
         
     }
 }

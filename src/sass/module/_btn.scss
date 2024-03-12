@@ -28,7 +28,7 @@
 }
 
 .btn.btn--contact {
-  padding: rem(14) 106px rem(14) rem(47);//rem(14) rem(116) rem(14) rem(37)
+  padding: rem(14) rem(106) rem(14) rem(47);
 }
 
 .btn::after {
@@ -95,7 +95,7 @@
 }
 
 .btn.btn--contact::before {
-  right: 58px;
+  right: rem(58);
 }
 
 .btn:hover::before {

@@ -20,7 +20,7 @@
 
 
   .blog-article__title{
-    margin-top: 8px;
+    margin-top: rem(8);
     color: $green1;
     font-size: rem(24);
     font-style: normal;
@@ -28,7 +28,7 @@
     line-height: normal;
 
     @include mq("md") {
-      margin-top: 7px;
+      margin-top: rem(7);
       font-size: rem(32);
     }
 
@@ -37,24 +37,24 @@
 
 
   hr.blog-article__line {
-    margin-top: 3px;
+    margin-top: rem(3);
     background-color: $green2;
-    height: 2px;
+    height: rem(2);
     border: none;
 
     @include mq("md") {
-        margin-top: -1px;
+        margin-top: rem(-1);
     }
   }
 
     .blog-article__img {
-        margin-top: 23.5px;
+        margin-top: rem(23.5);
         aspect-ratio: 700 / 468;
         object-fit: cover;
         // padding: rem(16) rem(16) rem(5) rem(16);
     
         @include mq("md") {
-          margin-top: 40px;
+          margin-top: rem(40);
           aspect-ratio: 708 / 468;
             // padding: rem(16) rem(16) rem(6) rem(16);
             transition: .5s ;
@@ -62,7 +62,7 @@
     }
 
     .blog-article__text{
-        margin-top: 24px;
+        margin-top: rem(24);
         color: $green1;
         font-size: rem(16);
         font-style: normal;
@@ -70,28 +70,28 @@
         line-height: rem(24); /* 150% */
 
         @include mq("md") {
-          margin-top: 40px;
+          margin-top: rem(40);
         }
       
       }
 
       .blog-article__list {
-        margin-top: 23px;
+        margin-top: rem(23);
 
         @include mq("md") {
-         margin-top: 39px;
+         margin-top: rem(39);
         }
       }
 
       .blog-article__list ul {
         line-height: 1.6;
-        padding: 0px 16px 0px 29px;
+        padding: rem(0) rem(16) rem(0) rem(29);
         position: relative;
       }
       
       .blog-article__list ul li {
         // line-height: 1.5;
-        padding: 1px 0;
+        padding: rem(1) 0;
         list-style-type: none!important;
       }
       
@@ -100,10 +100,9 @@
 
         content: "";
         position: absolute;
-        // top: 10px;
-        left: 1px;
-        width: 18px;
-        height: 18px;
+        left: rem(1);
+        width: rem(18);
+        height: rem(18);
         background-image: url(../images/common/icon-blogDetail.svg);
-        margin-top: 3px;
+        margin-top: rem(3);
       }
