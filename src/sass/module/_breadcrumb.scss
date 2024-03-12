@@ -20,3 +20,19 @@
         
     }
 }
+
+.breadcrumb a {
+    color: $green2;
+}
+
+.breadcrumb.breadcrumb--404 a {
+    color: $white;
+}
+
+.breadcrumb a:hover {
+    opacity: 0.5;
+}
+
+.breadcrumb.breadcrumb--404 a:hover {
+    opacity: 0.5;
+}
