@@ -1,17 +1,17 @@
 @use "global" as *;
 
 .sidebar {
-    margin-top: 87px;
+    margin-top: rem(87);
 
     @include mq("md") {
-        margin-top: 81px;
+        margin-top: rem(81);
     }
 
 }
 
 .sidebar__inner {
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: rem(25);
+  padding-left: rem(25);
 
   @include mq("md") {
     padding-right: inherit;
@@ -24,8 +24,8 @@
 }
 
 .sidebar__title {
-    padding: 8px 8px 8px 74px;
-    border-left: 7px solid $green2;
+    padding: rem(8) rem(8) rem(8) rem(74);
+    border-left: rem(7) solid $green2;
 
     color: $green1;
     font-size: rem(24);
@@ -40,60 +40,60 @@
     position: absolute;
     top: -1%;
     left: 5.5%;
-    width: 50px;
-    height: 50px;
+    width: rem(50);
+    height: rem(50);
     background-image: url(../images/common/icon-blog.svg);
     z-index: -1;
 }
 .sidebar__cards {
-    margin-top: 22px;
+    margin-top: rem(22);
 
     @include mq("md") {
-      margin-top: 22px;
+      margin-top: rem(22);
     }
   }
 
   .sidebar__review {
-    margin-top: 78px;
+    margin-top: rem(78);
     
     @include mq("md") {
-      margin-top: 80px;
+      margin-top: rem(80);
     }
  
   }
 
   .sidebar__campaign {
-    margin-top: 86px;
+    margin-top: rem(86);
 
     @include mq("md") {
-      margin-top: 87px;
+      margin-top: rem(87);
     }
  
   }
 
   .sidebar__archive {
-    margin-top: 86px;
+    margin-top: rem(86);
 
     @include mq("md") {
-      margin-top: 86px;
+      margin-top: rem(86);
     }
  
   }
 
   .sidebar__review-cardBtn {
     text-align: center;
-    margin-top: 45px;
+    margin-top: rem(45);
 
     @include mq("md") {
-      margin-top: 44px;
+      margin-top: rem(44);
     }
   }
 
   .sidebar__campaign-cardBtn {
     text-align: center;
-    margin-top: 45px;
+    margin-top: rem(45);
 
     @include mq("md") {
-      margin-top: 40px;
+      margin-top: rem(40);
     }
   }

@@ -18,7 +18,7 @@
     transform: translate(-50%,-50%);
     color: #fff;
     text-align: center;
-    min-width: 290px;
+    min-width: rem(290);
 
     @include mq("md") {
         top: 59%;
@@ -35,7 +35,7 @@
     font-weight: $regular;
     line-height: normal;
     width: 100%;
-    // max-width: 248px;
+    // max-width: rem(248);
     // text-transform: capitalize;
 
     @include mq(md) {

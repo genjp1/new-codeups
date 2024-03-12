@@ -7,8 +7,8 @@
 .toggl__container {
     position: relative;
     display: block;
-    // width: 600px;
-    margin-top: 15px;
+    // width: rem(600);
+    margin-top: rem(15);
   }
   
   details {
@@ -24,12 +24,12 @@
   }
   details > summary {
     position: relative;
-    margin-top: 1px;
+    margin-top: rem(1);
     color: $green2;
-    padding: 2px 0px 4px 0px;
+    padding: rem(2) rem(0) rem(4) rem(0);
     // background: #444;
 
-    font-size: 30px;
+    font-size: rem(30);
     font-style: normal;
     font-weight: $regular;
     line-height: normal;
@@ -43,7 +43,7 @@
   details[open] > summary {
     // background: #66e;
     // color: $green2;
-    // font-size: 24px;
+    // font-size: rem(24);
     // font-style: normal;
     // font-weight: $regular;
     // line-height: normal;
@@ -54,13 +54,13 @@
   }
   
   .folder {
-    margin: -14px 0 0px 29px;
+    margin: rem(-14) rem(0) rem(0) rem(29);
     // padding: 0.5em 0em 0.5em 1.5em;
     // border-left: 0.1em #ccc dotted;
     // border-bottom: 0.1em #ccc dotted;
   }
   .folder p {
-    margin: 15px;
+    margin: rem(15);
     color: $green1;
     font-style: normal;
     font-weight: $regular;
@@ -76,19 +76,19 @@
   }
   
   details:not([open]) .folder {
-    height: 0px !important;
+    height: rem(0) !important;
   }
 
   .toggl__age {
-    font-size: 24px;
+    font-size: rem(24);
     transition: .5s ;
     cursor: pointer;
 
   }
 
   .toggl__month {
-    font-size: 24px;
-    margin-left: -6px;
+    font-size: rem(24);
+    margin-left: rem(-6);
     transition: .5s ;
     cursor: pointer;
   }

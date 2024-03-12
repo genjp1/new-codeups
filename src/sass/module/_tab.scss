@@ -7,14 +7,14 @@
   .tab__list {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 21px;
-    row-gap: 16px;
+    column-gap: rem(21);
+    row-gap: rem(16);
     justify-items: center;
 
     @include mq("md") {
       display: flex;
-      column-gap: 0px;
-      row-gap: 10px;
+      column-gap: rem(0);
+      row-gap: rem(10);
     }
   }
 
@@ -22,7 +22,7 @@
       display: grid;
       grid-template-columns: repeat(3,1fr);
       column-gap: rem(20);
-      row-gap: 16px;
+      row-gap: rem(16);
       justify-items: center;
   
       @include mq("md") {
@@ -35,15 +35,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 34px;
+    height: rem(34);
     width: 100%;
-    padding: 6px 0px;
+    padding: rem(6) rem(0);
     flex-shrink: 0;
     cursor: pointer;
     border: 1px solid $green2;
 
     color: $green2;
-    font-size: 14px;
+    font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
     line-height: rem(22); /* 157.143% */
@@ -63,7 +63,7 @@
     // line-height: inherit; /* 157.143% */
 
     // width: 100%;
-    // padding: 6px 0px;
+    // padding: rem(6) rem(0);
     // flex-shrink: 0;
     cursor: pointer;
 
@@ -74,21 +74,21 @@
     line-height: inherit; /* 157.143% */
     max-width: rem(300);
     font-size: rem(14);
-    padding: 10px 15px 10px 15px;//29px 30px 26px 35px; rem(29) rem(30) rem(26) rem(35)
+    padding: rem(10) rem(15) rem(10) rem(15)
     text-align: right;
 
     border: none;
     text-align: center;
 
     color: $green2;
-    // font-size: 14px;
+    // font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
     background-color: $green3;
 
     position: relative;
 
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: rem(2) rem(2) rem(4) rem(0) rgba(0, 0, 0, 0.25);
 
     @include mq("md") {
       display: inherit;
@@ -99,17 +99,17 @@
       width: 100%;
       max-width: rem(300);
       font-size: rem(24);
-      padding: 29px 30px 26px 35px;//29px 30px 26px 35px; rem(29) rem(30) rem(26) rem(35)
+      padding: rem(29) rem(30) rem(26) rem(35);
       text-align: right;
       box-shadow: none;
     }
 
   }
   .tab__button.tab__button--page-information.tab__button--page-information-fun {
-    padding: 10px 15px 10px 15px;
+    padding: rem(10) rem(15) rem(10) rem(15);
 
       @include mq("md") {
-        padding: 29px 18px 26px 35px;
+        padding: rem(29) rem(18) rem(26) rem(35);
       }
 
   }
@@ -192,7 +192,7 @@
   .tab__button:not(:first-child) {
     
     @include mq("md") {
-      margin-left: 32px;
+      margin-left: rem(32);
     }
 
   }
@@ -200,7 +200,7 @@
   .tab__button.tab__button--page-information:not(:first-child) {
     
     @include mq("md") {
-      margin-left: 0px;
+      margin-left: rem(0);
     }
 
   }
@@ -211,25 +211,25 @@
   }
   
   .tab__contents {
-    margin-top: -8px;
+    margin-top: rem(-8);
     @include mq("md") {
-      margin-top: 20px;
+      margin-top: rem(20);
     }
 
   }
 
   .tab__contents.tab__contents--page-voice {
-    margin-top: -8px;
+    margin-top: rem(-8);
     @include mq("md") {
-      margin-top: 20px;
+      margin-top: rem(20);
     }
 
   }
 
   .tab__contents.tab__contents--page-information {
-    margin-top: -8px;
+    margin-top: rem(-8);
     @include mq("md") {
-      margin-top: 20px;
+      margin-top: rem(20);
     }
 
   }
@@ -247,7 +247,7 @@
   
   .tab__content {
     display: none;
-    // padding: 20px;
+    // padding: rem(20);
     // background-color: #c0c0c0;
   }
   
@@ -256,7 +256,7 @@
   }
   
   .tab__cards {
-    margin-top: 48px;
+    margin-top: rem(48);
 
       @include mq("md") {
         margin-top: rem(40);
@@ -265,15 +265,9 @@
 
 
   .tab__cards.tab__cards--page-information {
-    margin-top: 22px;
+    margin-top: rem(22);
 
     @include mq("md") {
-      margin-top: 22px;
+      margin-top: rem(22);
     }
   }
-
-
-
-  /*====================================================
-# 下層ページ：Informationページ用
-=====================================================*/

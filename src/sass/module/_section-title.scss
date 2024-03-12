@@ -32,11 +32,11 @@
     font-size: rem(80);
     line-height: rem(80); /* 100% */
     margin-bottom: rem(-9);
-    margin-left: -10px;
+    margin-left: rem(-10);
     @include mq("lg") {
         margin-bottom: rem(0);
         line-height: rem(46); /* 100% */
-        margin-left: 0px;
+        margin-left: rem(0);
     }
 }
 

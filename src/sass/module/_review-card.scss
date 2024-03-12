@@ -3,7 +3,7 @@
 .review-card {
     // box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
     // background-color: $white;
-    // padding: 10px 16px 16px 15px;
+    // padding: rem(10) rem(16) rem(16) rem(15);
   }
   
   .review-card:hover .review-card__img img {
@@ -17,11 +17,11 @@
   .review-card__img{
     width: 100%;
     aspect-ratio: 294 /218;// 横320 / 縦200
-    margin-top: 0px;
+    margin-top: rem(0);
     overflow: hidden;
 
     @include mq("md") {
-      margin-top: 2px;
+      margin-top: rem(2);
 
     }
   }
@@ -35,7 +35,7 @@
 
   .review-card__info {
     width: 100%;
-    margin-top: 15px;
+    margin-top: rem(15);
   }
 
   .review-card__age {
@@ -48,9 +48,9 @@
   
 
   .review-card__title{
-    margin-top: 8px;
+    margin-top: rem(8);
     color: $green1;
-    font-size: 24px;
+    font-size: rem(24);
     font-style: normal;
     font-weight: $medium;
     line-height: normal;
