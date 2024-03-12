@@ -15,9 +15,11 @@
 .footer-nav__contents {
     display: flex;
     // justify-content: space-around;
-    margin-left: rem(10);
+    margin-left: 12px;
     margin-top: rem(10);
-    gap: 40px;
+    gap: 18px;
+    justify-content: space-around;
+    width: 100%;
 
     @include mq("md") {
     justify-content: inherit;
@@ -28,9 +30,9 @@
 }
 
 .footer-nav__contents.footer-nav__contents--sitemap {
-    justify-content: inherit;
     gap: 51px;
     margin-left: 22px;
+
     @include mq("md") {
     gap: 22px;
     margin-left: 0px;
@@ -52,6 +54,10 @@
 
 .footer-nav__item {
 
+  }
+
+  .footer-nav__item ul {
+    margin-top: -2px;
   }
 
 .footer-nav__items-column {
@@ -88,7 +94,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: rem(18); /* 112.5% */
-    margin-top: rem(12);
+    margin-top: 12px;
 
     position: relative;
 
@@ -106,8 +112,8 @@
 }
 
 .footer-nav__item .footer-nav__item-child a {
-    padding-top: rem(11);
-    padding-bottom: rem(11);
+    padding-top: rem(6);
+    padding-bottom: rem(19);
     font-weight: $regular;
     margin-top: 0;
 }
