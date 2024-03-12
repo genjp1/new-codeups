@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
     content: "";
     position: absolute;
-    top: 8px;
+    top: rem(8);
     transform: translateY(-50%);
     width: rem(120);
     height:rem(50);
@@ -50,7 +50,7 @@
 
     @include mq("md") {
       width: 29%;
-      margin-left: 80px;
+      margin-left: rem(80);
     }
   }
 
