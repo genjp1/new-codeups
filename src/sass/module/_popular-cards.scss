@@ -4,10 +4,10 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     column-gap: rem(35);
-    row-gap: 23px;
+    row-gap: rem(23);
 
     @include mq("md") {
-      row-gap: 23px;
+      row-gap: rem(23);
       column-gap: rem(39);
     }
   }

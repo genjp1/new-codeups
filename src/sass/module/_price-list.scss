@@ -2,7 +2,7 @@
 
 .price-list {
     width: 100%;
-    max-width: 702px;
+    max-width: rem(702);
     line-height: 1;
     border-collapse: collapse;
     margin-right: auto;
@@ -10,7 +10,7 @@
 }
 
 .price-list__head {
-    max-width: 702px;
+    max-width: rem(702);
     margin-right: auto;
     margin-left: auto;
     
@@ -24,13 +24,13 @@
     text-align: center;
     width: 100%;
     border: 1px solid $green2;
-    padding: 7px 16px 6px 47px;
+    padding: rem(7) rem(16) rem(6) rem(47);
 
     color: $white;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $bold;
-    line-height: 24px; /* 150% */
+    line-height: rem(24); /* 150% */
     background: $green2;
 
     @include mq("md") {
@@ -39,10 +39,10 @@
         border: 1px solid $green2;
 
         color: $white;
-        font-size: 16px;
+        font-size: rem(16);
         font-style: normal;
         font-weight: $bold;
-        line-height: 24px; /* 150% */
+        line-height: rem(24); /* 150% */
         background: $green2;
     }
 }
@@ -52,26 +52,26 @@
     text-align: center;
     width: 100%;
     border: 1px solid $green2;
-    padding: 7px 16px 6px 47px;
+    padding: rem(7) rem(16) rem(6) rem(47);
 
     color: $white;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $bold;
-    line-height: 24px; /* 150% */
+    line-height: rem(24); /* 150% */
     background: $green2;
 
     @include mq("md") {
         text-align: center;
         width: 28.849%;
         border: 1px solid $green2;
-        padding: 7px 16px 85px 13px;
+        padding: rem(7) rem(16) rem(85) rem(13);
 
         color: $white;
-        font-size: 16px;
+        font-size: rem(16);
         font-style: normal;
         font-weight: $bold;
-        line-height: 24px; /* 150% */
+        line-height: rem(24); /* 150% */
         background: $green2;
     }
 }
@@ -81,19 +81,19 @@
     content: '';
     position: absolute;
     top: 20%;
-    left: calc(50% - min(45vw, 61px));
+    left: calc(50% - min(45vw, rem(61)));
     transform: translateX(-50%);
-    width: 24px;
-    height: 24px;
+    width: rem(24);
+    height: rem(24);
     background-image: url(../images/common/icon-price.svg);
 }
 
 .price-list__titleSp.price-list__titleSp--medium::before {
-    left: calc(50% - min(45vw, 69px));
+    left: calc(50% - min(45vw, rem(69)));
 }
 
 .price-list__titleSp.price-list__titleSp--long::before {
-    left: calc(50% - min(45vw, 84px));
+    left: calc(50% - min(45vw, rem(84)));
 }
 
 .price-list__titlePc::before {
@@ -102,8 +102,8 @@
     top: 40%;
     left: 50%;//25.2%
     transform: translateX(-50%);
-    width: 64px;
-    height: 64px;
+    width: rem(64);
+    height: rem(64);
     background-image: url(../images/common/icon-price.svg);
     background-position: center center;
     background-size: cover;
@@ -113,27 +113,27 @@
 
 .price-list__data {
     text-align: center;
-    padding: 6px 8px 6px 8px;
+    padding: rem(6) rem(8) rem(6) rem(8);
     width: 58%;
     border: 1px solid $green2;
 
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: 24px; /* 150% */
+    line-height: rem(24); /* 150% */
     
     @include mq(md){
         text-align: left;
-        padding: 18px 12px;
+        padding: rem(18) rem(12) rem(18) rem(12);
         width: 48%;
         border: 1px solid $green2;
     
         color: $green1;
-        font-size: 16px;
+        font-size: rem(16);
         font-style: normal;
         font-weight: $regular;
-        line-height: 24px; /* 150% */
+        line-height: rem(24); /* 150% */
 
         
     }
@@ -141,27 +141,27 @@
 
 .price-list__cost {
     text-align: right;
-    padding: 16px 16px;
+    padding: rem(16) rem(16) rem(16) rem(16);
     width: 20%;
     border: 1px solid $green2;
 
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: 24px; /* 150% */
+    line-height: rem(24); /* 150% */
 
     @include mq(md){
         text-align: right;
-        padding: 18px 16px;
+        padding: rem(18) rem(16) rem(18) rem(16);
         width: 23.076%;
         border: 1px solid $green2;
     
         color: $green1;
-        font-size: 16px;
+        font-size: rem(16);
         font-style: normal;
         font-weight: $regular;
-        line-height: 24px; /* 150% */
+        line-height: rem(24); /* 150% */
         
     }
 }

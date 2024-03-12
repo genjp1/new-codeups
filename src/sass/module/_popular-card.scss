@@ -3,7 +3,7 @@
 .popular-card{
     box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
     background-color: $white;
-    padding: 10px 16px 16px 15px;
+    padding: rem(10) rem(16) rem(16) rem(15);
   }
 
   .popular-card:hover .popular-card__img img {
@@ -17,7 +17,7 @@
   .popular-card__img{
     width: 47%;
     aspect-ratio: 121 /90;// 横320 / 縦200
-    margin-top: 6px;
+    margin-top: rem(6);
     overflow: hidden;
   }
   
@@ -30,7 +30,7 @@
 
   .popular-card__info {
     width: 48%;
-    margin-left: 14px;
+    margin-left: rem(14);
   }
 
   .popular-card__date{
@@ -44,9 +44,9 @@
   
 
   .popular-card__title{
-    margin-top: 3px;
+    margin-top: rem(3);
     color: $green1;
-    font-size: 16px;
+    font-size: rem(16);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
