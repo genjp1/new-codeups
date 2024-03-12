@@ -6,13 +6,13 @@
 
 .pagenavi__inner {
     margin: auto;
-    // padding: 0 20px;
-    max-width: 600px;
+    // padding: rem(0) rem(20);
+    max-width: rem(600);
     width: 100%;
     @include mq(md){
-        // padding: 0 25px;
-        max-width: 1200px;
-        // margin-left: -18px;
+        // padding: rem(0) rem(25);
+        max-width: rem(1200);
+        // margin-left: rem(-18);
     }
 }
 
@@ -29,16 +29,16 @@
 .pagenavi.pagenavi--page-blogDetail .wp-pagenavi {
 
     @include mq("md") {
-        margin-left: -34px;
+        margin-left: rem(-34);
     }
 }
 
 .pagenavi .wp-pagenavi a,
 .pagenavi .wp-pagenavi span {
     color: $green2;
-    margin: 0 3.7px;
-	padding: 6px 14px;
-    font-size: 16px;
+    margin: rem(0) rem(3.7);
+	padding: rem(6) rem(14);
+    font-size: rem(16);
     line-height: 1;
 	white-space: nowrap;
     border: 1px solid $green2;
@@ -46,7 +46,7 @@
     transition: .3s;
 
     @include mq("md") {
-    	padding: 6px 14px;
+    	padding: rem(6) rem(14);
     }
 }
 
@@ -65,19 +65,19 @@
 
 .pagenavi .wp-pagenavi .previouspostslink {
     position: relative;
-    margin-right: 36px;
-    margin-left: 0;
-    padding: 6px 18px;
+    margin-right: rem(36);
+    margin-left: rem(0);
+    padding: rem(6) rem(18);
 
     // @include mq("md") {
-    //     margin-right: 36px;
+    //     margin-right: rem(36);
 
     // }
 
 }
 
 .pagenavi.pagenavi--page-blogDetail .wp-pagenavi .previouspostslink {
-    margin-right: 41px;
+    margin-right: rem(41);
 }
 
 .pagenavi .wp-pagenavi .previouspostslink::after {
@@ -86,8 +86,8 @@
     top: 36%;
     left: 42%;
     transform: translate(-50%, -50%);
-    width: 10px; /* ボックスの横幅を指定する */
-    height: 10px; /* ボックスの高さを指定する */
+    width: rem(10); /* ボックスの横幅を指定する */
+    height: rem(10); /* ボックスの高さを指定する */
     border-top: 1px solid $green2; /* 境界線の上部を実線に指定する*/
     border-right: 1px solid $green2;/* 境界線の上部を実線に指定する*/
     display: inline-block; /* インライン要素化 */
@@ -98,19 +98,19 @@
 
 .pagenavi .wp-pagenavi .nextpostslink {
     position: relative;
-    margin-left: 36px;
-    margin-right: 0;
-    padding: 6px 18px;
+    margin-left: rem(36);
+    margin-right: rem(0);
+    padding: rem(6) rem(18);
 
     // @include mq("md") {
-    //     margin-left: 36px;
-    //     // margin-left: 31.5px;
+    //     margin-left: rem(36);
+    //     margin-left: rem(31.5);
     // }
 
 }
 
 .pagenavi.pagenavi--page-blogDetail .wp-pagenavi .nextpostslink {
-    margin-left: 41px;
+    margin-left: rem(41);
 }
 
 
@@ -120,8 +120,8 @@
     top: 36%;
     left: 30%;
     transform: translate(-50%, -50%);
-    width: 10px; /* ボックスの横幅を指定する */
-    height: 10px; /* ボックスの高さを指定する */
+    width: rem(10); /* ボックスの横幅を指定する */
+    height: rem(10); /* ボックスの高さを指定する */
     border-top: 1px solid $green2; /* 境界線の上部を実線に指定する*/
     border-right: 1px solid $green2;/* 境界線の上部を実線に指定する*/
     display: inline-block; /* インライン要素化 */
