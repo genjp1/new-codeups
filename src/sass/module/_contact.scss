@@ -82,7 +82,11 @@ hr.contact__line {
 }
 
 .contact__address {
+    margin-left: rem(-9);
 
+    @include mq("md") {
+        margin-left: inherit;
+    }
 }
 
 .contact__tel {
@@ -156,7 +160,7 @@ hr.contact__line {
     transform: translateY(-50%);
     width: rem(109);
     height: rem(50);
-    right: calc(50% - min(48vw, rem(172)));
+    right: calc(50% - min(45vw, rem(368)));
 
         @include mq("md") {
             background-image: url(../images/common/contact.svg);

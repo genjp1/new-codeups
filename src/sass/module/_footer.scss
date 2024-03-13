@@ -27,22 +27,16 @@
 
 .footer__copyright {
     text-align: center;
-    text-align: center;
-    margin: rem(25) 0 0  rem(5);
-
+    margin-top: rem(24);
     color: $white;
     font-family: $english-family;
     font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
-    // line-height: rem(18); /* 150% *
-    line-height:1;
+    line-height: rem(18); /* 150% */
 
     @include mq(md) {
-        font-size: rem(11);
-        // line-height: rem(4);
-        margin-left: rem(5);
-        margin-top: rem(67);
-        margin: rem(35) 0 0 rem(5);
+        font-size: rem(14);
+        margin-top: rem(58);
     }
 }
