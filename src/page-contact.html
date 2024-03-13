@@ -134,12 +134,12 @@
 </div>
 
 <!-- page-contact -->
-<section class="page-contact top-page-contact">
+<div class="page-contact top-page-contact">
   <div class="page-contact__inner inner">
 
     <div class="contact">
       <div class="contact__pageinner">
-        <form class="contact__form form" action="">
+        <form action="mail.php" method="POST" class="contact__form form">
           <dl class="form__wrap">
             <dt class="form__label"><label for="your-name" class="is-required">お名前<span>必須</span></label></dt>
             <dd class="form__input form-input"><input id="your-name" type="text" placeholder="沖縄　太郎"></dd>
@@ -183,7 +183,7 @@
           </dl>
           <dl class="form__wrap form__wrap--textarea">
             <dt class="form__label"><label for="your-message" class="is-required">お問合せ内容<span>必須</span></label></dt>
-            <dd class="form__textarea form-textarea"><textarea id="your-message" type="textarea" placeholder=""></textarea></dd>
+            <dd class="form__textarea form-textarea"><textarea id="your-message" placeholder=""></textarea></dd>
           </dl>
 
           <div class="form__privacy form-checkbox form-checkbox--consent form-checkbox-bg">
@@ -201,9 +201,8 @@
       </div>
     </div>
 
-
   </div>
-</section>
+</div>
 
  <footer class="footer top-footer top-page-contact-footer">
   <div class="footer__inner inner">
