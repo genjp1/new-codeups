@@ -17,6 +17,8 @@
 
     @include mq("md") {
         padding-top: rem(98);
+        position: relative;
+        z-index: 9000;
         
     }
 }

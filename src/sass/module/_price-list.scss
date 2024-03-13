@@ -65,7 +65,7 @@
         text-align: center;
         width: 28.849%;
         border: 1px solid $green2;
-        padding: rem(7) rem(16) rem(85) rem(13);
+        padding: rem(7) rem(16) rem(79) rem(13);
 
         color: $white;
         font-size: rem(16);
@@ -99,8 +99,8 @@
 .price-list__titlePc::before {
     content: '';
     position: absolute;
-    top: 40%;
-    left: 50%;//25.2%
+    top: 41%;
+    left: 50.4%;//25.2%
     transform: translateX(-50%);
     width: rem(64);
     height: rem(64);
@@ -108,6 +108,11 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.price-list__titlePc.price-list__titlePc--4row::before {
+    left: 50.7%;
+    top: 44%;
 }
 
 
@@ -125,7 +130,7 @@
     
     @include mq(md){
         text-align: left;
-        padding: rem(18) rem(12) rem(18) rem(12);
+        padding: rem(17) rem(12) rem(17) rem(12);
         width: 48%;
         border: 1px solid $green2;
     
@@ -141,7 +146,7 @@
 
 .price-list__cost {
     text-align: right;
-    padding: rem(16) rem(16) rem(16) rem(16);
+    padding: rem(15) rem(16) rem(15) rem(16);
     width: 20%;
     border: 1px solid $green2;
 
@@ -153,7 +158,7 @@
 
     @include mq(md){
         text-align: right;
-        padding: rem(18) rem(16) rem(18) rem(16);
+        padding: rem(17) rem(16) rem(17) rem(16);
         width: 23.076%;
         border: 1px solid $green2;
     
