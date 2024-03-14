@@ -49,6 +49,15 @@
     }
 
 }
+
+.top-footer.top-page-blogDetail-footer {
+    margin-top: rem(108);
+
+    @include mq("md") {
+        margin-top: rem(159);
+    }
+
+}
 .top-footer.top-page-terms-footer {
     margin-top: rem(105);
 

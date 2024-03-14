@@ -30,9 +30,9 @@
 
 //blogDetailページ
 .top-pagenavi.top-pagenavi--page-blogDetail {
-    margin-top: 46px;
+    margin-top: rem(39);
 
     @include mq("md") {
-        margin-top: rem(85);
+        margin-top: rem(77);
     }
 }
