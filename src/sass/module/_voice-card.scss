@@ -13,7 +13,7 @@
 
   .voice-card__content{
     display: flex;
-    
+
     @include mq("md") {
       align-items: flex-end;
     }
