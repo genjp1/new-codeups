@@ -1,10 +1,10 @@
 @use "global" as *;
 
 .sidebar {
-    margin-top: rem(87);
+    margin-top: rem(80);
 
     @include mq("md") {
-        margin-top: rem(81);
+        margin-top: 81px;
     }
 
 }
