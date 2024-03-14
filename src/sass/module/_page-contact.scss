@@ -29,7 +29,7 @@
     transform: translateY(-50%);
     width: rem(120);
     height: rem(50);
-    left: calc(50% - min(48vw, rem(168)));
+    left: calc(50% - min(45vw, rem(368)));
     z-index: -1;
 
     @include mq("md") {
