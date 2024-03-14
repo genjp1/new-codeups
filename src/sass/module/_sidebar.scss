@@ -36,14 +36,20 @@
 }
 
 .sidebar__title::before {
-    content: "";
+
     position: absolute;
-    top: -1%;
-    left: 5.5%;
+    content: "";
+    background-image: url(../images/common/icon-blog.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 47%;
+    left: rem(16);
+    transform: translateY(-50%);
     width: rem(50);
     height: rem(50);
-    background-image: url(../images/common/icon-blog.svg);
     z-index: -1;
+
 }
 .sidebar__cards {
     margin-top: rem(22);
