@@ -10,9 +10,10 @@
 
 //campaignページ
 .top-pagenavi.top-pagenavi--page-campaign {
+    margin-top: rem(78);
 
     @include mq("md") {
-        margin-top: rem(86);
+        margin-top: rem(78);
     }
 
 }
