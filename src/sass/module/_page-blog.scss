@@ -21,11 +21,11 @@
     background-repeat: no-repeat;
     content: "";
     position: absolute;
-    top: rem(-67);
+    top: rem(2);
     transform: translateY(-50%);
     width: rem(120);
     height:rem(50);
-    left: calc(50% - min(45vw, rem(620)));
+    left: calc(50% - min(45vw, rem(368)));
     z-index: -1;
 
     @include mq("md") {
