@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: $regular;
     line-height: 1.25; /* 125% */
-    text-transform:capitalize;
+    // text-transform:capitalize;
 
     @include mq(md) {
         font-size: rem(40);
@@ -52,7 +52,7 @@
     text-transform: none;
   }
 
-.title__sub{
+.title__sub {
     margin-top: rem(4);
     color: $green2;
     text-align: center;
@@ -63,6 +63,13 @@
     line-height: 1.5; /* 150% */
     @include mq("md") {
         margin-top: rem(8);
+    }
+}
+
+.title__sub.title__sub--contact {
+
+    @include mq("md") {
+        margin-top: rem(-7);
     }
 }
 

@@ -25,10 +25,11 @@
 
 
 .price__imgTop {
-    margin-top: rem(28);
+    margin-top: rem(30);
 
     @include mq("md") {
         display: none;
+        margin-top: rem(28);
     }
 }
 
@@ -57,7 +58,7 @@
 
 hr.price__line {
     border-color: $green2;
-    margin: rem(3) rem(0) rem(0) rem(0);
+    margin: rem(2) rem(0) rem(0) rem(0);
 }
 
 .price__course {
@@ -66,7 +67,11 @@ hr.price__line {
 }
 
 .price__course.price__course {
-    margin-top: rem(8);
+    margin-top: rem(8.3);
+
+    @include mq("md") {
+        margin-top: rem(5);
+    }
 }
 
 .price__name {

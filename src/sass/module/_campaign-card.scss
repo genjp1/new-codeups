@@ -102,6 +102,10 @@
 hr.campaign-card__line {
     border-color: $green2;
     margin: rem(6) 0;
+
+    @include mq("md") {
+        margin: rem(8) 0;
+    }
 }
 
 .campaign-card__text-block {
@@ -120,7 +124,7 @@ hr.campaign-card__line {
 
     @include mq(md){
        font-size: rem(16);
-       margin-top: rem(16);
+       margin-top: rem(13);
        margin-left: rem(-19);
     }
 }
@@ -137,7 +141,7 @@ hr.campaign-card__line {
     align-items: center;
 
     @include mq("md") {
-        margin-top: rem(6);
+        margin-top: rem(4);
     }
 }
 

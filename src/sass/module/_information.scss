@@ -18,7 +18,7 @@
 
     @include mq("md") {
         display: flex;
-        margin-top: rem(41);
+        margin-top: rem(40);
     }
 }
 
@@ -66,7 +66,7 @@ hr.information__line {
     margin: rem(3) 0;
 
     @include mq("md") {
-        margin: rem(7) 0;
+        margin: rem(3) 0;
     }
 }
 
@@ -86,6 +86,6 @@ hr.information__line {
 }
 
 .information__btn {
-    margin-top: rem(40);
+    margin-top: rem(41);
     text-align: center;
 }

@@ -32,6 +32,7 @@
     @include mq("md") {
       display: flex;
       justify-content: space-between;
+      margin-right: rem(3);
     }
 
   }
@@ -62,7 +63,7 @@
     line-height: 1.83333; /* 183.333% */
 
     @include mq(md){
-        padding: rem(6) rem(16) rem(6) rem(16);
+        padding: 6px 16px 6px 16px;//6px 16px 6px 16px
     }
 }
 
@@ -75,7 +76,7 @@
     line-height: normal;//ブラウザのデフォルトの行間隔を使用
 
     @include mq("md") {
-      margin-top: rem(8);
+      margin-top: rem(10);
       font-size: rem(24);
     }
   }
