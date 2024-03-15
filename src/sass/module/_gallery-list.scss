@@ -13,7 +13,13 @@
     @include mq(md) {
         grid-column: span 5;
         grid-row: span 1;
+        transition: all .5s;
+        cursor: pointer;
     }
+}
+
+.gallery-list__item:hover {
+    opacity: .5;
 }
 
 .gallery-list__item:nth-of-type(6n+1),

@@ -48,6 +48,7 @@
     font-weight: $regular;
     line-height: rem(22); /* 157.143% */
     background-color: $white;
+    transition: all .5s;
 
     @include mq("md") {
       width: rem(162);
@@ -114,6 +115,11 @@
 
   }
 
+  .tab__button:hover {
+    background-color: $green2;
+    color: $white;
+  }
+
   .tab__button.tab__button--page-information-license,
   .tab__button.tab__button--page-information-fun,
   .tab__button.tab__button--page-information-experience{
@@ -135,81 +141,114 @@
       background-size: contain;
       background-repeat: no-repeat;
       z-index: 2;
+      transition: all .5s;
     }
 
   }
 
-
+/* ライセンス講習
+=====================================================*/
+  //未選択時の画像
   .tab__button.tab__button--page-information-license::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information1-green.svg);
     }
-
-    
   }
+
+  //ホバー時の画像
+  .tab__button.tab__button--page-information-license:hover::before {
+
+    @include mq("md") {
+      background-image: url(../images/common/icon-information1-white.svg);
+    }
+  }
+
+  //アクティブ時の画像
   .tab__button.tab__button--page-information-license.is-active::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information1-white.svg);
     }
-
-    
   }
 
+/* ファンダイビング
+=====================================================*/
+  //未選択時の画像
   .tab__button.tab__button--page-information-fun::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information2.svg);
       left: calc(50% - (min(46.062vw, rem(132))));
     }
-
   }
+
+  //ホバー時の画像
+  .tab__button.tab__button--page-information-fun:hover::before {
+
+    @include mq("md") {
+      background-image: url(../images/common/icon-information1-white.svg);
+      left: calc(50% - (min(46.062vw, rem(132))));
+    }
+  }
+
+  //アクティブ時の画像
   .tab__button.tab__button--page-information-fun.is-active::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information1-white.svg);
       left: calc(50% - (min(46.062vw, rem(132))));
     }
-
   }
 
+/* 体験ダイビング
+=====================================================*/
+  //未選択時の画像
   .tab__button.tab__button--page-information-experience::before {
 
     @include mq("md") {
       background-image: url(../images/common/icon-information3.svg);
     }
-
   }
+
+  //ホバー時の画像
+  .tab__button.tab__button--page-information-experience:hover::before {
+
+    @include mq("md") {
+      background-image: url(../images/common/icon-information1-white.svg);
+    }
+  }
+
+  //アクティブ時の画像
   .tab__button.tab__button--page-information-experience.is-active::before {
-    
+
     @include mq("md") {
       background-image: url(../images/common/icon-information1-white.svg);
     }
 
   }
+
+
   
   .tab__button:not(:first-child) {
-    
+
     @include mq("md") {
       margin-left: rem(32);
     }
-
   }
 
   .tab__button.tab__button--page-information:not(:first-child) {
-    
+
     @include mq("md") {
       margin-left: rem(0);
     }
-
   }
-  
+
   .tab__button.is-active {
     color: #fff;
     background-color: $green2;
   }
-  
+
   .tab__contents {
     margin-top: rem(-8);
     @include mq("md") {

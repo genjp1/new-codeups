@@ -6,6 +6,7 @@
     position: relative;
     z-index: 9999;
     display: flex;
+    transition: all .5s;
 
     @include mq(md) {
         width: rem(141);
@@ -22,4 +23,8 @@
         width: rem(200);
 
     }
+}
+
+.logo:hover {
+    opacity: .5;
 }

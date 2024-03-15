@@ -21,6 +21,7 @@
     height: rem(24);
     margin-right: rem(16);
     margin-top: rem(16);
+    transition: all .5s;
 
     @include mq("md") {
         width: rem(32);
@@ -32,4 +33,9 @@
 
 .footer-sns__item:last-child {
     margin-right: 0;
+}
+
+
+.footer-sns__item:hover {
+    opacity: .5;
 }
