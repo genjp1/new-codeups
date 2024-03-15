@@ -31,7 +31,7 @@
     font-size: rem(24);
     font-style: normal;
     font-weight: $regular;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
     position: relative;
 }
 

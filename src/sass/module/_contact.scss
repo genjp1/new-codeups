@@ -71,7 +71,7 @@ hr.contact__line {
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(24); /* 150% */
+    line-height: 1.5; /* 150% */
 
     @include mq("md") {
         margin-top: 0;

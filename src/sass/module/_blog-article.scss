@@ -15,7 +15,7 @@
     font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(18); /* 150% */
+    line-height: 1.5; /* 150% */
   }
 
 
@@ -25,7 +25,7 @@
     font-size: rem(24);
     font-style: normal;
     font-weight: $medium;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
 
     @include mq("md") {
       margin-top: rem(7);
@@ -67,7 +67,7 @@
         font-size: rem(16);
         font-style: normal;
         font-weight: $regular;
-        line-height: rem(24); /* 150% */
+        line-height: 1.5; /* 150% */
 
         @include mq("md") {
           margin-top: rem(40);

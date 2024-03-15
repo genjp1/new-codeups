@@ -20,7 +20,7 @@
     font-size: rem(16);
     font-style: normal;
     font-weight: $bold;
-    line-height: rem(24); /* 150% */
+    line-height: 1.5; /* 150% */
 }
 
 
@@ -75,7 +75,7 @@ hr.price__line {
     font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(24); /* 171.429% */
+    line-height: 1.71429; /* 171.429% */
     width: 80%;
     @include mq("md") {
         font-size: rem(16);
@@ -88,7 +88,7 @@ hr.price__line {
     font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(24); /* 171.429% */
+    line-height: 1.71429; /* 171.429% */
     width: 20%;
     text-align-last: end;
 

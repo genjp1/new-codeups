@@ -57,7 +57,7 @@
     font-size: rem(16);
     font-style: normal;
     font-weight: 400;
-    line-height: rem(18); /* 112.5% */
+    line-height: 1.125; /* 112.5% */
 }
 
 .page-contact-complete__textBlock {
@@ -68,7 +68,7 @@
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
 }
 
 .page-contact-complete__text {

@@ -8,19 +8,19 @@
     font-size:  rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: $green3;
     font-size:  rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
 }
 ::placeholder{ /* Others */
     color: $green3;
     font-size:  rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
 }

@@ -83,12 +83,12 @@
     font-size: rem(40);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(40); /* 100% */
+    line-height: 1; /* 100% */
 
     @include mq("md") {
         color: $white;
         font-size: rem(80);
-        line-height: rem(100); /* 125% */
+        line-height: 1.25; /* 125% */
         width: 50%;
     }
 }
@@ -110,7 +110,7 @@
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(24); /* 150% */
+    line-height: 1.5; /* 150% */
 
     @include mq("md") {
         color: $white;
@@ -190,7 +190,7 @@
     font-size: rem(40);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(40); /* 100% */
+    line-height: 1; /* 100% */
     z-index: 1;
 
     @include mq("md") {
@@ -200,7 +200,7 @@
         transform: initial;
 
         font-size: rem(80);
-        line-height: rem(100); /* 125% */
+        line-height: 1.25; /* 125% */
         width: 50%;
     }
 }

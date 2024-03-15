@@ -37,7 +37,7 @@
     font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(18); /* 150% */
+    line-height: 1.5; /* 150% */
 
     @include mq(md) {
         font-size: rem(14);

@@ -60,7 +60,7 @@
     font-size: rem(16);
     font-style: normal;
     font-weight: $bold;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
     @include mq(md){
         max-width: rem(220);
         width: 100%;
@@ -79,7 +79,7 @@
     font-style: normal;
     font-weight: $regular;
     letter-spacing: rem(4.8);
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
     margin-left: rem(8);
     padding: rem(3) rem(11) rem(3) rem(12);
     display: inline-block;

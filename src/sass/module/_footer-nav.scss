@@ -93,7 +93,7 @@
     font-size: rem(16);
     font-style: normal;
     font-weight: 700;
-    line-height: rem(18); /* 112.5% */
+    line-height: 1.125; /* 112.5% */
     margin-top: rem(11);
 
     position: relative;
@@ -160,7 +160,7 @@
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(18); /* 112.5% */
+    line-height: 1.125; /* 112.5% */
 
 
     @include mq("md") {

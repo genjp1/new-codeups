@@ -35,7 +35,7 @@
     font-size: rem(18);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(18); /* 100% */
+    line-height: 1; /* 100% */
 }
 
 .pc-nav__item:last-child a{
@@ -51,7 +51,7 @@
     font-size: rem(10);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(15); /* 150% */
+    line-height: 1.5; /* 150% */
 
 
 }

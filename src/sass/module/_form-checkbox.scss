@@ -29,7 +29,7 @@
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
     text-align-last: left;
 }
 

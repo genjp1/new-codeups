@@ -32,7 +32,7 @@
     font-size: rem(30);
     font-style: normal;
     font-weight: $regular;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
   }
   details > summary:before {
     content: "";
@@ -46,7 +46,7 @@
     // font-size: rem(24);
     // font-style: normal;
     // font-weight: $regular;
-    // line-height: normal;
+    // line-height: normal;//ブラウザのデフォルトの行間隔を使用
   }
   details[open] > summary:before {
     content: "";
@@ -64,7 +64,7 @@
     color: $green1;
     font-style: normal;
     font-weight: $regular;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
     transition: .5s ;
     cursor: pointer;
   }

@@ -47,7 +47,7 @@
     font-size: rem(80);
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
     letter-spacing: rem(40);
     text-align: center;
     text-indent: 0.5em;
@@ -69,7 +69,7 @@
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(24); /* 150% */
+    line-height: 1.5; /* 150% */
 
     @include mq("md") {
         margin-top: rem(23);

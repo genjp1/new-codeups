@@ -43,7 +43,7 @@
     font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
-    line-height: rem(18); /* 150% */
+    line-height: 1.5; /* 150% */
   }
   
 
@@ -53,7 +53,7 @@
     font-size: rem(24);
     font-style: normal;
     font-weight: $medium;
-    line-height: normal;
+    line-height: normal;//ブラウザのデフォルトの行間隔を使用
   }
 
 
