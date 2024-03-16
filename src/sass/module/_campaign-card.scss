@@ -242,7 +242,7 @@ hr.campaign-card__line {
 
 hr.campaign-card__line.campaign-card__line--page-campaign {
     @include mq("md") {
-        margin: rem(2) 0;
+        margin:  0;
     }
 }
 
