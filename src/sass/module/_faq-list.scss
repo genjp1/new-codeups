@@ -13,7 +13,7 @@
 }
 
 .faq-list__item + .faq-list__item {
-    margin-top: rem(41.5);
+    margin-top: rem(40);
 
     @include mq("md") {
         margin-top: rem(40);
@@ -67,7 +67,7 @@
 }
 
 .faq-list__item-answer {
-    padding: rem(24) rem(16) rem(24) rem(16);
+    padding: rem(25) rem(16) rem(25) rem(16);
     display: none;
 
     border: 1px solid $green2;
