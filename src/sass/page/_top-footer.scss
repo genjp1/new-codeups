@@ -33,10 +33,10 @@
 }
 
 .top-footer.top-page-information-footer {
-    margin-top: rem(105);
+    margin-top: rem(100);
 
     @include mq("md") {
-        margin-top: rem(159);
+        margin-top: rem(161);
     }
 
 }
@@ -45,7 +45,7 @@
     margin-top: rem(99);
 
     @include mq("md") {
-        margin-top: rem(159);
+        margin-top: rem(160);
     }
 
 }

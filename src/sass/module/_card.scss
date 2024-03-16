@@ -25,13 +25,18 @@
   .card__body{
     padding: rem(12) rem(16)  rem(24);
     
-
     @include mq("md") {
         padding: rem(9) rem(17) rem(24);
     }
   }
 
-
+  .card__body.card__body--page-blog {
+    padding: rem(12) rem(16)  rem(24);
+    
+    @include mq("md") {
+        padding: rem(11) rem(17) rem(24);
+    }
+  }
 
   
   .card__date{
@@ -53,6 +58,48 @@
       margin:  rem(3) 0;
     }
 }
+
+hr.card__line.card__line--page-blog {
+  margin:  rem(3) 0;
+
+}
+
+  .card__title{
+    color: $green1;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: $medium;
+    line-height: 1.5; /* 150% */
+  }
+  
+  .card__text{
+    margin-top: rem(16);
+    color: $green1;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 1.5; /* 150% */
+  
+  }
+
+  .card__img,
+  .card__title,
+  .card__line,
+  .card__text,
+  .card__date {
+    @include mq("md") {
+      transition: .5s ;
+    }
+
+  }
+
+  .card:hover .card__img,
+  .card:hover .card__title,
+  .card:hover .card__line,
+  .card:hover .card__text,
+  .card:hover .card__date {
+    opacity: .5;
+  }
 
 .card__title{
     color: $green1;
