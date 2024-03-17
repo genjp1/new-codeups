@@ -22,7 +22,7 @@
     margin-top: rem(21);
 
     @include mq("md") {
-        margin-top: rem(36.5);
+        margin-top: rem(37);
     }
 }
 
@@ -30,7 +30,7 @@
     padding-bottom: rem(24);
 
     @include mq("md") {
-        padding-bottom: rem(38);
+        padding-bottom: rem(37);
     }
 }
 
@@ -124,7 +124,7 @@
     text-align: center;
   
     @include mq("md") {
-      margin-top: rem(77);
+      margin-top: rem(76);
     }
   }
   
