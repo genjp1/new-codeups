@@ -126,108 +126,171 @@
     position: relative;
   }
 
+//   .tab__button.tab__button--page-information-license::before,
+//   .tab__button.tab__button--page-information-fun::before,
+//   .tab__button.tab__button--page-information-experience::before {
+//     @include mq("md") {
+//       content: "";
+//       display: block;
+//       position: absolute;
+//       top: 50%;
+//       left: calc(50% - (min(46.062vw, rem(121))));
+//       transform: translateY(-50%);
+//       width: 100%;
+//       height: rem(63);
+//       background-size: contain;
+//       background-repeat: no-repeat;
+//       z-index: 2;
+//       transition: all .5s;
+//     }
+
+//   }
+
+// /* ライセンス講習
+// =====================================================*/
+//   //未選択時の画像
+//   .tab__button.tab__button--page-information-license::before {
+
+//     @include mq("md") {
+//       background-image: url(../images/common/icon-information1-green.svg);
+//     }
+//   }
+
+//   //ホバー時の画像
+//   .tab__button.tab__button--page-information-license:hover::before {
+
+//     @include mq("md") {
+//       background-image: url(../images/common/icon-information1-white.svg);
+//     }
+//   }
+
+//   //アクティブ時の画像
+//   .tab__button.tab__button--page-information-license.is-active::before {
+
+//     @include mq("md") {
+//       background-image: url(../images/common/icon-information1-white.svg);
+//     }
+//   }
+
+// /* ファンダイビング
+// =====================================================*/
+//   //未選択時の画像
+//   .tab__button.tab__button--page-information-fun::before {
+
+//     @include mq("md") {
+//       background-image: url(../images/common/icon-information2.svg);
+//       left: calc(50% - (min(46.062vw, rem(132))));
+//     }
+//   }
+
+//   //ホバー時の画像
+//   .tab__button.tab__button--page-information-fun:hover::before {
+
+//     @include mq("md") {
+//       background-image: url(../images/common/icon-information1-white.svg);
+//       left: calc(50% - (min(46.062vw, rem(132))));
+//     }
+//   }
+
+//   //アクティブ時の画像
+//   .tab__button.tab__button--page-information-fun.is-active::before {
+
+//     @include mq("md") {
+//       background-image: url(../images/common/icon-information1-white.svg);
+//       left: calc(50% - (min(46.062vw, rem(132))));
+//     }
+//   }
+
+// /* 体験ダイビング
+// =====================================================*/
+//   //未選択時の画像
+//   .tab__button.tab__button--page-information-experience::before {
+
+//     @include mq("md") {
+//       background-image: url(../images/common/icon-information3.svg);
+//     }
+//   }
+
+//   //ホバー時の画像
+//   .tab__button.tab__button--page-information-experience:hover::before {
+
+//     @include mq("md") {
+//       background-image: url(../images/common/icon-information1-white.svg);
+//     }
+//   }
+
+//   //アクティブ時の画像
+//   .tab__button.tab__button--page-information-experience.is-active::before {
+
+//     @include mq("md") {
+//       background-image: url(../images/common/icon-information1-white.svg);
+//     }
+
+//   }
+
+/* mask-imageで画像を設定（ホバー時色分けできるようにする）
+=====================================================*/
+// 共通のスタイル設定
   .tab__button.tab__button--page-information-license::before,
   .tab__button.tab__button--page-information-fun::before,
   .tab__button.tab__button--page-information-experience::before {
-    @include mq("md") {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: calc(50% - (min(46.062vw, rem(121))));
-      transform: translateY(-50%);
-      width: 100%;
-      height: rem(63);
-      background-size: contain;
-      background-repeat: no-repeat;
-      z-index: 2;
-      transition: all .5s;
-    }
-
+  @include mq("md") {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - (min(46.062vw, rem(121))));
+    transform: translateY(-50%);
+    width: 100%;
+    height: rem(63);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: $green2; // 初期の背景色（緑）
+    z-index: 2;
+    transition: all .5s;
   }
+}
 
-/* ライセンス講習
-=====================================================*/
-  //未選択時の画像
-  .tab__button.tab__button--page-information-license::before {
-
-    @include mq("md") {
-      background-image: url(../images/common/icon-information1-green.svg);
-    }
+// ライセンス講習のスタイル
+.tab__button.tab__button--page-information-license::before {
+  @include mq("md") {
+    mask-image: url(../images/common/icon-information1-green.svg);
   }
-
-  //ホバー時の画像
-  .tab__button.tab__button--page-information-license:hover::before {
-
-    @include mq("md") {
-      background-image: url(../images/common/icon-information1-white.svg);
-    }
+}
+.tab__button.tab__button--page-information-license:hover::before,
+.tab__button.tab__button--page-information-license.is-active::before {
+  @include mq("md") {
+    background-color: $white; // ホバー時とアクティブ時の背景色（白）
   }
+}
 
-  //アクティブ時の画像
-  .tab__button.tab__button--page-information-license.is-active::before {
-
-    @include mq("md") {
-      background-image: url(../images/common/icon-information1-white.svg);
-    }
+// ファンダイビングのスタイル調整
+.tab__button.tab__button--page-information-fun::before {
+  @include mq("md") {
+    mask-image: url(../images/common/icon-information2.svg);
+    left: calc(50% - (min(46.062vw, rem(132))));
   }
-
-/* ファンダイビング
-=====================================================*/
-  //未選択時の画像
-  .tab__button.tab__button--page-information-fun::before {
-
-    @include mq("md") {
-      background-image: url(../images/common/icon-information2.svg);
-      left: calc(50% - (min(46.062vw, rem(132))));
-    }
+}
+.tab__button.tab__button--page-information-fun:hover::before,
+.tab__button.tab__button--page-information-fun.is-active::before {
+  @include mq("md") {
+    background-color: $white; // 背景色（白）
+    left: calc(50% - (min(46.062vw, rem(132))));
   }
+}
 
-  //ホバー時の画像
-  .tab__button.tab__button--page-information-fun:hover::before {
-
-    @include mq("md") {
-      background-image: url(../images/common/icon-information1-white.svg);
-      left: calc(50% - (min(46.062vw, rem(132))));
-    }
+// 体験ダイビングのスタイル
+.tab__button.tab__button--page-information-experience::before {
+  @include mq("md") {
+    mask-image: url(../images/common/icon-information3.svg);
   }
-
-  //アクティブ時の画像
-  .tab__button.tab__button--page-information-fun.is-active::before {
-
-    @include mq("md") {
-      background-image: url(../images/common/icon-information1-white.svg);
-      left: calc(50% - (min(46.062vw, rem(132))));
-    }
+}
+.tab__button.tab__button--page-information-experience:hover::before,
+.tab__button.tab__button--page-information-experience.is-active::before {
+  @include mq("md") {
+    background-color: $white; // 背景色（白）
   }
-
-/* 体験ダイビング
-=====================================================*/
-  //未選択時の画像
-  .tab__button.tab__button--page-information-experience::before {
-
-    @include mq("md") {
-      background-image: url(../images/common/icon-information3.svg);
-    }
-  }
-
-  //ホバー時の画像
-  .tab__button.tab__button--page-information-experience:hover::before {
-
-    @include mq("md") {
-      background-image: url(../images/common/icon-information1-white.svg);
-    }
-  }
-
-  //アクティブ時の画像
-  .tab__button.tab__button--page-information-experience.is-active::before {
-
-    @include mq("md") {
-      background-image: url(../images/common/icon-information1-white.svg);
-    }
-
-  }
-
+}
 
   
   .tab__button:not(:first-child) {
