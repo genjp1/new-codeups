@@ -294,3 +294,66 @@ window.addEventListener("DOMContentLoaded", () => {
 		document.querySelector(".js-loading").style.display = "none";
 	}
 });
+
+
+/*====================================================
+# フッターのリンクをクリックしたらページ遷移（タブ選択）（フッター側設定）
+=====================================================*/
+document.addEventListener('DOMContentLoaded', function() {
+  // フッターのリンクをすべて取得
+  var links = document.querySelectorAll('.footer-nav__item-child--tab-link a');
+
+  links.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var tabMap = {
+        'ライセンス取得': 'license',
+        '体験ダイビング': 'experience-diving',
+        'ファンダイビング': 'fan-diving'
+      };
+
+      var text = e.target.textContent.trim();
+      if (tabMap[text]) {
+        e.preventDefault(); // デフォルトのリンク動作をキャンセル
+        // 対応するtabパラメータを使用してpage-information.htmlに遷移
+        window.location.href = 'page-information.html?tab=' + tabMap[text];
+      }
+    });
+  });
+});
+
+
+// page-informationページのタブ選択設定
+document.addEventListener('DOMContentLoaded', function() {
+  var params = new URLSearchParams(window.location.search);
+  var tab = params.get('tab');
+
+  var tabMap = {
+    'license': 0, // 「ライセンス取得」は最初のタブ
+    'experience-diving': 2, // 「体験ダイビング」は3番目のタブ
+    'fan-diving': 1 // 「ファンダイビング」は2番目のタブ
+  };
+
+  if (tabMap.hasOwnProperty(tab)) {
+    var activeTabIndex = tabMap[tab];
+    var tabButtons = document.querySelectorAll('.tab__button--page-information');
+    var tabContents = document.querySelectorAll('.js-tab-content');
+
+    // すべてのタブとコンテンツのアクティブ状態をリセット
+    tabButtons.forEach(function(btn) {
+      btn.classList.remove('is-active');
+    });
+    tabContents.forEach(function(content) {
+      content.classList.remove('is-active');
+    });
+
+    // 対応するタブとコンテンツをアクティブにする
+    if (tabButtons[activeTabIndex]) {
+      tabButtons[activeTabIndex].classList.add('is-active');
+    }
+    if (tabContents[activeTabIndex]) {
+      tabContents[activeTabIndex].classList.add('is-active');
+    }
+  }
+});
+/*フッターのリンクをクリックしたらページ遷移（タブ選択）　ここまで
+=====================================================*/
