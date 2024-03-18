@@ -300,8 +300,8 @@ window.addEventListener("DOMContentLoaded", () => {
 # フッターのリンクをクリックしたらページ遷移（タブ選択）（フッター側設定）
 =====================================================*/
 document.addEventListener('DOMContentLoaded', function() {
-  // フッターのリンクをすべて取得
-  var links = document.querySelectorAll('.footer-nav__item-child--tab-link a');
+  // 共通クラス名を持つリンクをすべて取得
+  var links = document.querySelectorAll('.tab-link');
 
   links.forEach(function(link) {
     link.addEventListener('click', function(e) {
@@ -320,6 +320,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 
 
 // page-informationページのタブ選択設定
