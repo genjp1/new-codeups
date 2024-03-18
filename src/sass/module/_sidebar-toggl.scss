@@ -83,6 +83,7 @@
     font-size: rem(24);
     transition: .5s ;
     cursor: pointer;
+    margin-left: rem(11);
 
   }
 
@@ -91,6 +92,7 @@
     margin-left: rem(-6);
     transition: .5s ;
     cursor: pointer;
+    margin-left: rem(6);
   }
 
   .toggl__age:hover,
@@ -98,3 +100,31 @@
   .folder p:hover  {
     opacity: .5;
   }
+
+
+
+/* アーカイブトグルアイコン（三角形アイコン）の画像配置
+=====================================================*/
+
+details > summary {
+    list-style: none; /* 既存のリストスタイルを削除 */
+    cursor: pointer; /* カーソルをポインターに変更して、クリック可能であることを示す */
+    position: relative; /* ::before疑似要素の位置決めの基点とする */
+    padding-left: rem(20); /* アイコンのスペースを確保 */
+}
+
+details > summary::before {
+    content: ""; /* 実際のテキストは不要なため、空にする */
+    position: absolute;
+    left: 1%; /* summaryの左端に配置 */
+    top: 36%; /* 上端に合わせる */
+    width: rem(17); /* アイコンのサイズを指定 */
+    height: rem(21);
+    background-image: url(../images/common/icon-blog-allow.png);
+    background-size: contain; /* アイコンのサイズに合わせて背景画像を調整 */
+    transition: transform 0.2s ease-in-out; /* アニメーション効果 */
+}
+
+details[open] > summary::before {
+    transform: rotate(90deg); /* 詳細が開かれたときにアイコンを90度回転 */
+}
