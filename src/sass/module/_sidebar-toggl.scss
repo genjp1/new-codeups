@@ -123,6 +123,7 @@ details > summary::before {
     background-image: url(../images/common/icon-blog-allow.png);
     background-size: contain; /* アイコンのサイズに合わせて背景画像を調整 */
     transition: transform 0.2s ease-in-out; /* アニメーション効果 */
+    background-repeat: no-repeat;
 }
 
 details[open] > summary::before {
