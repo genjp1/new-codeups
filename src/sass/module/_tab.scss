@@ -241,8 +241,8 @@
     top: 50%;
     left: calc(50% - (min(46.062vw, rem(121))));
     transform: translateY(-50%);
-    width: 100%;
-    height: rem(63);
+    width: rem(64);
+    height: rem(64);
     mask-size: contain;
     mask-repeat: no-repeat;
     background-color: $green2; // 初期の背景色（緑）
@@ -269,6 +269,7 @@
   @include mq("md") {
     mask-image: url(../images/common/icon-information2.svg);
     left: calc(50% - (min(46.062vw, rem(132))));
+
   }
 }
 .tab__button.tab__button--page-information-fun:hover::before,
