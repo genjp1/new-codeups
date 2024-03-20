@@ -40,14 +40,20 @@
 <body>
 
   <!-- ローディングアニメーション -->
-  <div class="loading js-loading u-desktop">
+  <div class="loading js-loading">
     <div class="loading__inner">
       <div class="loading__img-wrap">
         <div class="loading__img js-loading-img">
-          <img src="./assets/images/common/loading-left.jpg" alt="亀の写真" />
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/common/loading-left.jpg" class="mv">
+            <img src="./assets/images/common/loading-left-sp.jpg" class="mv" alt="水中のウミガメの様子">
+          </picture>
         </div>
         <div class="loading__img js-loading-img">
-          <img src="./assets/images/common/loading-right.jpg" alt="亀の写真" />
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/common/loading-right.jpg" class="mv">
+            <img src="./assets/images/common/loading-right-sp.jpg" class="mv" alt="水中のウミガメの様子">
+          </picture>
         </div>
       </div>
       <div class="loading__title-wrap js-loading-title">
