@@ -61,19 +61,34 @@
         }
     }
 
-    .blog-article__text{
-        margin-top: rem(24);
-        color: $green1;
-        font-size: rem(16);
-        font-style: normal;
-        font-weight: $regular;
-        line-height: 1.5; /* 150% */
+    .blog-article__text {
+      // margin-top: rem(24);
+      // color: $green1;
+      // font-size: rem(16);
+      // font-style: normal;
+      // font-weight: $regular;
+      // line-height: 1.5; /* 150% */
 
-        @include mq("md") {
-          margin-top: rem(40);
-        }
-      
+      // @include mq("md") {
+      //   margin-top: rem(40);
+      // }
+    }
+    
+    .blog-article__content p {
+      margin-top: rem(24);
+      color: $green1;
+      font-size: rem(16);
+      font-style: normal;
+      font-weight: $regular;
+      line-height: 1.5; /* 150% */
+
+      @include mq("md") {
+        margin-top: rem(40);
       }
+    }
+
+  
+
 
       .blog-article__list {
         margin-top: rem(23);
