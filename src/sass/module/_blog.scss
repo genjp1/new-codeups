@@ -2,12 +2,19 @@
 
 .blog{
 
+  // @include mq("md") {
+  //   position: relative;
+  // }
+}
+
+.blog-bg {
+  
   @include mq("md") {
     position: relative;
   }
 }
 
-.blog::before {
+.blog-bg::before {
 
   @include mq("md") {
     background-image: url(../images/common/bg-blog.jpg);
