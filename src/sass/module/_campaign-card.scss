@@ -23,14 +23,18 @@
     // opacity: 0.5;
 }
 
+
 .campaign-card__img {
-    width: 100%;
+    aspect-ratio: 280/188;
+    // width: 100%;
+    object-fit: cover;
     overflow: hidden;
 }
 
 .campaign-card__img img {
     width: 100%;
-    aspect-ratio: 280/188;
+    height: 100%;
+    // aspect-ratio: 280/188;
     object-fit: cover;
     transition: .6s;
 }
