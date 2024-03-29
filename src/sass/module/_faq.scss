@@ -3,3 +3,9 @@
 .faq__inner {
 
 }
+
+//動的化の際利用する（faq_content）
+.faq__content {
+    display: grid;
+    gap: rem(40);
+}
