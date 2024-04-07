@@ -24,13 +24,13 @@
 	text-align: center;
 	color: $green2;
 	@include mq("md") {
-    	top: 56%;
+    	top: 50.2%;
 	}
 }
 
 .loading__title {
 	font-size: rem(40);
-	font-family: $english-family;
+	font-family: $mv-english-family;
 	font-weight: $regular;
 	line-height: 1;
 	letter-spacing: 0.53em;
