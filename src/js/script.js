@@ -295,9 +295,9 @@ window.addEventListener("DOMContentLoaded", () => {
         openingAnimation();
     } else {
         // 2回目以降の訪問時の処理
-        // document.querySelector(".js-loading").style.display = "none";
-        sessionStorage.setItem(keyName, keyValue);
-        openingAnimation();
+        document.querySelector(".js-loading").style.display = "none";
+        // sessionStorage.setItem(keyName, keyValue);
+        // openingAnimation();
     }
 });
 
