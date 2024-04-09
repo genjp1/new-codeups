@@ -13,8 +13,10 @@
 
     @include mq("md") {
       display: flex;
+      column-gap: rem(32);
       row-gap: rem(10);
       flex-wrap: wrap;
+
 
     }
   }
