@@ -34,3 +34,15 @@
   .page-campaign__tab {
     
   }
+
+  .page-campaign__content {
+    margin-top: rem(48);
+
+    @include mq("md") {
+      margin-top: rem(40);
+    }
+  }
+
+  .page-campaign__cards {
+    
+  }
