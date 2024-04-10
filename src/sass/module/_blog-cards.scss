@@ -7,8 +7,8 @@
     row-gap: rem(39);
 
     @include mq("md") {
-      row-gap: rem(30);
       column-gap: rem(39);
+      row-gap: rem(79);
       grid-template-columns: repeat(3,1fr);
     }
   }
@@ -16,7 +16,6 @@
   .blog-cards.blog-cards--page-blog {
 
     @include mq("md") {
-      row-gap: rem(79);
       grid-template-columns: repeat(2,1fr);
     }
   }

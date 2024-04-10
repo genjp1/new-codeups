@@ -65,12 +65,12 @@
     @include mq("md") {
       margin:  rem(3) 0;
     }
-}
+  }
 
-hr.card__line.card__line--page-blog {
-  margin:  rem(3) 0;
+  hr.card__line.card__line--page-blog {
+    margin:  rem(3) 0;
 
-}
+  }
 
   .card__title{
     color: $green1;
