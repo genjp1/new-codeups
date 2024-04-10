@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.page-campaign-cards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: rem(35);
+    row-gap: rem(40);
+
+    @include mq("md") {
+      row-gap: rem(76);
+      column-gap: rem(39);
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  .page-campaign-cards__card {
+    
+  }

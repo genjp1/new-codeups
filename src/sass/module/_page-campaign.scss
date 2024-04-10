@@ -36,10 +36,13 @@
   }
 
   .page-campaign__content {
-    margin-top: rem(48);
+    margin-top: rem(40);
+    padding-right: rem(32);
+    padding-left: rem(32);
 
     @include mq("md") {
-      margin-top: rem(40);
+      padding-right: rem(0);
+      padding-left: rem(0);
     }
   }
 
