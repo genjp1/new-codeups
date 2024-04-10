@@ -2,7 +2,12 @@
 .sub-mv {
     position: relative;
     z-index: 1;
-    min-height: rem(400);
+    height: rem(460);
+    
+    @include mq("md") {
+        height: rem(548);
+    }
+
 }
 
 .sub-mv__inner {
