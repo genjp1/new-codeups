@@ -37,9 +37,7 @@
     line-height: 1.57143; /* 157.143% */
     background-color: $green3;
     transition: all .5s;
-
     position: relative;
-
     box-shadow: rem(2) rem(2) rem(4) rem(0) rgba(0, 0, 0, 0.25);
 
     @include mq("md") {
@@ -56,15 +54,12 @@
 
   }
 
-  
-
   .tab__button.tab__button--fun {
     padding: rem(10) rem(15) rem(10) rem(15);
 
       @include mq("md") {
         padding: rem(29) rem(18) rem(26) rem(35);
       }
-
   }
 
   .tab__button:hover {
@@ -72,18 +67,16 @@
     color: $white;
   }
 
-  .tab__button.tab__button--license,
-  .tab__button.tab__button--fun,
-  .tab__button.tab__button--experience{
-    position: relative;
+  .tab__button.is-active {
+    color: #fff;
+    background-color: $green2;
   }
+  
 
 /* mask-imageで画像を設定（ホバー時色分けできるようにする）
 =====================================================*/
 // 共通のスタイル設定
-  .tab__button.tab__button--license::before,
-  .tab__button.tab__button--fun::before,
-  .tab__button.tab__button--experience::before {
+  .tab__button::before {
   @include mq("md") {
     content: "";
     display: block;
@@ -107,10 +100,12 @@
     mask-image: url(../images/common/icon-information1-green.svg);
   }
 }
+
+// ライセンス講習のホバー時とアクティブ時の背景色（白）
 .tab__button.tab__button--license:hover::before,
 .tab__button.tab__button--license.is-active::before {
   @include mq("md") {
-    background-color: $white; // ホバー時とアクティブ時の背景色（白）
+    background-color: $white; 
   }
 }
 
@@ -122,10 +117,12 @@
 
   }
 }
+
+// ファンダイビングのホバー時とアクティブ時の背景色（白）
 .tab__button.tab__button--fun:hover::before,
 .tab__button.tab__button--fun.is-active::before {
   @include mq("md") {
-    background-color: $white; // 背景色（白）
+    background-color: $white;
     left: calc(50% - (min(46.062vw, rem(132))));
   }
 }
@@ -136,44 +133,29 @@
     mask-image: url(../images/common/icon-information3.svg);
   }
 }
+
+// 体験ダイビングのホバー時とアクティブ時の背景色（白）
 .tab__button.tab__button--experience:hover::before,
 .tab__button.tab__button--experience.is-active::before {
   @include mq("md") {
-    background-color: $white; // 背景色（白）
+    background-color: $white;
   }
 }
+/* mask-imageで画像を設定（ここまで）
+=====================================================*/
 
-  .tab__button:not(:first-child) {
 
-    @include mq("md") {
-
-    }
-  }
-
-  .tab__button:not(:first-child) {
-
-    @include mq("md") {
-      margin-left: rem(0);
-    }
-  }
-
-  .tab__button.is-active {
-    color: #fff;
-    background-color: $green2;
-  }
 
   .tab__contents {
-    margin-top: rem(-8);
+    margin-top: rem(14);
+
     @include mq("md") {
       margin-top: rem(20);
     }
-
   }
   
   .tab__content {
     display: none;
-    // padding: rem(20);
-    // background-color: #c0c0c0;
   }
   
   .tab__content.is-active {
@@ -181,9 +163,5 @@
   }
   
   .tab__cards {
-    margin-top: rem(22);
 
-    @include mq("md") {
-      margin-top: rem(22);
-    }
   }
