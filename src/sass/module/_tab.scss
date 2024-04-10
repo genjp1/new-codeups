@@ -6,30 +6,14 @@
   
   .tab__list {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: rem(21);
+    grid-template-columns: repeat(3,1fr);
+    column-gap: rem(20);
     row-gap: rem(16);
     justify-items: center;
 
     @include mq("md") {
-      display: flex;
-      row-gap: rem(10);
-      flex-wrap: wrap;
-
+      column-gap: rem(90);
     }
-  }
-
-    .tab__list.tab__list--page-information {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      column-gap: rem(20);
-      row-gap: rem(16);
-      justify-items: center;
-  
-      @include mq("md") {
-        column-gap: rem(90);
-      }
-
   }
   
   .tab__button {
@@ -74,7 +58,7 @@
 
   
 
-  .tab__button.tab__button--page-information-fun {
+  .tab__button.tab__button--fun {
     padding: rem(10) rem(15) rem(10) rem(15);
 
       @include mq("md") {
@@ -88,18 +72,18 @@
     color: $white;
   }
 
-  .tab__button.tab__button--page-information-license,
-  .tab__button.tab__button--page-information-fun,
-  .tab__button.tab__button--page-information-experience{
+  .tab__button.tab__button--license,
+  .tab__button.tab__button--fun,
+  .tab__button.tab__button--experience{
     position: relative;
   }
 
 /* mask-imageで画像を設定（ホバー時色分けできるようにする）
 =====================================================*/
 // 共通のスタイル設定
-  .tab__button.tab__button--page-information-license::before,
-  .tab__button.tab__button--page-information-fun::before,
-  .tab__button.tab__button--page-information-experience::before {
+  .tab__button.tab__button--license::before,
+  .tab__button.tab__button--fun::before,
+  .tab__button.tab__button--experience::before {
   @include mq("md") {
     content: "";
     display: block;
@@ -118,28 +102,28 @@
 }
 
 // ライセンス講習のスタイル
-.tab__button.tab__button--page-information-license::before {
+.tab__button.tab__button--license::before {
   @include mq("md") {
     mask-image: url(../images/common/icon-information1-green.svg);
   }
 }
-.tab__button.tab__button--page-information-license:hover::before,
-.tab__button.tab__button--page-information-license.is-active::before {
+.tab__button.tab__button--license:hover::before,
+.tab__button.tab__button--license.is-active::before {
   @include mq("md") {
     background-color: $white; // ホバー時とアクティブ時の背景色（白）
   }
 }
 
 // ファンダイビングのスタイル調整
-.tab__button.tab__button--page-information-fun::before {
+.tab__button.tab__button--fun::before {
   @include mq("md") {
     mask-image: url(../images/common/icon-information2.svg);
     left: calc(50% - (min(46.062vw, rem(132))));
 
   }
 }
-.tab__button.tab__button--page-information-fun:hover::before,
-.tab__button.tab__button--page-information-fun.is-active::before {
+.tab__button.tab__button--fun:hover::before,
+.tab__button.tab__button--fun.is-active::before {
   @include mq("md") {
     background-color: $white; // 背景色（白）
     left: calc(50% - (min(46.062vw, rem(132))));
@@ -147,13 +131,13 @@
 }
 
 // 体験ダイビングのスタイル
-.tab__button.tab__button--page-information-experience::before {
+.tab__button.tab__button--experience::before {
   @include mq("md") {
     mask-image: url(../images/common/icon-information3.svg);
   }
 }
-.tab__button.tab__button--page-information-experience:hover::before,
-.tab__button.tab__button--page-information-experience.is-active::before {
+.tab__button.tab__button--experience:hover::before,
+.tab__button.tab__button--experience.is-active::before {
   @include mq("md") {
     background-color: $white; // 背景色（白）
   }
@@ -185,33 +169,6 @@
     }
 
   }
-
-  // .tab__contents.tab__contents--page-voice {
-  //   margin-top: rem(-8);
-  //   @include mq("md") {
-  //     margin-top: rem(20);
-  //   }
-
-  // }
-
-  .tab__contents.tab__contents--page-information {
-    margin-top: rem(-8);
-    @include mq("md") {
-      margin-top: rem(20);
-    }
-
-  }
-
-  .tab__contents.tab__contents--page-campaign {
-    // padding-right: rem(32);
-    // padding-left: rem(32);
-
-    @include mq("md") {
-      // padding-right: inherit;
-      // padding-left: inherit;
-    }
-
-  }
   
   .tab__content {
     display: none;
@@ -224,15 +181,6 @@
   }
   
   .tab__cards {
-    margin-top: rem(48);
-
-      @include mq("md") {
-        margin-top: rem(40);
-      }
-  }
-
-
-  .tab__cards.tab__cards--page-information {
     margin-top: rem(22);
 
     @include mq("md") {
