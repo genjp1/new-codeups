@@ -2,13 +2,19 @@
 .sub-mv {
     position: relative;
     z-index: 1;
-    height: rem(460);
-    
-    @include mq("md") {
-        height: rem(548);
-    }
-
+    min-height: rem(400);
 }
+
+// .sub-mv {
+//     position: relative;
+//     z-index: 1;
+//     height: rem(460);
+    
+//     @include mq("md") {
+//         height: rem(548);
+//     }
+
+// }
 
 .sub-mv__inner {
     height: inherit;
