@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.form-checkbox {
+    
+}
+
 .form-checkbox label {
     display: block;
     // @include mq(md){
@@ -36,8 +40,8 @@
 .form-checkbox input + span::before {
     content: "";
     position: absolute;
-    top: 55%;
-    left: rem(-2);
+    top: 29%;
+    left: rem(0);
     transform: translateY(-50%);
     background: #fff;
     border: 1px solid $green1;
@@ -46,51 +50,30 @@
     height: rem(15);
 
     @include mq("md") {
-        top: 50%;
+        top: 49%;
+        left: rem(-2);
     }
 }
-
-.form-checkbox.form-checkbox--consent input + span::before {
-    top: 29%;
-  
-    @include mq("md") {
-      top: 49%;
-    }
-  }
 
 .form-checkbox input + span::after {
     content: "";
     margin-top: rem(-2);
     position: absolute;
-    top: 58%;
-    left: 1.2%;
-    transform: translateY(-50%) rotate(-45deg);
-    display: block;
-    width: rem(10);
-    height: rem(5);
-    border-bottom: rem(2) solid $red;
-    border-left: rem(2) solid $red;
-    transition:  .3s;
-    opacity: 0;
-    @include mq("md") {
-        top: 53%;
-        left: 1.4%;
-    }
-}
-
-.form-checkbox.form-checkbox-bg input + span::after {
+    top: 28%;
     left: rem(3);
     transform: translateY(-50%) rotate(-35deg);
     display: block;
     width: rem(16);
     height: rem(8);
-    top: 28%;
-  
+    border-bottom: rem(2) solid $red;
+    border-left: rem(2) solid $red;
+    transition:  .3s;
+    opacity: 0;
     @include mq("md") {
+        top: 45%;
         left: rem(1);
-      top: 45%;
     }
-  }
+}
 
 .form-checkbox input:checked + span::after {
     opacity: 1;

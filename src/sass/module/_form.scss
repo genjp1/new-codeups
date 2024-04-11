@@ -12,11 +12,6 @@
     }
 }
 
-.form__wrap.form__wrap--textarea {
-    @include mq(md){
-        align-items: flex-start;
-    }
-}
 
 .form__wrap + .form__wrap {
     margin-top: rem(21);
@@ -67,10 +62,6 @@
     }
 }
 
-.form__wrap.form__wrap--textarea .form__label {
-    @include mq(md){
-    }
-}
 
 .form__label span {
     background-color: #C94800;
