@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (tabMap.hasOwnProperty(tab)) {
     var activeTabIndex = tabMap[tab];
-    var tabButtons = document.querySelectorAll('.tab__button--page-information');
+    var tabButtons = document.querySelectorAll('.tab__button');
     var tabContents = document.querySelectorAll('.js-tab-content');
 
     // すべてのタブとコンテンツのアクティブ状態をリセット

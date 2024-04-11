@@ -28,7 +28,7 @@
     // }
 }
 
-.pagenavi.pagenavi--page-blogDetail .wp-pagenavi {
+.pagenavi.page-blogDetail__pagenavi .wp-pagenavi {
 
     @include mq("md") {
         margin-left: rem(-34);
@@ -84,7 +84,7 @@
 
 }
 
-.pagenavi.pagenavi--page-blogDetail .wp-pagenavi .previouspostslink {
+.pagenavi.page-blogDetail__pagenavi .wp-pagenavi .previouspostslink {
     margin-right: rem(41);
 }
 
@@ -117,7 +117,7 @@
 
 }
 
-.pagenavi.pagenavi--page-blogDetail .wp-pagenavi .nextpostslink {
+.pagenavi.page-blogDetail__pagenavi .wp-pagenavi .nextpostslink {
     margin-left: rem(41);
 }
 
