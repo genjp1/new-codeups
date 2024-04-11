@@ -10,7 +10,7 @@
     letter-spacing: 0.05em;
 }
 
-.breadcrumb.breadcrumb--404 {
+.breadcrumb.breadcrumb--white {
     background-color: $green1;
     color: $white;
     padding-top: rem(88);
@@ -27,7 +27,8 @@
     color: $green1;
 }
 
-.breadcrumb.breadcrumb--404 a {
+
+.breadcrumb.breadcrumb--white a {
     color: $white;
 }
 
@@ -35,6 +36,6 @@
     opacity: 0.5;
 }
 
-.breadcrumb.breadcrumb--404 a:hover {
+.breadcrumb.breadcrumb--white a:hover {
     opacity: 0.5;
 }
