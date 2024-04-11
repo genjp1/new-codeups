@@ -4,7 +4,7 @@
     height: 100%;
     display: block;
     flex-shrink: 0;
-    background: var(--White, #FFF);
+    background: $white;
     box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
 }
 
