@@ -62,7 +62,7 @@
 }
 
 hr.information__line {
-    border-color: $green2;
+    border: 1px solid $green2;
     margin: rem(3) 0;
 
     @include mq("md") {

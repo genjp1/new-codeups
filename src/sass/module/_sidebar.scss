@@ -97,9 +97,5 @@
 
   .sidebar__campaign-cardBtn {
     text-align: center;
-    margin-top: rem(45);
-
-    @include mq("md") {
-      margin-top: rem(45);
-    }
+    margin-top: rem(40);
   }

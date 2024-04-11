@@ -61,14 +61,14 @@
 .pagenavi .wp-pagenavi a:hover {
 	color: #fff;
 	background-color: $green2;
-	border-color: $green2;
+	border: 1px solid $green2;
     opacity: 1;
 }
 
 .pagenavi .wp-pagenavi .current {
 	color: #fff;
 	background-color: $green2;
-	border-color: $green2;
+	border: 1px solid $green2;
 }
 
 .pagenavi .wp-pagenavi .previouspostslink {

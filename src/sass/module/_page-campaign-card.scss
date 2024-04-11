@@ -87,7 +87,7 @@
 }
 
 hr.page-campaign-card__line {
-    border-color: $green2;
+    border: 1px solid $green2;
     margin: rem(6) 0;
 
     @include mq("md") {
