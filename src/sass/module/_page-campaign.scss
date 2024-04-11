@@ -49,3 +49,11 @@
   .page-campaign__cards {
     
   }
+
+  .page-campaign__pagenavi {
+    margin-top: rem(78);
+
+    @include mq("md") {
+        margin-top: rem(75);
+    }
+  }

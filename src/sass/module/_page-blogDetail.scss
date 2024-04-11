@@ -48,7 +48,11 @@
   }
 
   .page-blogDetail__pagenavi {
+    margin-top: rem(39);
 
+    @include mq("md") {
+        margin-top: rem(77);
+    }
   }
 
   .page-blogDetail__sidebar {
