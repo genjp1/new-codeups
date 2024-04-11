@@ -25,7 +25,7 @@
   details > summary {
     position: relative;
     margin-top: rem(1);
-    color: $green2;
+    color: $green1;
     padding: rem(2) rem(0) rem(4) rem(0);
     // background: #444;
 
@@ -42,7 +42,7 @@
   }
   details[open] > summary {
     // background: #66e;
-    // color: $green2;
+    // color: $green1;
     // font-size: rem(24);
     // font-style: normal;
     // font-weight: $regular;
@@ -61,7 +61,7 @@
   }
   .folder p {
     margin: rem(15);
-    color: $green1;
+    color: $main-black;
     font-style: normal;
     font-weight: $regular;
     line-height: normal;//ブラウザのデフォルトの行間隔を使用

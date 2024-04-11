@@ -7,7 +7,7 @@
     right: rem(20);
     bottom: rem(40);
     background: #fff;
-    border: solid  1px $green2;
+    border: solid  1px $green1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,8 +32,8 @@
     width: rem(11); /* 矢印の幅 */
     transform: rotate(127deg) skewX(-53deg); /* 回転してから斜めにする */
     background-color: transparent;
-    border-left:  rem(2) solid $green2; /* 矢印の形を作成 */
-    border-bottom:  rem(2) solid $green2; /* 矢印の形を調整 */
+    border-left:  rem(2) solid $green1; /* 矢印の形を作成 */
+    border-bottom:  rem(2) solid $green1; /* 矢印の形を調整 */
     z-index: 10;
 
     @include mq("md") {
@@ -48,7 +48,7 @@
 
 @media (hover: hover) and (pointer: fine) {
     .pagetop:hover, .pagetop:hover .pagetop__arrow {
-        background-color: $green2;
+        background-color: $green1;
         border-color: #fff;
         transition: all 1.0s ease 0s;
     }
@@ -56,7 +56,7 @@
 
 @media (hover: hover) and (pointer: fine) {
     .pagetop:hover, .pagetop:hover {
-        border:  2px solid $green2;
+        border:  2px solid $green1;
         transition: all 0.3s ease 0s;
     }
 }

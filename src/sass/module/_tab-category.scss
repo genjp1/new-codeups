@@ -28,9 +28,9 @@
     padding: rem(6) rem(0);
     flex-shrink: 0;
     cursor: pointer;
-    border: 1px solid $green2;
+    border: 1px solid $green1;
 
-    color: $green2;
+    color: $green1;
     font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
@@ -45,7 +45,7 @@
   }
 
   .tab-category__list:hover {
-    background-color: $green2;
+    background-color: $green1;
     color: $white;
   }
 
@@ -58,7 +58,7 @@
 
   .tab-category__list.is-active {
     color: #fff;
-    background-color: $green2;
+    background-color: $green1;
   }
 
   .tab-category__content {

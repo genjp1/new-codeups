@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .information {
-    background-color: $green3;
+    background-color: $green2;
 }
 
 .information__inner {
@@ -50,7 +50,7 @@
 }
 
 .information__course-title {
-    color: $green1;
+    color: $main-black;
     font-size: rem(20);
     font-style: normal;
     font-weight: $bold;
@@ -62,7 +62,7 @@
 }
 
 hr.information__line {
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     margin: rem(3) 0;
 
     @include mq("md") {
@@ -73,7 +73,7 @@ hr.information__line {
 .information__course-text {
     margin-top: rem(6);
 
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;

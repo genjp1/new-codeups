@@ -61,8 +61,8 @@
     padding: rem(4) rem(12);
     align-items: flex-start;
     gap: rem(8);
-    border: 1px solid $green2;
-    color: $green2;
+    border: 1px solid $green1;
+    color: $green1;
     font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
@@ -74,7 +74,7 @@
 }
 
 .campaign-card__title {
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: $medium;
@@ -88,7 +88,7 @@
 }
 
 hr.campaign-card__line {
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     margin: rem(6) 0;
 
     @include mq("md") {
@@ -101,7 +101,7 @@ hr.campaign-card__line {
 }
 
 .campaign-card__text {
-    color: $green1;
+    color: $main-black;
     font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
@@ -133,7 +133,7 @@ hr.campaign-card__line {
     text-decoration-thickness: rem(3);
     text-align: center;
 
-    color: $green1;
+    color: $main-black;
     font-family:$mv-english-family;
     font-size: rem(20);
     font-style: normal;
@@ -150,7 +150,7 @@ hr.campaign-card__line {
 }
 
 .campaign-card__price-discount {
-    color: $green2;
+    color: $green1;
     font-family: $mv-english-family;
     font-size: rem(32);
     font-style: normal;

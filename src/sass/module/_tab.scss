@@ -30,12 +30,12 @@
     border: none;
     text-align: center;
 
-    color: $green2;
+    color: $green1;
     font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
     line-height: 1.57143; /* 157.143% */
-    background-color: $green3;
+    background-color: $green2;
     transition: all .5s;
     position: relative;
     box-shadow: rem(2) rem(2) rem(4) rem(0) rgba(0, 0, 0, 0.25);
@@ -63,13 +63,13 @@
   }
 
   .tab__button:hover {
-    background-color: $green2;
+    background-color: $green1;
     color: $white;
   }
 
   .tab__button.is-active {
     color: #fff;
-    background-color: $green2;
+    background-color: $green1;
   }
   
 
@@ -88,7 +88,7 @@
     height: rem(64);
     mask-size: contain;
     mask-repeat: no-repeat;
-    background-color: $green2; // 初期の背景色（緑）
+    background-color: $green1; // 初期の背景色（緑）
     z-index: 2;
     transition: all .5s;
   }

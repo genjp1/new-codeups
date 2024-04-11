@@ -24,7 +24,7 @@
     position: relative;
     display: block;
 
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: 400;
@@ -46,7 +46,7 @@
     left: 0;
     transform: translateY(-50%);
     background: #fff;
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     border-radius: 50%;
 }
 
@@ -61,7 +61,7 @@
     transform: translateY(-50%);
     border: 1px solid transparent;
     border-radius: 50%;
-    background: $green2;
+    background: $green1;
     opacity: 0;
     transition: .3s;
 }

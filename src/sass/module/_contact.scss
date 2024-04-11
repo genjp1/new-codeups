@@ -48,7 +48,7 @@
 
 
 hr.contact__line {
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     margin: rem(5) rem(0) rem(0) rem(0);
 
     @include mq("md") {
@@ -67,7 +67,7 @@ hr.contact__line {
     text-align: center;
     margin-top: rem(16);
 
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;

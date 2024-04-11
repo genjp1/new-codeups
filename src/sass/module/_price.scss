@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .price {
-    background-color: $green3;
+    background-color: $green2;
     position: relative;
 
 }
@@ -16,7 +16,7 @@
 
 
 .price__title {
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: $bold;
@@ -57,7 +57,7 @@
 }
 
 hr.price__line {
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     margin: rem(2) rem(0) rem(0) rem(0);
 }
 
@@ -75,7 +75,7 @@ hr.price__line {
 }
 
 .price__name {
-    color: $green1;
+    color: $main-black;
     font-family: "Noto Sans JP";
     font-size: rem(14);
     font-style: normal;
@@ -89,7 +89,7 @@ hr.price__line {
 }
 
 .price__cost {
-    color: $green1;
+    color: $main-black;
     font-size: rem(14);
     font-style: normal;
     font-weight: $regular;

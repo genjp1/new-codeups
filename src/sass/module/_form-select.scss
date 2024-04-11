@@ -4,7 +4,7 @@
     padding: rem(11) rem(50) rem(11) rem(8);
     width: 100%;
     border-radius: 0;
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     background-image: url(./../images/common/arrow-contact.png);
     background-repeat: no-repeat;
     background-size: rem(15);
@@ -28,7 +28,7 @@
 }
 
 .form-select select:focus {
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     box-shadow: none;
 		outline: none;
 }

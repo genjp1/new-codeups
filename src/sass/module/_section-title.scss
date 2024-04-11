@@ -5,7 +5,7 @@
 }
 
 .title__main {
-    color: $green1;
+    color: $main-black;
     text-align: center;
     font-family: $english-family;
     font-size: rem(32);
@@ -39,7 +39,7 @@
 }
 
 .title__main::first-letter {
-    color: $green2;
+    color: $green1;
   }
 
   .title__main.title__main--white::first-letter {
@@ -54,7 +54,7 @@
 
 .title__sub {
     margin-top: rem(4);
-    color: $green2;
+    color: $green1;
     text-align: center;
     font-family: "Noto Sans JP";
     font-size: rem(12);
@@ -82,7 +82,7 @@
 
 .title__subText {
     margin-top: rem(8);
-    color: $green2;
+    color: $green1;
     text-align: center;
     font-family: "Noto Sans JP";
     font-size: rem(14);

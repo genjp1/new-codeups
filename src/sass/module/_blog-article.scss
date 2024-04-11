@@ -10,7 +10,7 @@
 }
 
 .blog-article__date{
-    color: $green1;
+    color: $main-black;
     font-family: $english-family;
     font-size: rem(14);
     font-style: normal;
@@ -21,7 +21,7 @@
 
   .blog-article__title{
     margin-top: rem(8);
-    color: $green1;
+    color: $main-black;
     font-size: rem(24);
     font-style: normal;
     font-weight: $medium;
@@ -38,7 +38,7 @@
 
   hr.blog-article__line {
     margin-top: rem(3);
-    background-color: $green2;
+    background-color: $green1;
     height: rem(2);
     border: none;
 
@@ -71,7 +71,7 @@
 
     .blog-article__text {
       // margin-top: rem(24);
-      // color: $green1;
+      // color: $main-black;
       // font-size: rem(16);
       // font-style: normal;
       // font-weight: $regular;
@@ -84,7 +84,7 @@
     
     .blog-article__content p {
       margin-top: rem(24);
-      color: $green1;
+      color: $main-black;
       font-size: rem(16);
       font-style: normal;
       font-weight: $regular;

@@ -38,7 +38,7 @@
   }
 
   .voice-card__age {
-    color: $green1;
+    color: $main-black;
     font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
@@ -55,8 +55,8 @@
     padding: rem(3) rem(12);
     align-items: flex-start;
     gap: rem(8);
-    border: 1px solid $green2;
-    color: $green2;
+    border: 1px solid $green1;
+    color: $green1;
     font-size: rem(12);
     font-style: normal;
     font-weight: $regular;
@@ -69,7 +69,7 @@
 
   .voice-card__title{
     margin-top: rem(3);
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: $medium;
@@ -82,7 +82,7 @@
   }
 
   hr.voice-card__line {
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     margin: rem(0) rem(0) rem(0) rem(0);
 }
 
@@ -110,7 +110,7 @@
 
   .voice-card__text{
     margin-top: rem(16);
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;

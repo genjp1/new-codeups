@@ -6,7 +6,7 @@
 	font-size: rem(15);
 	line-height: 1;
 	border-radius: 0;
-	border: 1px solid $green2;
+	border: 1px solid $green1;
 	appearance: none;
 	background-color: transparent;
 	background-image: none;
@@ -17,7 +17,7 @@
 		font-size: rem(15);
 		line-height: 1;
 		border-radius: 0;
-		border: 1px solid $green2;
+		border: 1px solid $green1;
 		appearance: none;
 		background-color: transparent;
 		background-image: none;
@@ -25,7 +25,7 @@
 }
 
 .form-input input:focus {
-	border: 1px solid $green2;
+	border: 1px solid $green1;
 	box-shadow: none;
 	outline: none;
 }

@@ -2,7 +2,7 @@
 
 .breadcrumb {
     padding: rem(8) 0;
-    color: $green1;
+    color: $main-black;
     font-size: rem(14);
     font-style: normal;
     font-weight: 400;
@@ -11,7 +11,7 @@
 }
 
 .breadcrumb.breadcrumb--404 {
-    background-color: $green2;
+    background-color: $green1;
     color: $white;
     padding-top: rem(88);
 
@@ -24,7 +24,7 @@
 }
 
 .breadcrumb a {
-    color: $green2;
+    color: $green1;
 }
 
 .breadcrumb.breadcrumb--404 a {

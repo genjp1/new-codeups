@@ -105,14 +105,14 @@
     }
   }
   
-  .footer-nav__items-column.footer-nav__items-column--end {
-    list-style-type: none;
+//   .footer-nav__items-column.footer-nav__items-column--end {
+//     list-style-type: none;
 
-    @include mq("md") {
-    width: inherit;
-    margin-right: rem(0);
-    }
-  }
+//     @include mq("md") {
+//     width: inherit;
+//     margin-right: rem(0);
+//     }
+//   }
   
 
 
@@ -144,7 +144,7 @@
 }
 
 .footer-nav__item.footer-nav__item--black a {
-    color: $green1;
+    color: $main-black;
 }
 
 .footer-nav__item .footer-nav__item-child a {

@@ -1,13 +1,13 @@
 @use "global" as *;
 
 .form__wrap {
-    border-bottom: 2px dotted $green2;
+    border-bottom: 2px dotted $green1;
     padding-bottom: rem(24);
 
     @include mq(md){
         display: flex;
         // align-items: center;
-        border-bottom: 2px dotted $green2;
+        border-bottom: 2px dotted $green1;
         padding-bottom: rem(40);
     }
 }
@@ -56,7 +56,7 @@
     // line-height: 1;
     // letter-spacing: 0.08em;
 
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: $bold;

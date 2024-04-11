@@ -23,7 +23,7 @@
     position: relative;
     text-align: center;
     width: 100%;
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     padding: rem(7) rem(16) rem(6) rem(47);
 
     color: $white;
@@ -31,19 +31,19 @@
     font-style: normal;
     font-weight: $bold;
     line-height: 1.5; /* 150% */
-    background: $green2;
+    background: $green1;
 
     @include mq("md") {
         text-align: center;
         width: 28.849%;
-        border: 1px solid $green2;
+        border: 1px solid $green1;
 
         color: $white;
         font-size: rem(16);
         font-style: normal;
         font-weight: $bold;
         line-height: 1.5; /* 150% */
-        background: $green2;
+        background: $green1;
     }
 }
 
@@ -51,7 +51,7 @@
     position: relative;
     text-align: center;
     width: 100%;
-    border: 1px solid $green2;
+    border: 1px solid $green1;
     padding: rem(7) rem(16) rem(6) rem(47);
 
     color: $white;
@@ -59,12 +59,12 @@
     font-style: normal;
     font-weight: $bold;
     line-height: 1.5; /* 150% */
-    background: $green2;
+    background: $green1;
 
     @include mq("md") {
         text-align: center;
         width: 28.849%;
-        border: 1px solid $green2;
+        border: 1px solid $green1;
         padding: rem(7) rem(16) rem(79) rem(13);
 
         color: $white;
@@ -72,7 +72,7 @@
         font-style: normal;
         font-weight: $bold;
         line-height: 1.5; /* 150% */
-        background: $green2;
+        background: $green1;
     }
 }
 
@@ -120,9 +120,9 @@
     text-align: center;
     padding: rem(6) rem(8) rem(6) rem(8);
     width: 58%;
-    border: 1px solid $green2;
+    border: 1px solid $green1;
 
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
@@ -132,9 +132,9 @@
         text-align: left;
         padding: rem(17) rem(12) rem(17) rem(12);
         width: 48%;
-        border: 1px solid $green2;
+        border: 1px solid $green1;
     
-        color: $green1;
+        color: $main-black;
         font-size: rem(16);
         font-style: normal;
         font-weight: $regular;
@@ -148,9 +148,9 @@
     text-align: right;
     padding: rem(15) rem(16) rem(15) rem(16);
     width: 20%;
-    border: 1px solid $green2;
+    border: 1px solid $green1;
 
-    color: $green1;
+    color: $main-black;
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
@@ -160,9 +160,9 @@
         text-align: right;
         padding: rem(17) rem(16) rem(17) rem(16);
         width: 23.076%;
-        border: 1px solid $green2;
+        border: 1px solid $green1;
     
-        color: $green1;
+        color: $main-black;
         font-size: rem(16);
         font-style: normal;
         font-weight: $regular;
