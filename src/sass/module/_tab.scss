@@ -55,7 +55,6 @@
   }
 
   .tab__button.tab__button--fun {
-    padding: rem(10) rem(15) rem(10) rem(15);
 
       @include mq("md") {
         padding: rem(29) rem(18) rem(26) rem(35);
