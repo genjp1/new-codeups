@@ -367,3 +367,39 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 /*フッターのリンクをクリックしたらページ遷移（タブ選択）　ここまで
 =====================================================*/
+
+
+/*====================================================
+# ページネーションのリンクをsp時、非表示にする（静的コード用）
+=====================================================*/
+document.addEventListener('DOMContentLoaded', function() {
+  function adjustPagination() {
+      // ウィンドウの幅を取得
+      var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+      // すべてのページネーションリンクを取得
+      var links = document.querySelectorAll('.pagenavi .wp-pagenavi a');
+
+      // リンクの表示をリセット
+      for (var i = 0; i < links.length; i++) {
+          links[i].style.display = 'flex'; // すべてのリンクを表示
+      }
+
+      // スマートフォンビュー（例えば768px以下）の場合
+      if (width <= 768) {
+          // 5番目と6番目のリンクを非表示に設定
+          if (links.length > 4) {
+              links[4].style.display = 'none'; // 5番目のリンクを非表示
+          }
+          if (links.length > 5) {
+              links[5].style.display = 'none'; // 6番目のリンクも非表示
+          }
+      }
+  }
+
+  // ページロード時とウィンドウサイズ変更時に実行
+  adjustPagination();
+  window.addEventListener('resize', adjustPagination);
+});
+
+
