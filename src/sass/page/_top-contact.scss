@@ -8,8 +8,7 @@
     }
 }
 
-.top-contact.top-page-voice-contact,
-.top-contact.top-page-campaign-contact {
+.top-contact-underPage {
     margin-top: rem(105);
 
     @include mq(md) {
@@ -17,74 +16,86 @@
     }
 }
 
+// .top-contact.top-page-voice-contact,
+// .top-contact.top-page-campaign-contact {
+//     margin-top: rem(105);
 
-.top-contact.top-page-about-contact {
-    margin-top: rem(106);
+//     @include mq(md) {
+//         margin-top: rem(140);
+//     }
+// }
 
-    @include mq(md) {
-        margin-top: rem(141);
-    }
-}
 
-.top-contact.top-page-policy-contact {
-    margin-top: rem(106);
+// .top-contact.top-page-about-contact {
+//     margin-top: rem(106);
 
-    @include mq(md) {
-        margin-top: rem(139);
-    }
-}
-.top-contact.top-page-terms-contact {
-    margin-top: rem(106);
+//     @include mq(md) {
+//         margin-top: rem(141);
+//     }
+// }
 
-    @include mq(md) {
-        margin-top: rem(138);
-    }
-}
+// .top-contact.top-page-policy-contact {
+//     margin-top: rem(106);
 
-.top-contact.top-page-faq-contact {
-    margin-top: rem(108);
+//     @include mq(md) {
+//         margin-top: rem(139);
+//     }
+// }
+// .top-contact.top-page-terms-contact {
+//     margin-top: rem(106);
 
-    @include mq(md) {
-        margin-top: rem(144);
-    }
-}
+//     @include mq(md) {
+//         margin-top: rem(138);
+//     }
+// }
+
+// .top-contact.top-page-faq-contact {
+//     margin-top: rem(108);
+
+//     @include mq(md) {
+//         margin-top: rem(144);
+//     }
+// }
+
+
+
+// .top-contact.top-page-price-contact {
+//     margin-top: rem(104);
+
+//     @include mq(md) {
+//         margin-top: rem(141);
+//     }
+// }
+
+// .top-contact.top-page-information-contact {
+//     margin-top: rem(106);
+
+//     @include mq(md) {
+//         margin-top: rem(138);
+//     }
+// }
+
+// .top-contact.top-page-blogDetail-contact {
+//     margin-top: rem(106);
+
+//     @include mq(md) {
+//         margin-top: rem(143);
+//     }
+// }
+
+// .top-contact.top-page-blog-contact {
+//     margin-top: rem(113);
+
+//     @include mq(md) {
+//         margin-top: rem(140);
+//     }
+// }
+
 
 .top-contact.top-page-sitemap-contact {
     margin-top: rem(89);
 
     @include mq(md) {
         margin-top: rem(118);
-    }
-}
-
-.top-contact.top-page-price-contact {
-    margin-top: rem(104);
-
-    @include mq(md) {
-        margin-top: rem(141);
-    }
-}
-
-.top-contact.top-page-information-contact {
-    margin-top: rem(106);
-
-    @include mq(md) {
-        margin-top: rem(138);
-    }
-}
-
-.top-contact.top-page-blog-contact {
-    margin-top: rem(113);
-
-    @include mq(md) {
-        margin-top: rem(140);
-    }
-}
-
-.top-contact.top-page-blogDetail-contact {
-    margin-top: rem(106);
-
-    @include mq(md) {
-        margin-top: rem(143);
     }
 }
