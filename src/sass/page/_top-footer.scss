@@ -14,80 +14,95 @@
 
 }
 
+
 .top-footer.top-footer--mt0 {
     margin-top: 0;
 }
 
-.top-footer.top-page-voice-footer,
-.top-footer.top-page-about-footer,
-.top-footer.top-page-blogDetail-footer {
+.top-footer-underPage {
+    background-color: $green1;
     margin-top: rem(99);
+    padding-top: rem(48);
+    padding-bottom: rem(56);
 
-    @include mq("md") {
+    @include mq(md) {
         margin-top: rem(160);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
     }
 
 }
 
-.top-footer.top-page-campaign-footer {
-    margin-top: rem(100);
+// .top-footer.top-page-voice-footer,
+// .top-footer.top-page-about-footer,
+// .top-footer.top-page-blogDetail-footer {
+//     margin-top: rem(99);
 
-    @include mq("md") {
-        margin-top: rem(160);
-    }
+//     @include mq("md") {
+//         margin-top: rem(160);
+//     }
 
-}
+// }
 
-.top-footer.top-page-information-footer {
-    margin-top: rem(100);
+// .top-footer.top-page-campaign-footer {
+//     margin-top: rem(100);
 
-    @include mq("md") {
-        margin-top: rem(161);
-    }
+//     @include mq("md") {
+//         margin-top: rem(160);
+//     }
 
-}
+// }
+
+// .top-footer.top-page-information-footer {
+//     margin-top: rem(100);
+
+//     @include mq("md") {
+//         margin-top: rem(161);
+//     }
+
+// }
 
 
-.top-footer.top-page-terms-footer {
-    margin-top: rem(99);
+// .top-footer.top-page-terms-footer {
+//     margin-top: rem(99);
 
-    @include mq("md") {
-        margin-top: rem(161);
-    }
+//     @include mq("md") {
+//         margin-top: rem(161);
+//     }
 
-}
+// }
 
-.top-footer.top-page-sitemap-footer {
-    margin-top: rem(99);
+// .top-footer.top-page-sitemap-footer {
+//     margin-top: rem(99);
 
-    @include mq("md") {
-        margin-top: rem(162);
-    }
+//     @include mq("md") {
+//         margin-top: rem(162);
+//     }
 
-}
+// }
 
-.top-footer.top-page-contact-footer {
-    margin-top: rem(145);
+// .top-footer.top-page-contact-footer {
+//     margin-top: rem(145);
 
-    @include mq("md") {
-        margin-top: rem(160);
-    }
+//     @include mq("md") {
+//         margin-top: rem(160);
+//     }
 
-}
-.top-footer.top-page-contact-complete-footer {
-    margin-top: rem(144);
+// }
+// .top-footer.top-page-contact-complete-footer {
+//     margin-top: rem(144);
 
-    @include mq("md") {
-        margin-top: rem(120);
-    }
+//     @include mq("md") {
+//         margin-top: rem(120);
+//     }
 
-}
-.top-footer.top-page-404-footer {
-    padding-top: rem(69);
-    margin-top: 0;
+// }
+// .top-footer.top-page-404-footer {
+//     padding-top: rem(69);
+//     margin-top: 0;
 
-    @include mq("md") {
-        padding-top: rem(134);
-    }
+//     @include mq("md") {
+//         padding-top: rem(134);
+//     }
 
-}
+// }
