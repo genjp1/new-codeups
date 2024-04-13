@@ -35,27 +35,18 @@
     
   }
 
+  .page-voice__cards {
+    margin-top: rem(40);
+  }
+
+  .page-voice__card {
+    
+  }
+
   .page-voice__pagenavi {
     margin-top: rem(78);
 
     @include mq("md") {
         margin-top: rem(73);
     }
-  }
-
-  .page-voice__contents {
-
-
-  }
-
-  .page-voice__content {
-    margin-top: rem(40);
-  }
-
-  .page-voice__cards {
-
-  }
-
-  .page-voice__card {
-    
   }
