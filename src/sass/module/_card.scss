@@ -38,13 +38,21 @@
     }
   }
 
-  .card__body.card__body--page-blog {
+  .card__body-pageBlog{
     padding: rem(12) rem(16)  rem(24);
     
     @include mq("md") {
-        padding: rem(11) rem(17) rem(24);
+      padding: rem(11) rem(17) rem(24);
     }
   }
+
+  // .card__body.card__body--page-blog {
+  //   padding: rem(12) rem(16)  rem(24);
+    
+  //   @include mq("md") {
+  //       padding: rem(11) rem(17) rem(24);
+  //   }
+  // }
 
   
   .card__date{
@@ -67,10 +75,17 @@
     }
   }
 
-  hr.card__line.card__line--page-blog {
+  hr.card__line-pageBlog {
     margin:  rem(3) 0;
-
+    background-color: $green1;
+    height: rem(2);
+    border: none;
   }
+
+  // hr.card__line.card__line--page-blog {
+  //   margin:  rem(3) 0;
+
+  // }
 
   .card__title{
     color: $main-black;
