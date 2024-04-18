@@ -315,9 +315,9 @@ document.addEventListener('DOMContentLoaded', function() {
   links.forEach(function(link) {
     link.addEventListener('click', function(e) {
       var tabMap = {
-        'ライセンス取得': 'license',
+        'ライセンス取得': 'licence',
         '体験ダイビング': 'experience-diving',
-        'ファンダイビング': 'fan-diving'
+        'ファンダイビング': 'fun-diving'
       };
 
       var text = e.target.textContent.trim();
@@ -338,9 +338,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var tab = params.get('tab');
 
   var tabMap = {
-    'license': 0, // 「ライセンス取得」は最初のタブ
+    'licence': 0, // 「ライセンス取得」は最初のタブ
     'experience-diving': 2, // 「体験ダイビング」は3番目のタブ
-    'fan-diving': 1 // 「ファンダイビング」は2番目のタブ
+    'fun-diving': 1 // 「ファンダイビング」は2番目のタブ
   };
 
   if (tabMap.hasOwnProperty(tab)) {

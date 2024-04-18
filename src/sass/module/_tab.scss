@@ -94,15 +94,15 @@
 }
 
 // ライセンス講習のスタイル
-.tab__button.tab__button--license::before {
+.tab__button.tab__button--licence::before {
   @include mq("md") {
     mask-image: url(../images/common/icon-information1-green.svg);
   }
 }
 
 // ライセンス講習のホバー時とアクティブ時の背景色（白）
-.tab__button.tab__button--license:hover::before,
-.tab__button.tab__button--license.is-active::before {
+.tab__button.tab__button--licence:hover::before,
+.tab__button.tab__button--licence.is-active::before {
   @include mq("md") {
     background-color: $white; 
   }
