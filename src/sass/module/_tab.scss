@@ -96,7 +96,7 @@
 // ライセンス講習のスタイル
 .tab__button.tab__button--licence::before {
   @include mq("md") {
-    mask-image: url(../images/common/icon-information1-green.svg);
+    mask-image: url(../images/common/icon-information1.svg);
   }
 }
 
